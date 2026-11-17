@@ -44,6 +44,22 @@ const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => ca
       <header>
         <h1>{category.title[locale]}</h1>
       </header>
+    </div>
+
+    <FilterBar locale={locale} formats={formatsOf(list)} languages={languagesOf(list)} pricing={pricingOf(list)} />
+
+    <div class="wrap section" data-catalog data-count-template={ui.filtersCount}>
+      <h2 class="section-head">{ui.categoryEntries}</h2>
+      <p class="empty" data-empty hidden>{ui.filtersEmpty}</p>
+      <section data-group>
+        <div class="grid">
+          {list.map((entry) => <EntryCard entry={entry} locale={locale} />)}
+        </div>
+      </section>
+    </div>
+
+    <div class="wrap section">
+      <h2 class="section-head">{ui.categoryGuide}</h2>
       <article class="prose">
         {paragraphs(category.intro[locale]).map((paragraph) => <p>{paragraph}</p>)}
       </article>
@@ -60,16 +76,7 @@ const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => ca
       </p>
     </div>
 
-    <FilterBar locale={locale} formats={formatsOf(list)} languages={languagesOf(list)} pricing={pricingOf(list)} />
-
-    <div class="wrap section" data-catalog data-count-template={ui.filtersCount}>
-      <h2 class="section-head">{ui.categoryEntries}</h2>
-      <p class="empty" data-empty hidden>{ui.filtersEmpty}</p>
-      <section data-group>
-        <div class="grid">
-          {list.map((entry) => <EntryCard entry={entry} locale={locale} />)}
-        </div>
-      </section>
+    <div class="wrap section">
       <aside class="cta">
         <p class="eyebrow">{ui.ctaEyebrow}</p>
         <h2>{cta.title[locale]}</h2>
