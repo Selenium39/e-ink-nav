@@ -43,6 +43,21 @@ function fail(message) {
   console.error(`FAIL ${message}`);
 }
 
+// Shared by the listing-page and detail-page loops.
+function checkUmami(html, label) {
+  if (html.includes('cloud.umami.is')) fail(`${label} umami cloud host should be absent`);
+  if (umamiWebsiteId === '') {
+    if (html.includes('umami')) fail(`${label} umami should be absent`);
+    return;
+  }
+  if (!html.includes(`data-website-id="${umamiWebsiteId}"`)) fail(`${label} umami website id`);
+  if (!umamiScriptHost || !html.includes(umamiScriptHost)) fail(`${label} umami script host`);
+}
+
+if (umamiWebsiteId !== '' && umamiScriptHost === '') {
+  fail('config umami script src is empty while a website id is set');
+}
+
 if (!fs.existsSync(dist)) fail('dist/ is missing');
 
 for (const [url, file, lang, homeCount] of pages) {
@@ -61,13 +76,7 @@ for (const [url, file, lang, homeCount] of pages) {
     fail(`${url} filters`);
   }
   if (!html.includes('data-lang-link')) fail(`${url} language switch`);
-  if (html.includes('cloud.umami.is')) fail(`${url} umami cloud host should be absent`);
-  if (umamiWebsiteId === '') {
-    if (html.includes('umami')) fail(`${url} umami should be absent`);
-  } else {
-    if (!html.includes(`data-website-id="${umamiWebsiteId}"`)) fail(`${url} umami website id`);
-    if (!html.includes(umamiScriptHost)) fail(`${url} umami script host`);
-  }
+  checkUmami(html, url);
   if (!html.includes('mailto:openminimax@gmail.com')) fail(`${url} mailto`);
   const entries = html.match(/data-entry="1"/g)?.length ?? 0;
   if (homeCount !== null && entries !== homeCount) fail(`${url} has ${entries} entries, expected ${homeCount}`);
@@ -77,6 +86,32 @@ for (const [url, file, lang, homeCount] of pages) {
   }
   if (homeCount === null && !html.includes('class="cta"')) fail(`${url} missing CTA`);
   if (homeCount === null && !html.includes('class="prose"')) fail(`${url} missing intro`);
+}
+
+// Detail pages: one per entry per locale. ItemList/filter assertions above do
+// not apply here; these pages get their own set of checks.
+const detailPages = data.entries.flatMap((entry) => [
+  [`/sites/${entry.id}`, `dist/sites/${entry.id}.html`, 'en', entry],
+  [`/zh/sites/${entry.id}`, `dist/zh/sites/${entry.id}.html`, 'zh-CN', entry],
+]);
+
+let detailPagesChecked = 0;
+for (const [url, file, lang, entry] of detailPages) {
+  if (!fs.existsSync(file)) {
+    fail(`missing ${file}`);
+    continue;
+  }
+  detailPagesChecked += 1;
+  const html = fs.readFileSync(file, 'utf8');
+  if (!html.includes(`lang="${lang}"`)) fail(`${url} lang`);
+  if (!html.includes(`rel="canonical" href="https://nav.e-ink.me${url}"`)) fail(`${url} canonical`);
+  if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"') || !html.includes('hreflang="x-default"')) {
+    fail(`${url} hreflang`);
+  }
+  if (!html.includes('"@type":"BreadcrumbList"')) fail(`${url} BreadcrumbList`);
+  if (!html.includes(`class="action-link" href="${entry.url}"`)) fail(`${url} action link`);
+  checkUmami(html, url);
+  if (!html.includes('mailto:openminimax@gmail.com')) fail(`${url} mailto`);
 }
 
 function readDist(file, label) {
@@ -120,4 +155,7 @@ if (failed) {
   console.error(`${failed} dist check(s) failed`);
   process.exit(1);
 }
-console.log(`OK dist: ${pages.length} pages, filters and ItemList present, Umami present with website id ${umamiWebsiteId}, sitemap ${expectedSitemapUrls} urls.`);
+const umamiStatus = umamiWebsiteId === '' ? 'Umami omitted' : `Umami present with website id ${umamiWebsiteId}`;
+console.log(
+  `OK dist: ${pages.length} listing pages + ${detailPagesChecked} detail pages, filters and ItemList present, ${umamiStatus}, sitemap ${expectedSitemapUrls} urls.`,
+);

@@ -489,7 +489,8 @@ input {
   text-decoration-thickness: 2px;
 }
 
-.ext {
+.ext,
+.ext:visited {
   font-size: 0.85rem;
   color: var(--muted);
   text-decoration: none;
