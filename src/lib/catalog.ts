@@ -30,6 +30,7 @@ export interface Entry {
   name: string;
   url: string;
   description: Localized;
+  long: Localized;
   category: string;
   formats: string[];
   languages: string[];
@@ -64,6 +65,12 @@ export function categoryBySlug(slug: string): Category {
 
 export function entriesIn(slug: string): Entry[] {
   return entries.filter((entry) => entry.category === slug);
+}
+
+export function entryById(id: string): Entry {
+  const entry = entries.find((item) => item.id === id);
+  if (!entry) throw new Error(`Unknown entry: ${id}`);
+  return entry;
 }
 
 const HOUSE_IDS = new Set(['eink-me', 'iloveepub']);
@@ -139,6 +146,30 @@ export function paragraphs(text: string): string[] {
     .split(/\n\s*\n/)
     .map((part) => joinWrappedLines(part))
     .filter(Boolean);
+}
+
+/**
+ * One-line summary for the directory index: the first sentence of a longer
+ * text. Long sentences are cut at a word boundary and closed with an ellipsis
+ * so a cell never grows past one thought.
+ *
+ * CJK terminators (。！？) end a sentence outright; Latin .!? only count when
+ * followed by whitespace or the end, so "ctext.org" does not cut early. CJK
+ * text carries no spaces, so the word-boundary trim only applies when a space
+ * sits near the cut.
+ */
+export function firstSentence(text: string, maxChars = 110): string {
+  const paragraph = paragraphs(text)[0] ?? '';
+  const cjk = paragraph.search(/[。！？]/);
+  const latin = paragraph.search(/[.!?](?:\s|$)/);
+  const ends = [cjk, latin].filter((index) => index !== -1);
+  const end = ends.length === 0 ? -1 : Math.min(...ends);
+  const sentence = end === -1 ? paragraph.trimEnd() : paragraph.slice(0, end + 1);
+  if (sentence.length <= maxChars) return sentence;
+  const clipped = sentence.slice(0, maxChars - 1);
+  const space = clipped.lastIndexOf(' ');
+  const cut = space > maxChars * 0.6 ? clipped.slice(0, space) : clipped;
+  return `${cut.trimEnd()}…`;
 }
 
 export function domainOf(url: string): string {

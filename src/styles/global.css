@@ -139,7 +139,6 @@ a:hover {
 .family ul,
 .tools,
 .lang-switch,
-.cat-nav ul,
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -328,32 +327,104 @@ main {
   font-size: 0.8rem;
 }
 
-.cat-nav {
-  margin-top: 1.75rem;
+/* Category band: the site's directory, ruled off under the masthead. The
+   family header above already draws the top hairline, so the band closes
+   itself with a bottom rule only. */
+.cat-band {
+  border-bottom: 1px solid var(--line);
+  padding-block: 0.55rem;
 }
 
-.cat-nav ul {
-  gap: 0.5rem;
+.cat-band ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.cat-nav a {
+.cat-band a {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.35rem;
-  border: 1px solid var(--line);
+  gap: 0.3rem;
   text-decoration: none;
-  padding: 0.25rem 0.55rem;
+  font-size: 0.95rem;
   color: var(--accent);
 }
 
-.cat-nav a[aria-current='page'] {
+.cat-band a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.cat-band a[aria-current='page'],
+.cat-band a[aria-current='location'] {
   color: var(--ink);
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+.cat-band a[aria-current='page'] .count,
+.cat-band a[aria-current='location'] .count {
+  color: inherit;
+}
+
+.cat-band .count {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* Directory index on the home page: a library-catalog grid of entry points. */
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.index-card {
+  position: relative;
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 0.85rem 0.95rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.index-card:hover {
   border-color: var(--ink);
 }
 
-.cat-nav .count {
+.index-title {
+  font-size: 1.18rem;
+}
+
+.index-title a {
+  text-decoration: none;
+}
+
+.index-title a:hover {
+  text-decoration: underline;
+}
+
+/* Stretched link: the whole cell is one entry point, still keyboard-focusable. */
+.index-title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.index-count {
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.index-summary {
+  font-size: 0.92rem;
 }
 
 .filters {
@@ -437,6 +508,69 @@ input {
   text-decoration: none;
 }
 
+.favicon-lg {
+  width: 40px;
+  height: 40px;
+  margin-top: 0.3rem;
+  flex: none;
+}
+
+.entry-head h1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+  margin-bottom: 0.75rem;
+}
+
+.facts {
+  max-width: 40rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9rem) 1fr;
+  gap: 0.6rem;
+  padding-block: 0.45rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.facts dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.action-link {
+  display: inline-block;
+  margin-top: 1.4rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.ext,
+.ext:visited {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.ext:hover {
+  color: var(--accent);
+}
+
 .prose {
   max-width: 40rem;
   margin-top: 1rem;
@@ -507,7 +641,13 @@ input {
     width: min(70rem, calc(100% - 1.5rem));
   }
 
-  .grid {
+  .grid,
+  .index-grid {
     grid-template-columns: 1fr;
+  }
+
+  .fact {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
   }
 }

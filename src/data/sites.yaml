@@ -404,6 +404,19 @@ entries:
         Project Gutenberg distributes tens of thousands of public-domain books at no charge, in EPUB, Kindle, PDF, and plain text. Proofreading is volunteer work, so a famous novel is usually readable and an obscure scan may still be rough.
       zh: >
         古腾堡计划免费提供数以万计的公有领域图书，常见格式有 EPUB、Kindle、PDF 和纯文本。校对来自志愿者，名著通常能读，冷门扫描本有时仍比较粗。
+    long:
+      en: |
+        Project Gutenberg is the oldest digital library in existence. It began in 1971, when a university student named Michael S. Hart was given spare computer time and typed the United States Declaration of Independence into the machine — by most accounts, the first ebook. Half a century later it is still a volunteer operation, funded by donations, with no accounts and no advertising.
+
+        The catalog runs to tens of thousands of books that are in the public domain under United States law: classic literature above all, plus history, reference works, and a smaller set of other languages. Every title downloads as EPUB, plain text, HTML, or old Kindle files, with no DRM anywhere. Proofreading has been volunteer work for decades, so a famous novel is usually solid while an obscure scan keeps its rough edges.
+
+        Nothing costs anything and registration does not exist. On an e-ink reader the EPUB and plain-text files reflow cleanly, which makes them the natural picks over image-based copies. The honest limits: the shelf stops at the American public-domain line, a few titles are hidden in countries where copyright still applies, and no current bestseller will ever appear here. For older books, this is the first shelf to check.
+      zh: |
+        Project Gutenberg（古腾堡计划）是世界上仍在运行的最老牌数字图书馆。1971 年，大学生 Michael S. Hart 拿到富余的机时，把美国《独立宣言》敲进机器——多数人公认这是第一本电子书。半个世纪后它仍由志愿者运转，靠捐赠维持，没有账号，也没有广告。
+
+        书目以数万种按美国标准进入公有领域的书为主：西方文学经典是主体，另有历史、工具书和少量其他语种。每种书都能下载 EPUB、纯文本、HTML 或老式 Kindle 文件，全程无 DRM。校对是志愿者做了几十年的活，名著通常可靠，冷门扫描本则难免粗糙。
+
+        一切免费，也不存在注册这回事。在墨水屏上，EPUB 和纯文本都能干净地重排，比图像版更值得选。它有诚实的边界：书架止于美国公有领域线，少数书在版权未到期的国家被隐藏，当代畅销书更不会出现在这里。要读老书，先看这一格。
     category: free-ebooks
     formats: [EPUB, PDF, TXT, HTML, MOBI]
     languages: [en, de, fr, fi, nl, it, es, pt, zh]
@@ -422,6 +435,19 @@ entries:
         Standard Ebooks republishes a careful selection of English public-domain books with modern typography, corrected texts, and covers. Downloads include EPUB, AZW3, and KEPUB, produced for e-readers rather than left as raw scans.
       zh: >
         Standard Ebooks 从英文公有领域里挑选一批书，重新校对、排版并做封面。提供 EPUB、AZW3 和 KEPUB，是为电纸书做的版本，不是原始扫描件。
+    long:
+      en: |
+        Standard Ebooks starts from a simple observation: a public-domain book can still be badly made. The project takes works that are already free — many sourced from Project Gutenberg scans — and redoes them properly. Volunteer proofreaders correct the text against multiple editions, a modern stylesheet resets the typography, and every book gets a cover designed for this century rather than borrowed from an 1890s frontispiece.
+
+        The catalog is deliberately small, a few hundred titles against Gutenberg's tens of thousands, with new releases arriving as a steady trickle. Everything is English-language and United States public domain. Downloads come as EPUB, AZW3 for Kindles, and KEPUB for Kobos, with no DRM, no account, and no fee.
+
+        On an e-ink reader the difference from a raw Gutenberg file shows immediately: consistent margins, real small caps, a table of contents that works, sensible line breaks. The honest limits are the size and language of the shelf — no Chinese classics, no obscure titles, nothing still in copyright. For a well-loved English novel, this is the version worth keeping.
+      zh: |
+        Standard Ebooks 的出发点很直接：公有领域的书，也可能做得很糟。这个项目把已经免费的作品——不少取自古腾堡的扫描底本——重新做一遍。志愿者对照多个版本校订文字，新的样式表重排版式，每本书配一个为今天设计的封面，而不是挪用一八九〇年代的卷首图。
+
+        书目刻意做得小，几百种，对照古腾堡的几万种，新书以平稳的节奏持续增加。全部是英文、按美国标准进入公有领域的作品。下载有 EPUB、给 Kindle 的 AZW3 和给 Kobo 的 KEPUB，没有 DRM，不用账号，不收费用。
+
+        在墨水屏上，它和原始古腾堡文件的差别一眼可见：边距一致、小型大写字母正常、目录能用、断行讲究。诚实的边界在书架的规模和语种——没有中文经典，没有冷门书，也没有版权期内的作品。读一本常读的英文小说，这是值得留下的那个版本。
     category: free-ebooks
     formats: [EPUB, AZW3, KEPUB]
     languages: [en]
@@ -440,6 +466,19 @@ entries:
         Internet Archive stores a vast library of scanned books and other texts, many of them downloadable when they are public domain. In-copyright borrowing is a loan with a waitlist, not a file you keep.
       zh: >
         互联网档案馆保存海量扫描图书和其他文本，公有领域的资料很多可以下载。仍受版权保护的借阅是排队的借期，不是可以留下的文件。
+    long:
+      en: |
+        The Internet Archive, the nonprofit Brewster Kahle founded in 1996, is best known for the Wayback Machine's snapshots of the web. Its book collection is a monument of a different kind: millions of scanned volumes digitized with library partners, covering out-of-print fiction, scholarly monographs, and material no commercial store would ever carry.
+
+        What you can do with a given book depends on its status. Public-domain items are full view and usually downloadable as PDF, sometimes with EPUB or plain text alongside. In-copyright items fall under controlled digital lending: the Archive lends as many copies as it physically holds, one reader per copy, with a free account and a waitlist. Publisher lawsuits have trimmed how much can be lent, so the rules here have already shifted once and may shift again.
+
+        On e-ink, the practical advice is short: prefer the reflowable file when one exists, and accept that most scans are fixed photographs of pages. For out-of-print, rare, and scholarly material this is close to the strongest shelf anywhere; for anything current, a library card or a store will be faster.
+      zh: |
+        互联网档案馆是 Brewster Kahle 于 1996 年创办的非营利组织，最有名的是保存网页快照的 Wayback Machine。它的图书馆藏是另一座碑：与图书馆合作扫描的数百万卷册，涵盖绝版小说、学术专著，以及商业书店永远不会上架的材料。
+
+        一本书能做什么，取决于它的状态。公有领域条目全本可见，通常可下载 PDF，有时还附 EPUB 或纯文本。仍在版权保护下的书走受控数字借阅：档案馆按实体持有量出借，一册同时只借一位读者，要免费账号，要排队。出版商的诉讼削减了可借范围，规则已经变过一次，将来还可能再变。
+
+        在墨水屏上，实际建议很短：有可重排文件就优先用，没有就接受大多数扫描本只是书页照片。找绝版、珍稀和学术材料，这里几乎是各处书架里最强的；找新书，一张借书证或一家商店都会更快。
     category: free-ebooks
     formats: [PDF, EPUB, TXT, DAISY, DJVU]
     languages: [en, fr, de, es, zh, ja, ru, pt, it, ar]
@@ -458,6 +497,19 @@ entries:
         Open Library is a catalog of every book plus a lending library for ebooks, run with the Internet Archive. Borrowing an in-copyright title needs a free account, and you may have to wait for a copy.
       zh: >
         Open Library 是一份想覆盖所有书的目录，也和互联网档案馆一起做电子书借阅。借仍在版权期内的书需要免费账号，而且可能要等副本。
+    long:
+      en: |
+        Open Library is the Internet Archive's attempt to build a web page for every book ever published — a catalog that reads like Wikipedia for books, with editions, covers, and publication history. Attached to the catalog is a lending desk: where a digitized copy exists and rights allow, the book can be borrowed after signing up for a free account.
+
+        Lending follows the same one-copy-one-reader rules as the Archive itself. Popular titles gather waitlists; some works offer only short in-browser preview loans rather than a full borrow. Public-domain scans can often be read or downloaded outright. The catalog data is openly licensed, which is why other services quietly build on it.
+
+        Registration is free and lightweight. On an e-ink device the in-browser reader is serviceable on larger screens and clumsy on six inches, so treat a borrowable EPUB as the better path when one is offered. The most useful habit is to treat this as a discovery layer: identify the edition here, then read it in place, borrow it through a library app, or buy it somewhere sensible.
+      zh: |
+        Open Library 是互联网档案馆的一项工程：为每一本出版过的书建一个网页——读起来像图书版的维基百科，有版本、封面和出版沿革。目录旁附设一个借阅台：凡是存在数字副本且权利允许，注册免费账号之后就能借阅。
+
+        借阅遵守与档案馆相同的「一册一人」规则。热门书会攒出队伍；有些作品只提供浏览器内的短时试读，而不是整本借出。公有领域扫描本常常可以直接阅读或下载。目录数据本身按开放许可发布，别的服务也在悄悄使用它。
+
+        注册免费而轻。在墨水屏设备上，浏览器阅读器在大屏上尚可，六寸屏就笨拙了，所以能借到 EPUB 时，那才是更好的路。最有用的习惯是把它当作发现层：在这里认准版本，然后就地读、用图书馆应用借，或去合适的地方买。
     category: free-ebooks
     formats: [EPUB, PDF]
     languages: [en, fr, de, es, zh, ja, ru, it, pt]
@@ -476,6 +528,19 @@ entries:
         ManyBooks hosts a large collection of free public-domain ebooks in EPUB, PDF, and MOBI, with a paid membership that adds convenience around the same catalog. You can download without paying.
       zh: >
         ManyBooks 提供大批免费的公有领域电子书，格式有 EPUB、PDF 和 MOBI。付费会员只是在同一书库上多一些方便，不付钱也可以下载。
+    long:
+      en: |
+        ManyBooks dates from the early 2000s, when someone looked at the raw Project Gutenberg pile and built a friendlier face over it: genre browsing, short blurbs, recommendations. Much of the stock traces back to those same public-domain scans, rewrapped; the site is independent and ad-supported, with a paid membership layered over a catalog that stays free.
+
+        Downloading needs no account and no money: pick a title and take EPUB, PDF, MOBI, or several other formats. The membership mostly buys conveniences — a calmer interface, shelf tools — rather than different books. Everything on offer is English-language.
+
+        Quality is the honest caveat. Files are volunteer- and machine-processed reflows of old scans, so typography ranges from clean to eccentric, and when the same title exists at Standard Ebooks that version is nearly always better made. Use ManyBooks to browse and stumble into things you did not know you wanted, use Gutenberg for depth, and look at the first few pages of any download before trusting it on a long read.
+      zh: |
+        ManyBooks 起于 2000 年代初：有人看着 Project Gutenberg 那一堆原始文件，给它们加了一张友好的门面——按类型浏览、短评、推荐。库存大多仍可追溯到同一批公有领域扫描件，重新包了一层；站点独立运营，靠广告支撑，在免费书库之上另设付费会员。
+
+        下载不要账号、不要钱：选中一本书，拿走 EPUB、PDF、MOBI 或其他几种格式。会员买的主要是方便——更清爽的界面和书架工具——而不是别的书。书目只有英文，站点版式也不重，老旧的墨水屏浏览器照样吃得消。
+
+        诚实的告诫在质量。文件多是志愿者和机器对旧扫描件的重排，排版从干净到古怪都有，目录和元数据偶有错漏，版本信息不必尽信；同一本书若 Standard Ebooks 也有，那一版几乎总是更好。把 ManyBooks 当作闲逛和偶遇之处，找深度回古腾堡，任何下载先翻几页，再决定要不要带它上路。
     category: free-ebooks
     formats: [EPUB, PDF, MOBI]
     languages: [en]
@@ -494,6 +559,19 @@ entries:
         Wikisource is the Wikimedia library of source texts that are free of copyright, proofread by volunteers in many language editions. You can read them on the web and, on many pages, export PDF or EPUB.
       zh: >
         维基文库是维基媒体的公有领域文献库，由志愿者按语种校对。可以在网页上读，许多页面也能导出 PDF 或 EPUB。
+    long:
+      en: |
+        Wikisource is the Wikimedia library of source texts — the sibling of Wikipedia that collects the texts themselves rather than articles about them. Each language community runs its own edition, and volunteers proofread works page by page against scanned originals, so a transcribed speech, poem, or statute can be checked against the page it came from.
+
+        The holdings are genuinely multilingual: literature, law, historical documents, speeches, and scripture across dozens of editions, strong in the languages with active communities and thin elsewhere. Many pages export cleanly to PDF or EPUB, and the web reading view is light and quick — it behaves in an old browser, which anyone reading on an e-ink device will recognize as a feature rather than neglect.
+
+        Everything is free, and reading requires no account; only editing asks for one. Nothing under copyright is included, by design. The right use of Wikisource is as the first stop for a primary source you want to quote accurately, or for older works in languages the bigger free libraries barely touch. As a shelf of novels to read straight through, it is serviceable but far from complete.
+      zh: |
+        维基文库是维基媒体的文献图书馆——维基百科的姊妹项目，收录文本本身，而不是关于文本的条目。每种语言有自己的子站，志愿者对照扫描原件逐页校对，所以一篇转写的演说、诗或法条，可以核对其所出的那一页。
+
+        馆藏真正多语：文学、法律、历史文献、演说和经文散布在几十个子站，社区活跃的语种扎实，冷僻处则薄。许多页面可以干净地导出 PDF 或 EPUB，网页阅读视图轻快，在老式浏览器上照常工作——用墨水屏读书的人会认出这是优点，不是怠慢。
+
+        一切免费，阅读不需要账号，只有编辑才要登录。版权期内的作品一概不收，这是原则。维基文库的正确用法是：要准确引用一手文献，或要找大书库照顾不到的语种里的老书，先来这里。要通读一架子小说，它可用，但远不完备。
     category: free-ebooks
     formats: [HTML, PDF, EPUB]
     languages: [en, zh, fr, de, es, ru, ja, pl, it, pt, nl, ar]
@@ -512,6 +590,19 @@ entries:
         The Directory of Open Access Books indexes peer-reviewed academic books that publishers have made free to read. DOAB points you at the open file, usually a PDF or EPUB hosted by the publisher or by OAPEN.
       zh: >
         DOAB（开放获取图书目录）索引出版社免费开放的同行评审学术书。它把你指到开放文件，通常是出版社或 OAPEN 上的 PDF 或 EPUB。
+    long:
+      en: |
+        DOAB, the Directory of Open Access Books, is run by the OAPEN Foundation in Amsterdam, and its whole job is indexing: it lists peer-reviewed academic books that publishers have chosen to release under open access — several thousand of them — and points you to the actual file, usually a PDF or EPUB hosted by the publisher or by the OAPEN Library itself.
+
+        Search works by subject, publisher, keyword, and language, and the records carry proper bibliographic metadata, which matters when you are citing rather than browsing. The directory is free, requires no account, and hosts no files of its own: it is the card catalog, not the stacks.
+
+        On an e-ink reader, EPUB editions reflow pleasantly, while large academic PDFs are fixed layouts that fare better on bigger screens. The honest skew is topical — humanities and social sciences dominate, English and European languages lead, and the catalog only mirrors what publishers have agreed to open. For a student or self-learner priced out of monographs, this remains one of the first places worth checking.
+      zh: |
+        DOAB（开放获取图书目录）由阿姆斯特丹的 OAPEN 基金会运营，做的只有索引这一件事：列出出版社主动以开放获取发布的同行评审学术书——已有数千种——再把你指向真正的文件，通常是出版社或 OAPEN 图书馆托管的 PDF 或 EPUB。
+
+        检索可按学科、出版社、关键词和语言进行，条目带有规范的著录信息，对要引用而非随手翻的人很重要——写论文时，这里的出处可以直接抄进参考文献。目录免费，不需要账号，本身不存文件：它是卡片目录，不是书库。
+
+        在墨水屏上，EPUB 版重排舒适；大体量的学术 PDF 是固定版式，屏幕大些才好读。诚实的偏向在学科——人文社科占大头，英文和欧洲语言领先，目录也只反映出版社愿意开放的部分。对买不起学术专著的学生和自学者，这里仍是最值得先查的几个地方之一。
     category: free-ebooks
     formats: [PDF, EPUB]
     languages: [en, fr, de, es, it, pt, zh]
@@ -530,6 +621,19 @@ entries:
         OAPEN Library hosts open-access scholarly books, with a deep European list, and serves the PDF and EPUB files themselves. It is a reading collection, not only a directory of links.
       zh: >
         OAPEN 图书馆存放开放获取的学术书，欧洲书目很深，并直接提供 PDF 和 EPUB。它是书库，不只是链接目录。
+    long:
+      en: |
+        The OAPEN Library is where many books listed in DOAB actually live. The same Amsterdam foundation hosts and serves the files: open-access scholarly books from hundreds of participating publishers, downloadable as PDF and EPUB without registration, with the metadata published under an open license so other libraries can reuse the records in their own catalogs.
+
+        The collection leans European and leans humanities — Dutch and German publishers are unusually well represented alongside the English-language presses — and it grows steadily as publishers deposit new titles. Reading happens in the browser or on your device after a download; there is no app, no account, and no fee.
+
+        Treat it as the stacks behind the card catalog. When DOAB finds you the book, OAPEN often hands you the file, and both are worth searching directly because coverage is not identical. The limits mirror the strengths: scholarly work only, so no fiction or general trade titles, and PDF-heavy output means e-ink readers should reach for the EPUB button whenever it exists.
+      zh: |
+        OAPEN 图书馆是 DOAB 所列许多书真正的存放处。同一个阿姆斯特丹基金会负责托管和分发文件：数百家出版社的开放获取学术书，PDF 和 EPUB 均可免注册下载，元数据按开放许可发布，其他图书馆可以把这些记录复用到自己的目录里。
+
+        馆藏偏欧洲、偏人文——荷兰和德国的出版社格外充足，英语世界的出版社也在其中——并随出版社不断存入新书而稳步增长。阅读在浏览器里进行，或下载后放进设备；没有应用，没有账号，没有费用。
+
+        把它当作卡片目录背后的书库。DOAB 帮你找到书时，OAPEN 常常直接递上文件，两边都值得各自检索，覆盖并不相同。局限正好是长处的镜像：只收学术书，没有小说和大众读物；PDF 偏多，用墨水屏的人该在 EPUB 按钮存在时优先按它。
     category: free-ebooks
     formats: [PDF, EPUB]
     languages: [en, de, nl, fr, it, es]
@@ -548,6 +652,19 @@ entries:
         HathiTrust is a preservation library of millions of volumes from research institutions. Public-domain books can often be downloaded in full. In-copyright volumes are generally limited to partner-library readers.
       zh: >
         HathiTrust 是研究机构共建的保存型图书馆，藏有数以百万计的卷册。公有领域图书常常可以整本下载。仍在版权期内的卷册通常只对合作馆读者开放。
+    long:
+      en: |
+        HathiTrust is what happens when research institutions pool their scans. A partnership of universities and libraries — seeded largely by the Google Books digitization effort alongside the Internet Archive — it preserves millions of volumes and opens them as a digital reading room with real house rules, rather than as a free-for-all download pile.
+
+        Anything in the public domain is generally full view and downloadable whole as PDF, sometimes with the OCR text alongside. In-copyright works are searchable but readable only in fragments, with fuller access for members of partner institutions and separate arrangements for readers with print disabilities. That split is the identity of the place: preservation and lawful access, not lending.
+
+        No account is needed to search or read full-view items; institutional affiliation widens the door. On an e-ink reader, the downloaded PDFs are photographs of pages — manageable on a large screen, punishing on six inches, with no reflow to hope for. For out-of-print scholarship and historical material, particularly from the American academy, it is close to unmatched; for anything recent, it is simply the wrong shelf.
+      zh: |
+        HathiTrust 是研究机构把扫描件汇到一处的结果。由大学和图书馆组成的联合体——底子主要来自 Google Books 的数字化工程和互联网档案馆——保存数百万卷册，并把它当作一间有馆规的数字阅览室开放，而不是人人可下的下载场。
+
+        凡属公有领域，通常全本可见，可整册下载 PDF，有时还附 OCR 文本。仍在版权期内的书可以检索，正文只给片段；合作机构的成员能看到更多，视障读者另有专门安排。这条界线就是它的身份：保存与合法获取，不是出借。
+
+        检索和阅读全本不需要账号，机构身份能把门开得更宽。在墨水屏上，下载到的 PDF 是书页照片——大屏尚可，六寸屏吃力，也不必指望重排。找绝版学术与历史材料，尤其是美国学界那部分，它几乎无可替代；找新书，则干脆是走错了书架。
     category: free-ebooks
     formats: [PDF, TXT]
     languages: [en, de, fr, es, zh, ja]
@@ -566,6 +683,19 @@ entries:
         OpenStax publishes free, peer-reviewed textbooks you can read on the web or download as PDF. It is the practical shelf when a course asks you to buy a new edition of a standard textbook.
       zh: >
         OpenStax 出版免费、经同行评审的教材，可以在网页阅读或下载 PDF。课程要求购买某本标准教材的新版本时，先看这里。
+    long:
+      en: |
+        OpenStax, a nonprofit initiative at Rice University, publishes peer-reviewed, openly licensed textbooks — the sort actually assigned in courses. The catalog concentrates on introductory college subjects: mathematics, physics, biology, chemistry, economics, psychology, United States history among them, with several titles available in Spanish translation.
+
+        Every book is free to read on the web and free to download as PDF, while low-cost print editions and paid online homework from partner platforms exist for people who want them. No account is required to read, and instructors can adopt or adapt the texts under the license — which is the quiet point of the whole exercise.
+
+        On e-ink, the web version reflows and the PDF is a fixed but professionally designed layout: workable on larger readers, cramped on small ones. This is the shelf to check when a syllabus points at a standard textbook priced like a car payment. It is not a general bookstore — no trade titles, no advanced monographs, and coverage thins out quickly outside the core introductory subjects.
+      zh: |
+        OpenStax 是莱斯大学的非营利项目，出版同行评审、开放许可的教材——也就是课程上真的会指定的那种。书目集中在大学入门科目：数学、物理、生物、化学、经济学、心理学、美国历史等，其中若干种有西班牙语译本。教材在真实课堂里被采用，也随教学反馈持续修订。
+
+        每本书都可免费在网页上读、免费下载 PDF；另备低价印刷版和合作平台的付费在线作业，给需要的人。阅读不需要账号，教师可以按许可采用或改编教材——这正是这件事安静的目的。
+
+        在墨水屏上，网页版可以重排，PDF 是固定但设计过的版式：大屏可用，小屏局促。当课表指向一本标价离谱的标准教材时，先来这一格。它不是综合书店——没有大众读物，没有高深专著，核心入门科目之外覆盖也很快变薄。
     category: free-ebooks
     formats: [PDF]
     languages: [en, es]
@@ -584,6 +714,19 @@ entries:
         The Chinese Text Project is a free library of pre-modern Chinese writing, with originals, transcriptions, and some English translations. It is as much a lookup tool as a shelf of books to read straight through.
       zh: >
         中国哲学书电子化计划是免费的先秦以来中文文献库，有原文、转录和一部分英译。它既是连续阅读的书架，也是检索工具。
+    long:
+      en: |
+        The Chinese Text Project, ctext.org, is a digital library of pre-modern Chinese writing, created and maintained over many years by the scholar Donald Sturgeon, with volunteer corrections layered on top. It holds texts from the pre-Qin period onward: classical originals, modern transcriptions, and English translations covering a meaningful share of the corpus.
+
+        It behaves as much like a research instrument as a bookshelf. You can search across the whole corpus, pull concordance-style listings of every place a phrase appears, set text beside scanned source editions for comparison, and follow a character straight into dictionary tools. A few conveniences sit behind an optional paid supporter account; reading the texts themselves costs nothing.
+
+        The pages are light and clean, which e-ink browsers appreciate, and plain-text downloads exist for offline reading. The honest limits: this is classical material only, the translations are partial, and the interface assumes a certain scholarly patience. Nothing here is a contemporary novel — for that, the free and paid shelves elsewhere in this catalog are the right rooms.
+      zh: |
+        中国哲学书电子化计划（ctext.org）是先秦以来中文文献的数字图书馆，由学者 Donald Sturgeon 创建并维护多年，志愿者订正层层叠加其上。馆藏自先秦一路向下：文言原文、现代转录，以及覆盖相当一部分语料的英译。
+
+        它用起来更像研究工具，而不只是书架。可以跨全库检索，按用例列出一条短语出现的所有位置，把文本与扫描底本并排对读，也可以把一个字直接送进词典工具。少数便利功能放在可选的付费赞助账号后面；阅读文本本身分文不取。
+
+        页面轻而干净，墨水屏浏览器读着舒服，也提供纯文本下载供离线阅读。诚实的边界：这里只有古典文献，译文不全，界面也默认读者有一点学术耐心。这里没有当代小说——要读那类书，本目录里的免费书库和商店两栏才是对的房间。
     category: free-ebooks
     formats: [HTML, TXT]
     languages: [zh, en]
@@ -602,6 +745,19 @@ entries:
         书格 is a free digital library of public-domain rare books and prints, published as high-resolution PDFs chosen for the quality of the edition. The pages are photographs, so they do not reflow on an e-reader.
       zh: >
         书格是免费的公有领域古籍与版画数字图书馆，以高清 PDF 发布，挑选时看重版本。页面是书影，在电纸书上不能重排。
+    long:
+      en: |
+        书格 (Shuge) is an independent Chinese digital library that publishes high-resolution scans of rare books, atlases, and prints that have entered the public domain. A small team runs it as a craft project as much as an archive: the selections favor notable editions — Song and Yuan dynasty printing among them — and the site documents where its files come from.
+
+        Everything downloads as PDF, free, with no account; the project runs on donations. The files are large because the images are detailed, and that is deliberate. This is a facsimile collection, chosen for the quality of the object, not a text corpus; if you want the words without the page, another site holds the transcription.
+
+        On an e-ink reader, behave accordingly. These are photographs of pages — no reflow, small type in old formats, and PDFs that strain a six-inch screen. Larger e-readers and tablets with good PDF handling are the natural habitat, and the Chinese Text Project makes a companion for reading the text itself. For looking at beautiful old books properly, 书格 is the place.
+      zh: |
+        书格是独立的中文数字图书馆，把已进入公有领域的善本、舆图和版画以高分辨率扫描发布。一个小团队把它当档案，也当一件手艺活来经营：挑选偏重版本——宋元刻本也在其中——并注明所发布文件的来历。
+
+        所有内容免费下载 PDF，无需账号；项目靠捐赠维持。文件很大，因为图像足够精细，这是有意为之。它是仿真书影的集合，为器物品质而选，不是文本语料；只想要文字不要书页的话，转录在另一处。
+
+        在墨水屏上，请照此对待。这些是书页照片——不能重排，旧版式上字很小，PDF 会压得六寸屏喘不过气。大屏电纸书和处理 PDF 得力的平板才是它自然的归宿，要读文字本身，中国哲学书电子化计划正好做伴。要好好端详漂亮的老书，书格就是那个地方。
     category: free-ebooks
     formats: [PDF]
     languages: [zh]
@@ -620,6 +776,19 @@ entries:
         The Kindle Store sells current ebooks as Kindle files, mainly KFX and AZW3, and is the shop tied to Kindle hardware and the Kindle app. Kindle Unlimited, where it exists, is an optional subscription beside pay-per-book buying.
       zh: >
         Kindle 商店出售当前电子书，文件主要是 KFX 和 AZW3，并与 Kindle 硬件和应用绑在一起。在提供 Kindle Unlimited 的市场，它是单本购买之外的可选订阅。
+    long:
+      en: |
+        Amazon's Kindle Store is the largest English-language ebook retailer and the shop end of the Kindle system: a purchase lands on the Kindle devices and apps registered to your account without any file handling on your part. The files are Kindle formats — KFX and AZW3 today — wrapped in Amazon's DRM, so a bought book opens where Amazon expects it and nowhere else.
+
+        The buying model is pay-per-book, with an optional Kindle Unlimited subscription in the markets that offer it, and occasional reading perks bundled with Prime. What you can see, and what it costs, follows the marketplace of your Amazon account: a title on the American store is not a promise about the German or Japanese one, and some publishers hold whole catalogs back from some countries.
+
+        For an e-ink reader, Kindle hardware remains the most frictionless appliance in the field, which is the store's real reason for being. The honest limits: you are buying a license inside one ecosystem, files do not travel to a Kobo or a PocketBook, and the DRM does not come off. For personal documents, the Send to Kindle service accepts EPUB — the one open door in the wall.
+      zh: |
+        Kindle 商店是最大的英文电子书零售商，也是 Kindle 体系的售货端：一笔购买会自动落到账号下注册的 Kindle 设备和应用里，你全程不必碰文件。文件是 Kindle 格式——如今主要是 KFX 和 AZW3——外面裹着亚马逊的 DRM，所以买来的书只在亚马逊预期的地方打开，别处不行。
+
+        买法是按本付费，提供 Kindle Unlimited 的市场另有可选订阅，部分市场的 Prime 会员还附带阅读权益。你能看到什么、要花多少钱，都跟着账号所属的亚马逊站点走：美国店有的一本书，不保证德国店或日本店也有；有的出版社干脆对某些国家扣下整个书目。
+
+        对墨水屏用户，Kindle 硬件仍是这一行里最省事的家电，这也正是商店存在的理由。诚实的边界：你买到的是一家生态里的许可，文件去不了 Kobo 或 PocketBook，DRM 也不会自己褪掉。个人文档这一侧，Send to Kindle 服务接受 EPUB——墙上一扇敞开的门。
     category: ebook-stores
     formats: [KFX, AZW3]
     languages: [en, zh, de, fr, es, ja, it, pt, nl]
@@ -638,6 +807,19 @@ entries:
         The Kobo Store sells EPUB books, including Kobo's KEPUB variant, and is the matching shop for Kobo readers. Kobo Plus is an optional subscription on top of ordinary purchases.
       zh: >
         Kobo 商店出售 EPUB，包括 Kobo 的 KEPUB，是 Kobo 阅读器对应的店。Kobo Plus 是普通购书之外的可选订阅。
+    long:
+      en: |
+        Rakuten Kobo operates the best-known ebook storefront outside Amazon's wall. The company is based in Toronto and owned by Japan's Rakuten; it sells EPUB, including its own KEPUB variant that picks up extra features on Kobo hardware, which makes this the native shop for Kobo readers and a workable one for anything that reads EPUB.
+
+        Purchases carry DRM, under Adobe's scheme or Kobo's own, and read in the Kobo app and on Kobo devices. Kobo Plus, offered in a number of countries, folds ebooks and audiobooks into one subscription. A durable convenience worth knowing: where local libraries support it, Kobo e-readers can borrow directly through OverDrive, so a single device covers both the buying and the borrowing habit.
+
+        Catalog and prices follow the country of your Kobo account, and the depth of the shelf varies between markets more than Amazon's does. The honest limits: a smaller catalog in many countries, DRM still applied to purchases, and store books are licenses rather than files. For an EPUB-first reader, though, this is the most complete storefront standing.
+      zh: |
+        Rakuten Kobo 经营着亚马逊高墙之外最知名的电子书门面。公司总部在多伦多，属日本乐天所有。它卖 EPUB——包括在 Kobo 硬件上能多出几项功能的 KEPUB——因此既是 Kobo 阅读器的原生商店，也照顾一切吃 EPUB 的设备。
+
+        购买带 DRM，走 Adobe 的方案或 Kobo 自家的加密，可在 Kobo 应用和 Kobo 设备上读。若干国家提供 Kobo Plus，把电子书和有声书折进一份订阅。还有一条多年不变、值得知道的好处：在本地图书馆支持的地方，Kobo 阅读器可以通过 OverDrive 直接借书，一台设备同时管住买书和借书两个习惯。
+
+        书目和价格跟着 Kobo 账号所在的国家走，书架深度在市场之间的差别比亚马逊更大。诚实的边界：许多国家书目更小，购买仍带 DRM，店里的书是许可而非文件。不过对以 EPUB 为先的读者，这是现存最完整的门面，配一台 Kobo 阅读器就凑成一整套读书的家当。
     category: ebook-stores
     formats: [EPUB, KEPUB]
     languages: [en, fr, zh, ja, es, it, nl, de, pt]
@@ -656,6 +838,19 @@ entries:
         Google Play Books sells ebooks and audiobooks on a Google account, with EPUB and PDF as the formats you actually read in the Play Books app. Prices and availability change with the country of that account.
       zh: >
         Google Play 图书用 Google 账号出售电子书和有声书，在 Play 图书应用里读到的是 EPUB 和 PDF。价格和能否购买随账号所在国家变化。
+    long:
+      en: |
+        Google Play Books is the bookstore living inside the Google account you already have: no new family of logins, ebooks and audiobooks sold in the same Play store you use for everything else. Most titles are EPUB behind Google's DRM, read in the Play Books app or the web reader, and a minority arrive as PDF.
+
+        The feature that sets it apart is the upload shelf. You can add your own EPUB and PDF files — up to a thousand of them — to the same cloud library, where they sync and open on any device signed into the account, at no cost. That makes Play Books a plausible home for mixed collections of purchases and sideloaded files. Some countries also get family sharing.
+
+        Storefront, prices, and what is purchasable at all vary with the account's country, sometimes sharply. On the e-ink side there is no Google device, but the app runs on Android-based e-ink readers and the web reader works in a browser. Honest limits: DRM on purchases, a reading app that is good rather than great, and availability that depends on where your account lives.
+      zh: |
+        Google Play 图书是住在你已有 Google 账号里的书店：不必再养一套登录，电子书和有声书都在平时用的 Play 商店里卖。多数书是 EPUB，隔着 Google 的 DRM，在 Play 图书应用或网页阅读器里读；少数以 PDF 交付。
+
+        让它与众不同是上传书架。你可以把自己手头的 EPUB 和 PDF——最多一千个——加进同一个云书库，它们在登录同一账号的任何设备上同步、打开，不花钱。这让 Play 图书适合「买的」和「侧载的」混在一起放。部分国家另有家庭共享，一家人可以共用其中一部分购买。
+
+        店面、价格，甚至能不能买，都随账号所在国家变化，有时差别很大。墨水屏方面，Google 没有自己的设备，但应用能装在 Android 底子的墨水屏阅读器上，网页阅读器也能用浏览器打开。诚实的边界：购买带 DRM，阅读应用是好而谈不上出色，能不能买则取决于账号安家何处。
     category: ebook-stores
     formats: [EPUB, PDF]
     languages: [en, zh, ja, de, fr, es, it, pt, ko, ru]
@@ -674,6 +869,19 @@ entries:
         Apple Books is Apple's store for EPUB ebooks, plus audiobooks and some PDFs, read in the Books app on Apple devices. The storefront follows the country of the Apple ID.
       zh: >
         Apple Books 是苹果的 EPUB 电子书商店，也有有声书和一部分 PDF，在苹果设备的图书应用里阅读。店面跟着 Apple ID 所在的国家走。
+    long:
+      en: |
+        Apple Books is the bookstore built into every iPhone, iPad, and Mac, selling EPUB wrapped in Apple's FairPlay DRM alongside audiobooks and the occasional free public-domain title. Buying and reading never leave the Books app, and payment rides on the Apple ID, so the friction of a separate bookstore simply does not exist.
+
+        The storefront follows the country of that Apple ID: catalog and prices differ by region, and switching means changing the account's country settings rather than scrolling to another tab. Highlights, notes, and reading position sync through iCloud across Apple devices, and sideloaded EPUBs and PDFs sit in the same library as purchases.
+
+        The e-ink caveat is the big one: Apple makes no e-reader, and FairPlay files open nowhere but Apple's own app, so this store is a poor fit for a Kobo or Kindle household. It suits readers whose phone or iPad is the reader, or who want ebooks and audiobooks on one bill inside hardware they already carry. Honest limits: one ecosystem, DRM, and a catalog that shifts with your account region.
+      zh: |
+        Apple Books 是内置于每一台 iPhone、iPad 和 Mac 的书店，出售裹着 Apple FairPlay DRM 的 EPUB，另有有声书和少量免费的公版书。购买和阅读都不出「图书」应用，付款挂在 Apple ID 上，独立书店那种多余的摩擦在这里根本不存在。
+
+        店面跟着 Apple ID 所在国家走：书目和价格因地区而异，换店要改账号的国家设置，不是多滚动一个标签页那么简单。划线、笔记和阅读进度经 iCloud 在苹果设备间同步，侧载的 EPUB 和 PDF 与购买的书放在同一个书库里。
+
+        对墨水屏用户，最大的告诫很直白：苹果不做阅读器，FairPlay 文件只能在苹果自家应用里打开，Kobo 或 Kindle 家庭用不上这家店。它适合把手机或 iPad 当阅读器的人，或想让电子书和有声书记在同一张账单、装在本就随身携带的硬件里的人。诚实的边界：单一生态、DRM，以及随账号地区漂移的书目。
     category: ebook-stores
     formats: [EPUB, PDF]
     languages: [en, zh, ja, de, fr, es, it, pt, ko]
@@ -692,6 +900,19 @@ entries:
         微信读书 is a Chinese reading service on a WeChat account, with a large free catalog, paid titles, and a membership card. Store books stay inside the app and are not handed out as open files.
       zh: >
         微信读书用微信账号阅读，有大批免费书、单本付费和无限卡会员。商店里的书留在应用内，不会以开放文件发给你。
+    long:
+      en: |
+        微信读书 (WeRead) is Tencent's reading service, and the login explains the business: it runs on a WeChat account, inside WeChat's world. The catalog is among the deepest for Chinese-language books, and a large share of it can be read free if you accept time limits and daily caps — a gentle, persistent push toward the membership.
+
+        That membership, the 无限卡, opens the catalog more fully, alongside ordinary per-title purchases. Reading happens in the app or the web reader, with rankings, shared annotations, and notes treated as first-class objects — the social layer is a real feature, not decoration. Local files can be imported into the app, but store books never leave it as open EPUBs.
+
+        The e-ink situation: no dedicated device, though the Android app runs on e-ink Android readers and the web reader works in a browser. Everything assumes a reader in mainland China — WeChat Pay for purchases, licenses negotiated for that market — so expect friction anywhere else. For a Chinese-language reader inside that network it is the most complete shelf there is; as an owner of files, you leave with nothing.
+      zh: |
+        微信读书是腾讯的阅读服务，看登录方式就明白这门生意：用微信账号，活在微信的世界里。它的中文书目数一数二，其中相当一部分可以免费读——前提是接受时长限制和每日上限，一种温和而不间断的、朝会员去的推力。
+
+        会员（无限卡）把书目打得更开，单本购买照常并行。阅读在应用或网页阅读器里完成，排行、共同批注和笔记都是一等公民——社交层是真功能，不是装饰。本地文件可以导入应用，但商店里的书不会以开放的 EPUB 离开。
+
+        墨水屏方面：没有专用设备，但 Android 应用可以装在墨水屏 Android 阅读器上，网页阅读器也能用浏览器打开。一切都默认读者在中国大陆——付款走微信支付，授权也按那个市场谈——在其他地方就要预期磕绊。对那张网络里的中文读者，它是现存最全的书架；作为文件的主人，你两手空空地离开。
     category: ebook-stores
     formats: []
     languages: [zh]
@@ -710,6 +931,19 @@ entries:
         豆瓣阅读 sells individual Chinese ebooks and magazines that you read in the browser or the Douban app. It is a pay-per-title shelf, not an open file you download and keep.
       zh: >
         豆瓣阅读按本出售中文电子书和杂志，在网页或豆瓣应用里阅读。这是按本计价的书架，不是可以下载留存的开放文件。
+    long:
+      en: |
+        豆瓣阅读 (Douban Read) is the ebook arm of Douban, the Beijing company behind the long-running Chinese book community of the same name. Where the big platforms feel like operating systems, Douban Read feels closer to a small press: a per-title shelf of Chinese ebooks and magazines, read in the browser or the app, with an unusually strong line in original writing.
+
+        That original side is the distinctive part — serialized fiction, essays, and contest winners published under Douban's own imprint — sitting beside recognizable contemporary books. You pay per work, and there is no membership scheme to decode. Reading stays inside Douban's apps and web reader; store books are not handed over as files.
+
+        The assumed audience is mainland China, for payment above all. On e-ink the web reader is serviceable, and the Android app can be sideloaded onto e-ink devices. This shelf suits readers who already live on Douban, want one specific Chinese title without joining a membership, or follow new writers early. Honest limits: a catalog far smaller than the giants', no open downloads, and prices that only occasionally beat paper.
+      zh: |
+        豆瓣阅读是豆瓣的电子书业务，豆瓣即同名老牌中文读书社区背后的北京公司。几家大平台像操作系统，豆瓣阅读更像一家小出版社：按本计价的中文电子书和杂志书架，在网页或应用里读，原创写作一条线格外强。
+
+        原创是它最有辨识度的部分——连载小说、随笔和征文获奖作品由豆瓣自家出版——旁边摆着常见的当代图书。按作品付钱，没有需要破译的会员制。阅读留在豆瓣的应用和网页阅读器里，商店的书不以文件形式交付。
+
+        目标读者默认在中国大陆，支付尤其如此。墨水屏上，网页阅读器可用，Android 应用也能侧载到墨水屏设备。这一格适合本来就住在豆瓣上的人、不想为某一本书卷进会员制的人，以及早早追新作者的读者。诚实的边界：书目远小于几家巨头，没有开放下载，价格也只是偶尔胜过纸书。
     category: ebook-stores
     formats: []
     languages: [zh]
@@ -728,6 +962,19 @@ entries:
         京东读书 is JD.com's ebook shop, mixing free titles, paid books, and a membership, read in the JD Read apps. The catalog is licensed for that app rather than handed out as open files.
       zh: >
         京东读书是京东的电子书商店，免费书、付费书和会员混在一起，在京东读书的应用里读。书目授权给这个应用，不会以开放文件发给你。
+    long:
+      en: |
+        京东读书 (JD Read) is JD.com's ebook service, and its logic is inherited from the parent: books sold the way everything else on JD is sold, inside the app, with memberships behaving like coupons. The Chinese-language catalog is large, a meaningful slice of it reads free within a VIP membership, and the rest is per-title purchase.
+
+        Reading happens in JD's reading apps; store books do not export as open files, and the licensed catalog is bound to the app you bought it in. The web presence is mostly a storefront, so this is an app-first service by construction.
+
+        The mainland assumption is strong — accounts, payment, and much of the catalog take for granted a reader inside that network, and reliability drops at the border. On e-ink devices the Android app can be sideloaded with some effort. JD Read makes most sense for people already shopping on JD, who can add books to an account they log into weekly anyway. As a primary ebook home it is a walled room with a decent shelf; as a file library, it contributes nothing.
+      zh: |
+        京东读书是京东的电子书服务，逻辑承自母公司：像京东上其他商品一样卖书，在应用里完成，会员像优惠券一样起作用。中文书目不小，其中可观的一部分在 VIP 会员内免费读，其余按本购买。
+
+        阅读在京东读书的应用里进行；商店的书不会导出为开放文件，授权书目也只认购买时所用的那个应用。网页端基本是店面，所以这是一项从构造上就以应用为先的服务。
+
+        大陆默认很强——账号、支付和大部分书目都理所当然地假定读者在那张网络之内，出境之后可靠性明显下降。墨水屏设备上，Android 应用可以费些力气侧载。对本来就在京东购物、每周都会登录同一账号的人，顺手加几本书最合理。作为电子书的主阵地，它是一间墙上书架不错的封闭房间；作为文件书库，它交不出任何东西。
     category: ebook-stores
     formats: []
     languages: [zh]
@@ -746,6 +993,19 @@ entries:
         Libby is the library app from OverDrive for borrowing ebooks and audiobooks with a public-library card. You see your library's copies, you wait when they are out, and the loan expires.
       zh: >
         Libby 是 OverDrive 的图书馆应用，用公共图书馆读者证借电子书和有声书。你看见的是本馆的副本，借完了就要等，借期结束就收回。
+    long:
+      en: |
+        Libby is the borrowing app from OverDrive, the American company that has run library ebook lending since before smartphones existed. One app holds one or many library cards; what you browse is what your library actually bought — ebooks, audiobooks, and magazines — and when every copy of a popular title is out, you place a hold and wait your turn.
+
+        Loans expire on their own, and that is the whole deal: no late fees, because there is nothing to return. Holds come with an estimated wait, and you can tag titles, sample them, or suspend a hold like a patient person. In the United States, many libraries let you send a borrowed ebook to a Kindle, which quietly makes Libby a front end for e-ink hardware; elsewhere you read inside the app.
+
+        The service is free — the library pays — but membership is closed: it works only with a card from a participating library, concentrated in the United States, Canada, the UK, Australia, and New Zealand. Your shelf is that library's budget, not a universal catalog, and a bestseller's queue can outlast your interest in the book. For a cardholder, though, this is the best price in books that exists anywhere.
+      zh: |
+        Libby 是 OverDrive 的借阅应用，这家美国公司经营图书馆电子书借阅的年头比智能手机还早。一个应用里可以放一张或多张读者证；你浏览的是本馆实际买下的东西——电子书、有声书和杂志——热门书副本借完，就预约，排队等轮次。
+
+        借期一到自动到期，规则就这么简单：没有逾期费，因为没有东西可还。预约会给出预估等待，你还可以给书打标签、先试读，甚至像有耐心的人那样把一条预约暂停。在美国，许多馆允许把借来的电子书送到 Kindle，Libby 因此悄悄成了墨水屏硬件的一个前端；别处则在应用里读。
+
+        服务免费——钱由图书馆付——但会员是封闭的：只有参与馆的读者证能用，成员馆集中在美国、加拿大、英国、澳大利亚和新西兰。你看到的书架是本馆的预算，不是全球总库，畅销书的队也可能排到你兴趣已过。不过对持证人来说，这是书的世界里现存最好的价格。
     category: library-borrowing
     formats: [EPUB, PDF]
     languages: [en, es, fr]
@@ -764,6 +1024,19 @@ entries:
         Hoopla lends ebooks, audiobooks, and comics through participating public libraries, usually with a monthly borrow cap instead of a long hold queue. You read or listen in the app, and you do not keep the file.
       zh: >
         Hoopla 通过参与的公共图书馆出借电子书、有声书和漫画，通常是每月借阅上限，而不是排长队。在应用里读或听，文件不能留下。
+    long:
+      en: |
+        Hoopla is the other big library lending app in North America, run by Midwest Tape, an Ohio company that has supplied public libraries with media for decades. Its model inverts Libby's: instead of waiting on a limited pool of copies, the library pays per checkout, so anything in the catalog is available instantly — until you hit the monthly borrow limit your library has set.
+
+        That limit is the real currency. A handful of borrows a month is typical, and it buys a strange, pleasant range: ebooks, audiobooks, and comics, sitting beside movies, television, and music. Everything streams or downloads inside the app; nothing leaves as a file, and loans return themselves.
+
+        You need a card from a participating library, overwhelmingly in the United States and Canada. On e-ink devices there is no file path at all — reading happens in the app on a phone or tablet, and comics honestly want a bigger screen than six inches. This catalog places it next to Libby on purpose: when one service's hold queue is long and the other has the same title instantly, you have a real choice.
+      zh: |
+        Hoopla 是北美另一家大型图书馆借阅应用，由俄亥俄州的 Midwest Tape 运营——一家给公共图书馆供了几十年媒体的公司。它的模型与 Libby 相反：不是等有限副本，而是图书馆按次付费，所以目录里的任何东西都能立刻打开——直到你撞上本馆设定的每月借阅上限。
+
+        那条上限才是真正的货币。每月几本是常态，买到的东西却怪而讨喜：电子书、有声书和漫画，旁边还站着电影、剧集和音乐。一切在应用里串流或下载，没有东西以文件形式离开，借期到了自己归还。
+
+        你需要一张参与馆的读者证，馆压倒性地集中在美国和加拿大。墨水屏设备上完全没有文件这条路——阅读发生在手机或平板的应用里，而漫画这种东西，说实话想要比六寸更大的屏幕。本目录把它挨着 Libby 放是故意的：一边队伍排得长、另一边同一本书立等可取时，你手里就有真正的选择。
     category: library-borrowing
     formats: [EPUB, PDF]
     languages: [en, es]
@@ -782,6 +1055,19 @@ entries:
         The National Library of China is the public front door to its digital reading rooms, rare-book images, and modern ebook lending. Borrowing the licensed collections needs a reader card.
       zh: >
         中国国家图书馆是其数字阅览、古籍影像和现代电子书借阅的公共入口。借授权资源需要读者证。
+    long:
+      en: |
+        The National Library of China in Beijing, with roots going back to 1909, is among the largest libraries in the world, and its website is the public door to that century of collecting. On the digital side the door opens onto several rooms at once: digitized rare books and manuscripts, Republican-era material, and licensed databases plus modern ebooks for registered readers.
+
+        Access is tiered, and honestly so. The ancient-book image collections — a large and growing share of the rare holdings — can be browsed by anyone; much of the licensed material requires a reader card, and some of it is limited to the library's own network or to addresses in mainland China. The card itself involves real-name registration and is free within its rules.
+
+        On e-ink, expect page images rather than reflowable text: the value here is the object — old editions, local gazetteers, Republican-era periodicals — photographed at high resolution. There is no app to install and little hand-holding; the portal assumes a desktop browser and a certain persistence. For Chinese classical scholarship it is close to irreplaceable. For current bestsellers, it is simply the wrong building.
+      zh: |
+        北京的中国国家图书馆可上溯至 1909 年，是世界最大的图书馆之一，它的网站是这一百年收藏的公共入口。数字一侧的门后同时有几间屋子：数字化的古籍善本与手稿、民国文献，以及面向注册读者的授权数据库和现代电子书。
+
+        访问分层，而且分得坦白。古籍影像库——馆藏善本中越来越大的一部分——任何人都能浏览；大量授权资料需要读者证，还有一些只限馆内网络或中国大陆地址。读者证要走实名注册，在规矩之内免费。
+
+        在墨水屏上，请预期书页图像而不是可重排文本：这里的价值在器物本身——老刻本、地方志、民国期刊——以高分辨率拍摄。没有可装的应用，也没有多少手把手；门户假定你在桌面浏览器里，且带着几分毅力。做中文古典学术，它几乎无可替代；找当期畅销书，则干脆走错了楼。
     category: library-borrowing
     formats: [PDF]
     languages: [zh]
@@ -800,6 +1086,19 @@ entries:
         KOReader is a free, open-source reader for EPUB, PDF, MOBI, AZW3, text, and comics, built for e-ink devices and long sessions. It reads files you already have. It is not a shop.
       zh: >
         KOReader 是免费开源阅读器，能读 EPUB、PDF、MOBI、AZW3、文本和漫画，为墨水屏和长时间阅读而做。它读你已有的文件，不是商店。
+    long:
+      en: |
+        KOReader began as a homemade alternative reader for early Kindles and grew into the open-source reader for e-ink devices generally: Kindle, Kobo, PocketBook, reMarkable, Android, and Linux portables all run it. It is built by its user community, free of charge, with no store and no account — you point it at files you already have.
+
+        The format list runs long — EPUB, PDF, MOBI, AZW3, DjVu, CBZ, plain text, HTML among others — and the interface is designed around physical buttons, slow refreshes, and long reading sessions. PDFs get a reflow mode that rebuilds columns into flowing text, dictionaries can be consulted in place, and OPDS support fetches books from free catalogs without leaving the reader. Statistics, annotations, and fine control over refresh behavior round it out.
+
+        The honest cost is comfort. Installation means sideloading or replacing the stock reader, updates come from the project rather than the vendor, and the interface is functional rather than pretty. For anyone willing to spend an evening on setup, it is the best reading experience an older e-ink device can be given. It is not a store, and it will not open DRM-locked purchases.
+      zh: |
+        KOReader 起初是给早期 Kindle 做的自制替代阅读器，后来长成墨水屏设备通用的开源阅读器：Kindle、Kobo、PocketBook、reMarkable、Android 和 Linux 便携机都跑得动。它由用户社区构建，分文不收，没有商店也没有账号——你把它指向你已有的文件。
+
+        格式单很长——EPUB、PDF、MOBI、AZW3、DjVu、CBZ、纯文本、HTML 等——界面则围绕实体按键、慢刷新和长时间阅读设计。PDF 有重排模式，能把分栏重建成流动文本；词典可以就地取词；OPDS 支持让你不必离开阅读器就从免费书库取书。统计、批注和对刷新行为的精细控制把它补全。
+
+        诚实的代价是动手。安装意味着侧载或替换原厂阅读器，更新来自项目而非厂商，界面讲功能不讲漂亮。肯花一个晚上配置的人，能让一台旧墨水屏设备得到最好的阅读体验，让按下去的每一页都翻得干净利落。它不是商店，也打不开锁着 DRM 的购买。
     category: reading-apps
     formats: [EPUB, PDF, MOBI, AZW3, TXT, FB2, DJVU, CBZ, HTML]
     languages: [en, zh, de, fr, es, it, pt, ja, ko, ru, pl, nl, ar]
@@ -818,6 +1117,19 @@ entries:
         Calibre is free desktop software for organizing an ebook library and converting among EPUB, MOBI, AZW3, PDF, and many other formats. Most people use it to prepare files, then read them on a device.
       zh: >
         Calibre 是免费的桌面软件，用来管理电子书库，并在 EPUB、MOBI、AZW3、PDF 等格式之间转换。多数人用它把文件准备好，再拿到设备上读。
+    long:
+      en: |
+        Calibre, written by Kovid Goyal in 2006 and maintained by him ever since, is the piece of free desktop software most serious ebook readers eventually install. It is a library manager, a format converter, a metadata editor, and a device hand-off station in one package, running on Windows, macOS, and Linux, and famously dense.
+
+        In daily use it does four jobs well. It keeps a collection searchable, with tags and covers; it converts among EPUB, MOBI, AZW3, PDF, and the rest, with the engine tunable down to margins and font sizes; it edits books directly through a built-in EPUB and AZW3 editor; and it sends the right format to the right device, Kindle or Kobo, in one click. The built-in content server can also hand your library to any browser on your network.
+
+        What it is not: a phone app, a store, or a rescue for scanned pages — conversion cannot invent text that exists only as an image. The interface asks for some tolerance. But as the back office of a file-based reading life it has no real rival, and it costs nothing.
+      zh: |
+        Calibre 由 Kovid Goyal 于 2006 年写出并维护至今，是最认真的电子书读者终究会装上的那件免费桌面软件。它把书库管理、格式转换、元数据编辑和设备交接装进一个包，跑在 Windows、macOS 和 Linux 上，出了名的密。
+
+        日常它做好四件事。它用标签和封面让藏书可检索；它在 EPUB、MOBI、AZW3、PDF 等格式之间转换，引擎细到页边距和字号可调；它通过内置的 EPUB/AZW3 编辑器直接改书；再一键把对的格式送往对的设备，Kindle 或 Kobo 都行，插上就认得出来。内置的内容服务器还能把书库交给同一网络里的任何浏览器，手机连上就能挑书。
+
+        它不是什么：不是手机应用，不是商店，也救不了扫描页——转换变不出只以图像存在的文字。界面需要一点容忍。但作为以文件为本的读书生活的后台，它没有真正的对手，而且分文不取。
     category: reading-apps
     formats: [EPUB, MOBI, AZW3, PDF, TXT, DOCX, FB2, HTML]
     languages: [en, zh, de, fr, es, it, pt, ja, ko, ru, nl, pl, ar]
@@ -836,6 +1148,19 @@ entries:
         Moon+ Reader is an Android reading app for local books in EPUB, PDF, MOBI, AZW3, text, and comics. The free app is enough to read. A one-time Pro upgrade adds more tools.
       zh: >
         静读天下是 Android 阅读应用，读取本地的 EPUB、PDF、MOBI、AZW3、文本和漫画。免费版就可以读。专业版一次买断，多一些工具。
+    long:
+      en: |
+        Moon+ Reader, known in Chinese as 静读天下, is one of the veteran Android readers, maintained for well over a decade by an independent developer — and the feature count shows it. It opens the formats people actually carry on a phone or memory card: EPUB, PDF, MOBI, AZW3, FB2, HTML, plain text, and comics.
+
+        Its identity is customization. Fonts, margins, pagination, scrolling behavior, brightness gestures, and themes are all adjustable; text-to-speech is built in; highlights and notes export cleanly. Bookmarks and reading progress can sync through cloud storage or WebDAV, which matters if you read across devices. The free version reads fine; a one-time Pro purchase unlocks the rest of the toolbox.
+
+        The trade-offs: Android only; an interface that looks like it has accepted every feature request ever made (it has); and a settings list that takes an evening to learn. On Android-based e-ink readers it is a popular pairing. It reads files you have — it is not, and does not include, a bookstore.
+      zh: |
+        静读天下（Moon+ Reader）是 Android 阅读器里的老兵——由独立开发者维护十几年，功能数量就是证据。人们手机和存储卡上实际带着的格式它都开：EPUB、PDF、MOBI、AZW3、FB2、HTML、纯文本和漫画。
+
+        它的身份是可定制。字体、页边距、翻页方式、滚动行为、亮度手势、主题，样样可调；内置文本转语音；划线和笔记可以干净地导出。书签和进度能通过云盘或 WebDAV 同步，跨设备阅读的人会在意这一点，毕竟换机的时候书签最怕丢。免费版就能好好读；一次性买断的专业版解锁工具箱里剩下的部分。
+
+        代价：只有 Android；界面像收下了人们提出过的每一项需求（它确实收下了）；设置清单要学上一个晚上，好在常用的就那几条。在 Android 底子的墨水屏阅读器上，它是常见的搭档。它读你已有的文件——它不是书店，也不内置书店。
     category: reading-apps
     formats: [EPUB, PDF, MOBI, AZW3, TXT, FB2, HTML, CBZ]
     languages: [en, zh, de, fr, es, it, pt, ja, ko, ru, nl, pl, ar]
@@ -854,6 +1179,19 @@ entries:
         ReadEra opens local books and documents on Android and iOS, including EPUB, PDF, MOBI, AZW3, FB2, and DjVu, without an account. A paid upgrade adds extras around the same free reader.
       zh: >
         ReadEra 在 Android 和 iOS 上打开本地书籍和文档，包括 EPUB、PDF、MOBI、AZW3、FB2 和 DjVu，不必注册。付费升级是在同一个免费阅读器上多一些功能。
+    long:
+      en: |
+        ReadEra is the quiet one among Android readers: install it, point it at a folder, read. No account, no registration step, no ads in the base app — the developers instead sell a premium tier carrying sync and convenience features. An iOS version exists alongside the original Android one.
+
+        It handles EPUB, MOBI, AZW3, FB2, DjVu, PDF, plain text, comics, and Word documents, and it organizes what it finds into series and authors without being asked. Reading settings are the ordinary good ones — fonts, themes, margins — without the deep trenches of customization its noisier rivals dig.
+
+        On e-ink it runs well on Android-based readers, where a lack of animation and fuss is a virtue. The limits mirror the calm: fewer power features than KOReader or Moon+ Reader, basic PDF handling, and no desktop edition. As the reader you hand to a parent, or put on a tablet for a child, it comes close to ideal.
+      zh: |
+        ReadEra 是 Android 阅读器里安静的那一个：装上，指向一个文件夹，开读。没有账号，没有注册步骤，基础应用里也没有广告——开发者转而出售带同步和便利功能的付费高级层。iOS 版与最初的 Android 版并存。
+
+        它吃下 EPUB、MOBI、AZW3、FB2、DjVu、PDF、纯文本、漫画和 Word 文档，并主动把找到的书按系列和作者归架。阅读设置是那些常规的好东西——字体、主题、页边距——没有吵闹的对手挖出的那些深沟般的自定义。翻页动画可以整个关掉，墨水屏上正合适。
+
+        墨水屏上，它在 Android 底子的阅读器上跑得很好，不动画、不折腾正是美德。局限是这安静的镜像：强项功能少于 KOReader 或静读天下，PDF 处理偏基础，也没有桌面版。作为递给父母或装在孩子平板上的那个阅读器，它接近理想；作为你自己的主力，则要看你想要多深的定制。
     category: reading-apps
     formats: [EPUB, PDF, MOBI, AZW3, FB2, DJVU, TXT, CBZ, DOCX]
     languages: [en, zh, de, fr, es, it, pt, ja, ko, ru, nl, pl, ar]
@@ -872,6 +1210,19 @@ entries:
         FBReader is a long-running ebook reader for local EPUB, MOBI, FB2, and PDF files, with a free tier and a paid premium. It is a reader for files you have, not a library card.
       zh: >
         FBReader 是长期维护的电子书阅读器，读取本地 EPUB、MOBI、FB2 和 PDF，有免费层和付费层。它读你已有的文件，不是一张借书证。
+    long:
+      en: |
+        FBReader is one of the oldest open-source ebook readers still alive — it took shape in the mid-2000s as a program for the FictionBook format and then spread across platforms: Android, iOS, Windows, macOS, and Linux, along with more exotic devices over the years.
+
+        The core reads EPUB, MOBI, FB2, and basic PDF, keeps a lightweight library, and can fetch books from OPDS catalogs and a built-in book network. The free version covers plain reading; FBReader Premium, a paid tier, adds synchronization, translations, and the shelf features heavy users want.
+
+        Age is the honest theme. The interface is plain, development now favors the paying tier, and PDF support remains rudimentary next to KOReader's. But it starts fast, runs almost anywhere — old laptops, e-ink portables, whatever is at hand — and asks nothing of you. That makes it a useful fallback reader for odd devices; as the primary reader on a capable e-ink machine, its rivals have moved past it.
+      zh: |
+        FBReader 是仍在运营的最老一批开源电子书阅读器之一——2000 年代中期从 FictionBook 格式起家，起初的目标设备是掌上 Linux 机器，比 Android 出生还早，随后铺遍各平台：Android、iOS、Windows、macOS 和 Linux，多年来也上过不少冷门设备。
+
+        内核读 EPUB、MOBI、FB2 和基础 PDF，维护一个轻量书库，并能从 OPDS 目录和内置书源取书。免费版覆盖普通阅读；付费的 FBReader Premium 加上同步、翻译和重度用户要的书架功能。
+
+        年岁是诚实的主题。界面朴素，开发如今偏向付费层，PDF 支持放在 KOReader 旁边也只能算入门。但它启动快，几乎哪儿都能跑——旧笔记本、墨水屏便携机、手边有什么是什么——而且对你一无所求，装上就认得常见的几种文件。这让它是冷门设备上称手的备用阅读器；作为一台得力墨水屏机器上的主力，对手们已经走到了它前面，但它还在，也还在更新。
     category: reading-apps
     formats: [EPUB, MOBI, FB2, PDF]
     languages: [en, zh, de, fr, es, ru, it, pl]
@@ -890,6 +1241,19 @@ entries:
         开源阅读 (Legado) is a free, open-source Android reader for local TXT and EPUB files and for online sources you add yourself. Only add a source you are allowed to read.
       zh: >
         开源阅读是免费开源的 Android 阅读器，可读本地 TXT 和 EPUB，也可接入你自己添加的在线书源。只添加你有权阅读的书源。
+    long:
+      en: |
+        开源阅读 (Legado) is a free, open-source Android reader, developed in public on GitHub as the successor to an earlier Chinese project of the same idea. Its home ground is web fiction and local files, and its defining feature is the book source: rule sets, shared as plain text, that teach the app where a given site keeps its chapters.
+
+        Locally it handles TXT and EPUB well, with text-to-speech, theming, and a web mode for managing the library from a computer. The app itself is legal and carries no ads. What it fetches is decided entirely by the sources you add: pointed at a pirate site, it is piracy; pointed at sites you have the right to read, it is an excellent, endlessly adjustable reader.
+
+        This catalog's line follows the law: the app is listed, the pirate sources are not. On Android-based e-ink devices it is widely used. The costs are technical — sources need importing, and they need occasional repair when a site changes — and the interface and community remain mostly Chinese.
+      zh: |
+        开源阅读（Legado）是免费开源的 Android 阅读器，在 GitHub 上公开开发，是同一思路的早期中文项目的后继。主场是网络文学和本地文件，招牌功能是书源：以纯文本形式分享的规则集，教会应用某个网站的章节放在哪里。
+
+        本地阅读对 TXT 和 EPUB 都好，配文本转语音、主题，还有从电脑管理书库的网页模式。换源、离线缓存和备份也都在，照看一个书架不难。应用本身合法，不带广告。它取回什么，完全由你添加的书源决定：指向盗版站，那就是盗版；指向你有权阅读的站点，它就是一个出色、可无限调整的阅读器。
+
+        本目录的界线跟着法律走：收录应用，不收录盗版书源。在 Android 底子的墨水屏设备上它被广泛使用。代价在技术——书源需要导入，站点改版后偶尔要修——界面和社区也仍以中文为主。
     category: reading-apps
     formats: [TXT, EPUB]
     languages: [zh]
@@ -908,6 +1272,19 @@ entries:
         Thorium Reader is a free desktop app from EDRLab for EPUB, PDF, DAISY, and audiobooks, including LCP library loans. It is a reader, not a store.
       zh: >
         Thorium Reader 是 EDRLab 的免费桌面阅读器，可读 EPUB、PDF、DAISY 和有声书，也包括 LCP 图书馆借阅。它是阅读器，不是商店。
+    long:
+      en: |
+        Thorium Reader is the desktop reader published by EDRLab, the Paris-based nonprofit that also stewards the Readium toolkits and the LCP licensing standard used by many European libraries and publishers. It is free, open source, and available for Windows, macOS, and Linux.
+
+        It reads EPUB 2 and 3, PDF, DAISY books for print-disabled readers, and audiobooks, and its signature ability is LCP: borrowed or purchased files protected with that scheme open here, where a plain EPUB app would refuse them. Accessibility is a design goal rather than a checkbox — screen-reader support, dyslexia-friendly typefaces, and deep adjustment of reading settings are built in.
+
+        There is no mobile version and no store; it is a companion to whichever libraries you use, not an ecosystem of its own. On e-ink, think of it as the desk-side reader, e-ink monitors and Android desktops included. Honest limits: desktop only, cloud sync absent by design, and a spare interface that favors function over charm.
+      zh: |
+        Thorium Reader 是 EDRLab 发布的桌面阅读器，这家巴黎的非营利组织同时维护 Readium 工具包和 LCP 授权标准——欧洲大陆的公共图书馆是它的主场，许多出版社也在用。它免费开源，有 Windows、macOS 和 Linux 版，界面支持多语言。
+
+        它读 EPUB 2 和 3、PDF、面向视障读者的 DAISY 图书和有声书，招牌能力是 LCP：用这套方案加密的借阅或购买文件，普通 EPUB 应用只会拒绝，这里可以打开。无障碍是设计目标而非走过场——读屏支持、对阅读障碍友好的字体、深入的阅读设置调整都在，读屏软件可以直接配合使用。
+
+        没有手机版，也没有商店；它是你所用图书馆的搭档，不自成生态。墨水屏方面，把它当书桌边的阅读器——墨水屏显示器和 Android 桌面也算。诚实的边界：仅限桌面，设计上就不做云同步，界面偏功能、不讨好，但键盘快捷键齐全。
     category: reading-apps
     formats: [EPUB, PDF, DAISY, MP3]
     languages: [en, fr, de, es, it, pt, nl, zh, ja, pl, sv]
@@ -926,6 +1303,19 @@ entries:
         The Kindle app is Amazon's free reader for phones, tablets, and computers. It opens Kindle Store books plus personal PDF, MOBI, and text files sent to the account.
       zh: >
         Kindle 应用是亚马逊的免费阅读器，用于手机、平板和电脑。它打开 Kindle 商店的书，以及发送到账号的个人 PDF、MOBI 和文本。
+    long:
+      en: |
+        The Kindle app is how the Kindle Store follows you onto hardware Amazon did not sell you: phones, tablets, and computers. It installs free and opens the library tied to your Amazon account — purchases, samples, and the personal documents you have sent through Send to Kindle.
+
+        Reading position, highlights, and notes sync with whatever Kindle devices you own, and that is the actual value: a chapter started on the e-reader finishes on the phone. The app reads the store's formats and the personal files delivered to the account, but it is not a general-purpose file manager; sideloading runs through Amazon's personal-document pipeline rather than a file picker.
+
+        The honest limits: books bought from the store stay inside the store's DRM, the app exists to sell as much as to read, and on e-ink devices it runs only on Android-based machines — where dedicated readers like KOReader often behave better. Use it when your library already lives in Amazon's account, not as a reason to move there.
+      zh: |
+        Kindle 应用是 Kindle 商店跟着你走到亚马逊没卖给你的硬件上的方式：手机、平板和电脑。安装免费，打开的是绑在亚马逊账号上的书库——购买、试读，以及经 Send to Kindle 送进去的个人文档。
+
+        阅读位置、划线和笔记与你拥有的 Kindle 设备同步，这才是它真正的价值：在阅读器上开始的一章，可以在手机上读完。应用读商店的格式和送达账号的个人文件，但它不是通用的文件管理器；侧载走的是亚马逊的个人文档管道，而不是一个文件选择器。
+
+        诚实的边界：商店买的书锁在商店的 DRM 里；这个应用为卖书而生，不只为读书；墨水屏设备上它只跑在 Android 底子的机器里，而在那里，KOReader 这类专注的阅读器常常表现更好。书库已经住在亚马逊账号里时用它，别为它搬过去。
     category: reading-apps
     formats: [KFX, AZW3, PDF, MOBI, TXT]
     languages: [en, zh, de, fr, es, it, pt, ja, nl]
@@ -944,6 +1334,19 @@ entries:
         The Kobo app is the free reader for Kobo purchases on phones, tablets, and computers, and it also opens your own EPUB and PDF files. Store books stay tied to the Kobo account.
       zh: >
         Kobo 应用是手机、平板和电脑上阅读 Kobo 购书的免费应用，也能打开你自己的 EPUB 和 PDF。商店里的书仍然绑在 Kobo 账号上。
+    long:
+      en: |
+        The Kobo app extends Rakuten Kobo's reading to phones and tablets, keeping purchases, sideloaded files, and reading progress under one account. Where the Kindle app is a shop window first, the Kobo app still behaves like a reader: alongside Kobo purchases it opens your own EPUB and PDF files.
+
+        Sync is its real job — annotations, position, and the library mirror whatever your Kobo devices hold, so a chapter started on an e-reader can finish on a train. Where supported, OverDrive borrowing also surfaces inside Kobo's ecosystem, tying the store and the library card together on one screen.
+
+        Limits, honestly stated: store purchases carry DRM and stay in the account; reading on a phone remains a phone experience; and the desktop versions are an afterthought. On Android-based e-ink devices the app runs, with the usual caveats about animation. For a reading life centered on a Kobo e-reader it is the natural companion; for file-first readers, KOReader or ReadEra serve better.
+      zh: |
+        Kobo 应用把乐天 Kobo 的阅读延伸到手机和平板，购买、侧载文件和阅读进度都收在同一个账号之下。Kindle 应用首先是一扇店窗，Kobo 应用则仍然更像一只阅读器：Kobo 的购买旁边，它还打开你自己的 EPUB 和 PDF。
+
+        同步才是它的本职——批注、进度和书库镜像着你的 Kobo 设备，在阅读器上开始的一章，可以在火车上读完，夜间模式和字体调节也都在。在支持的地方，OverDrive 借阅也会出现在 Kobo 的体系里，把商店和读者证系在同一块屏幕上。
+
+        限制照实说：商店购买带 DRM、留在账号里；手机上的阅读终究是手机体验；桌面版本只是余兴，能用而已。在 Android 底子的墨水屏设备上应用能跑，动画的老毛病在那块屏上照旧。以 Kobo 阅读器为中心的读书生活，它是天然的搭档；以文件为先的读者，KOReader 或 ReadEra 这样的本地阅读器更合适。
     category: reading-apps
     formats: [EPUB, KEPUB, PDF]
     languages: [en, fr, zh, ja, es, it, nl, de, pt]
@@ -962,6 +1365,19 @@ entries:
         The WeRead app is the mobile reader for the 微信读书 catalog, membership, and local files such as EPUB, PDF, TXT, MOBI, and AZW3. Store titles are read inside the app.
       zh: >
         微信读书 App 是微信读书书目、会员和本地文件的手机阅读器，本地文件包括 EPUB、PDF、TXT、MOBI 和 AZW3。商店里的书在应用内阅读。
+    long:
+      en: |
+        The 微信读书 app is the mobile half of Tencent's reading service, and for many of its users it is the service. The full stack is here: the Chinese catalog, the free-reading mechanics, the 无限卡 membership, per-title purchases, and the social layer of shared annotations and rankings that makes the platform feel inhabited.
+
+        Less advertised but real: it imports local files — EPUB, PDF, TXT, MOBI, AZW3 — which then sync and annotate alongside store books. Store titles stay inside the app and its DRM by design; only files you brought with you ever leave as files.
+
+        Mainland assumptions apply throughout: WeChat login, payment through that world, and a catalog licensed for that market. On e-ink, the Android app can be sideloaded onto e-ink Android readers, and it works, though nothing in it was designed for slow refreshes. As a reading life contained in one app, for a reader inside that network, it is remarkably complete; as a way of owning books, it is not one.
+      zh: |
+        微信读书 App 是腾讯阅读服务的移动端，对许多用户来说，它就是服务本身。全套都在这里：中文书目、免费阅读的机制、无限卡会员、单本购买，还有让平台显得有人气的共同批注和排行那一层社交。
+
+        宣传得少但确实存在：它能导入本地文件——EPUB、PDF、TXT、MOBI、AZW3——随后与商店的书放在同一个书架里同步、批注。商店的书按设计留在应用和它的 DRM 里；只有你带来的文件还能以文件形式离开。
+
+        大陆默认贯穿始终：微信登录、在那个世界里付款、书目按那个市场授权。墨水屏方面，Android 应用可以侧载到墨水屏 Android 阅读器上，能用，只是它没有一处是为慢刷新设计的。对那张网络之内的读者，作为一种装进一个应用的读书生活，它完整得出奇；作为一种拥有书的方式，它不是。
     category: reading-apps
     formats: [EPUB, PDF, TXT, MOBI, AZW3]
     languages: [zh]
@@ -980,6 +1396,19 @@ entries:
         e-ink.me turns a web page into an EPUB and converts among formats such as MOBI, PDF, EPUB, HTML, and TXT. New accounts get a small free credit balance; further conversions are pay as you go.
       zh: >
         e-ink.me 把网页做成 EPUB，并在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。新账号有少量免费额度，之后按次计费。
+    long:
+      en: |
+        e-ink.me is this catalog's sibling, and its job is the gap between a web page and an e-reader: it extracts an article, a documentation page, or a long post into a clean EPUB, stripping the chrome and keeping the text. It also converts among the ordinary ebook and document formats — MOBI, PDF, EPUB, HTML, TXT, and DOCX among them.
+
+        An account starts with a small free credit balance, and further conversions are pay-per-use; there is no subscription to forget about. The output files are ordinary DRM-free files that you keep — what goes onto your reader is yours to copy again, convert again, or share inside a household.
+
+        The honest limits match the design. It does not remove DRM from books bought elsewhere — nothing legal does — and a scanned PDF converted to EPUB is still a photograph at heart. What it is for is the everyday case: the long read trapped in a browser tab, and the file in the wrong shape for the device in your bag.
+      zh: |
+        e-ink.me 是本目录的姊妹站点，做的是网页与电纸书之间那段空隙：把一篇文章、一页文档或一篇长帖抽成干净的 EPUB，剥掉广告、评论和外壳，留下文字本身。它也在常见的电子书与文档格式之间来回转换——MOBI、PDF、EPUB、HTML、TXT、DOCX 都在内。
+
+        新账号自带少量免费额度，之后的转换按次计费；没有一份会忘掉的订阅。输出的是普通的无 DRM 文件，归你保存——进阅读器的东西，可以再拷贝、再转换，也可以在家人之间传看，不必再回头找原链接。
+
+        诚实的边界与设计一致。它不剥别处购买的书上的 DRM——合法的工具都不做这件事——扫描版 PDF 转成 EPUB，骨子里仍是照片。它为的是日常情形：困在浏览器标签页里的长文，和格式与包里那台设备对不上的文件——两三下操作，书就进了阅读器，随后随时可读。
     category: ebook-tools
     formats: [EPUB, PDF, MOBI, TXT, HTML, DOCX, FB2, CBZ]
     languages: [en, zh, de, fr, es, it, ja, ko, nl, pl, pt, ru, sv, ar, tr]
@@ -998,6 +1427,19 @@ entries:
         iloveepub.com is a set of free EPUB tools that run in the browser, including compress, merge, split, and conversions such as PDF or TXT to EPUB. Files stay on your device, and there is no account.
       zh: >
         iloveepub.com 是一组在浏览器里运行的免费 EPUB 工具，包括压缩、合并、拆分，以及 PDF 或 TXT 转 EPUB。文件留在本机，不必注册。
+    long:
+      en: |
+        iloveepub.com is the small, free sibling in the same family: a set of EPUB utilities that run entirely in your browser. Compress a file whose images choke an old device, merge split volumes into one book, divide one book into parts, or convert PDF, TXT, HTML, and DOCX into EPUB.
+
+        The characteristic that matters most to careful people: the processing happens on your machine. Files are not uploaded to a server, there is no account to create, and the tools cost nothing. Close the tab and nothing remains anywhere.
+
+        The limits are the flip side of that design. Browser-based tools strain on very large files, the options are fewer than a desktop converter would offer, and no browser utility can rescue a scanned page — there is no text there to work on. For quick surgery on an EPUB you already have, it is the fastest legal tool on this shelf, and the only one that never asks where your file has been.
+      zh: |
+        iloveepub.com 是同一家族里小而免费的工具站：一组完全在浏览器里运行的 EPUB 工具。图片压得旧设备喘不过气，就压缩；分卷想合成一本，就合并；一本要拆成几段，就拆分；也可以把 PDF、TXT、HTML 和 DOCX 转成 EPUB。
+
+        对谨慎的人最要紧的一条：处理发生在你的机器上。文件不上传服务器，没有要建的账号，工具分文不收，断网也不耽误手头正在做的活。关掉标签页，任何地方都不留痕迹。
+
+        局限是这设计的另一面。浏览器工具对付超大文件吃力，选项少于桌面转换器，而任何浏览器小工具都救不了扫描页——那上面没有可供处理的文字。对一本已在手上的 EPUB 做快速手术，或者转出一份能进阅读器的新文件，它是这一栏最快的合法工具，也是唯一不问你的文件去过哪里的。
     category: ebook-tools
     formats: [EPUB, PDF, TXT, HTML, DOCX, KEPUB]
     languages: [en]
@@ -1016,6 +1458,19 @@ entries:
         Sigil is a free, open-source desktop editor for EPUB files. Use it to fix chapters, styles, metadata, and the table of contents when a conversion is not enough.
       zh: >
         Sigil 是免费开源的 EPUB 桌面编辑器。转换不够用时，用它修改章节、样式、元数据和目录。
+    long:
+      en: |
+        Sigil is the open-source desktop editor for EPUB files, maintained by volunteers for well over a decade. Where a converter rewraps a book, Sigil opens it up: chapters, the stylesheet, the table of contents, and the metadata all become directly editable, in a visual view and a code view alike.
+
+        The typical honest work: repair a contents page a converter mangled, fix encoding errors in an old file, change covers or metadata in batches, or build an EPUB properly from scratch. Regex find-and-replace runs across the whole book, and a plugin system extends the program, with validation wrappers among the most-used additions.
+
+        The limits: it edits EPUB only — no MOBI, no PDF — it runs on the desktop, and it assumes some willingness to learn how an EPUB is assembled. It is a workshop tool rather than a reader, and it cannot open DRM-protected files, by design and by law. For anyone producing or repairing EPUBs by hand, it remains the standard free answer.
+      zh: |
+        Sigil 是开源的 EPUB 桌面编辑器，由志愿者维护十几年。转换器只是把书重新包一层，Sigil 则把它拆开：章节、样式表、目录和元数据都变成可直接编辑的对象，可视化视图和代码视图皆备。
+
+        典型的诚实活计：转换器弄坏了目录，来修；旧文件里的编码错误，来修；批量换封面、改元数据；或者从头把一本 EPUB 像样地做出来。正则查找替换可以贯穿全书，插件系统还能扩展程序——校验类的包装用得最多，社区还维护着一份长长的插件列表，想要的功能多半已有人写好。
+
+        边界：只编辑 EPUB——没有 MOBI，没有 PDF——跑在桌面上，还假定你愿意学一点 EPUB 的构造。它是作坊里的工具，不是阅读器，出于设计与法律也打不开带 DRM 的文件。对亲手制作或修复 EPUB 的人，它一直是免费的标准答案。
     category: ebook-tools
     formats: [EPUB]
     languages: [en, zh, de, fr, es, it, ru]
@@ -1034,6 +1489,19 @@ entries:
         Pandoc is a free command-line converter that turns Markdown, DOCX, HTML, and many other formats into EPUB or PDF. It is the direct path from a manuscript to a reader, not a repair tool for scanned pages.
       zh: >
         Pandoc 是免费的命令行转换器，把 Markdown、DOCX、HTML 等许多格式变成 EPUB 或 PDF。它适合从手稿到阅读器，不适合修复扫描页。
+    long:
+      en: |
+        Pandoc is the command-line converter that quietly holds the document world together, written and maintained by the philosopher John MacFarlane. It reads Markdown, DOCX, HTML, LaTeX, and a long list of other formats, and writes EPUB and PDF among many outputs. When a program or website converts documents, there is a good chance Pandoc is underneath it.
+
+        For a reader, the honest path is the manuscript path: a text you control, in Markdown or DOCX, becomes a real EPUB with chapters, a generated table of contents, embedded metadata, and a stylesheet you can swap. Options and templates make the whole thing scriptable, which is why publishing and academic pipelines route through it.
+
+        The limits are equally honest. There is no graphical interface, scanned pages cannot be read, and producing PDF means dealing with LaTeX or another typesetting engine unless the job is simple. It converts structure, not appearance — the output is only ever as clean as the input. As the road from your own writing to your own reader, nothing free comes close.
+      zh: |
+        Pandoc 是那条悄悄撑起文档世界的命令行转换器，由哲学家 John MacFarlane 编写并维护。它读 Markdown、DOCX、HTML、LaTeX 和一长串其他格式，输出里就有 EPUB 和 PDF。一个程序或网站若能转文档，底下多半是 Pandoc。
+
+        对读书人而言，诚实的路是手稿之路：一份由你掌控的文本，Markdown 或 DOCX，变成一本真正的 EPUB——有章节、有生成的目录、有内嵌元数据，还有可替换的样式表。选项和模板让整件事可脚本化，出版和学术的流水线因此从它中间穿过，重复的活计写成脚本便一劳永逸。
+
+        边界同样诚实。它没有图形界面，读不了扫描页，要出 PDF 还得面对 LaTeX 或别的排版引擎，除非活计简单。它转换的是结构，不是外观——输出只可能和输入一样干净。但作为从你自己的写作到你自己的阅读器的那条路，免费世界里没有对手。
     category: ebook-tools
     formats: [EPUB, PDF, HTML, TXT, DOCX]
     languages: [en]
@@ -1052,6 +1520,19 @@ entries:
         LibriVox publishes free audiobooks of public-domain books, recorded by volunteers and downloadable as MP3 and often M4B. You keep the files. The narration varies because it is volunteer work.
       zh: >
         LibriVox 发布公有领域图书的免费有声书，由志愿者录制，可下载 MP3，也常常有 M4B。文件可以留下。因为是志愿者，演播水平不齐。
+    long:
+      en: |
+        LibriVox has been recording public-domain books since 2005, when the writer Hugh McGuire proposed volunteer-read audiobooks as a project to give away, and it has never stopped: thousands of completed titles, all free, all made by people who wanted to read out loud.
+
+        The catalog has the shape of the public domain — classic novels, philosophy, poetry, and history, strongest in English with real shelves in French, German, Spanish, and other languages. Files download as MP3, often packaged as a single M4B audiobook file, with no account and no expiry: what you keep is yours. Recordings vary honestly — one careful soloist through a whole novel, or a chapter-by-chapter relay of different voices.
+
+        Anyone can volunteer to record, which is both the charm of the pipeline and its variance. On e-ink there is nothing to say: audio goes to any player you own. The limits are structural — nothing under copyright, uneven narration, occasional background hiss. As the free floor for classic listening it stands alone, and a library card covers most of the rest.
+      zh: |
+        LibriVox 从 2005 年起录制公有领域图书，那年作家 Hugh McGuire 提议做一个志愿者朗读、免费送出的有声书项目，此后就再没停过：数千种成品，全部免费，全部出自想朗读的人之手。
+
+        书目的形状就是公有领域的形状——古典小说、哲学、诗和历史，英文最强，法文、德文、西班牙文等语种也有真正的架子。文件以 MP3 下载，常打包成一个 M4B 文件，不需要账号，也不过期：留下的就是你的。录音水平坦率不齐——一部小说可能是一位细心独诵者从头到尾，也可能是一章换一个声音的接力。
+
+        谁都可以报名朗读，这既是这条生产线的魅力，也是它的方差。墨水屏这边无事可说：音频进你拥有的任何播放器。边界是结构性的——没有版权期内的作品，演播不齐，偶尔有底噪。作为经典收听的免费地板，它独自站着；其余大部分，一张读者证补齐。
     category: audiobooks
     formats: [MP3, M4B]
     languages: [en, de, fr, es, it, pt, zh, nl, ru]
@@ -1070,6 +1551,19 @@ entries:
         Audible is Amazon's audiobook service, sold mainly as a credit subscription plus individual purchases. Downloads use Audible's own format and play in the Audible app.
       zh: >
         Audible 是亚马逊的有声书服务，主要按积分会员出售，也可以单本购买。下载文件是 Audible 自己的格式，在 Audible 应用里播放。
+    long:
+      en: |
+        Audible is Amazon's audiobook company, operating since the 1990s and now the largest producer and retailer of spoken audio in English. The standard offer is a membership that pays a monthly fee for credits, each credit exchanged for a book, with ordinary purchases at list price alongside it.
+
+        The catalog is the deepest commercial shelf anywhere — bestsellers, originals produced in-house, and series that exist nowhere else — and playback lives in the Audible app, because downloads arrive in Audible's own protected formats. Listening position, notes, and the library sync across the devices tied to the account.
+
+        What to weigh honestly: credits can lapse if left unused for long stretches; prices, and even whether a given plan exists, follow the country storefront on your account; and the files never leave the ecosystem — there is no official plain MP3. For a heavy listener the arithmetic works. For a book a year, a library card through Libby usually beats it.
+      zh: |
+        Audible 是亚马逊的有声书公司，自 1990 年代运营至今，如今是最大的英语口播音频制作与零售商。标准卖法是一份会员：按月付费换积分，一个积分换一本书，旁边照原价单买。
+
+        书目是各处商业书架里最深的一张——畅销书、自制原创，以及只在这里存在的系列——播放则住在 Audible 应用里，因为下载下来的是 Audible 自家的受保护格式。收听位置、笔记和书库在账号下的设备间同步，应用里还能调速、定睡眠计时，通勤和睡前各有各的用法。
+
+        要诚实掂量的：积分长期闲置会失效；价格乃至某项方案是否存在，都跟着账号上那一国店面走；文件也永远出不了这个生态——没有官方的纯 MP3。重度听众算得过这笔账；一年只听一本的人，Libby 那张读者证通常更划算。
     category: audiobooks
     formats: [AAX]
     languages: [en, de, fr, es, it, ja]
@@ -1088,6 +1582,19 @@ entries:
         喜马拉雅 is a large Chinese audio service with audiobooks, lectures, and podcasts. Some programs are free. Much of the book-length listening is behind a membership or a single purchase, played in the app.
       zh: >
         喜马拉雅是大型中文音频服务，有有声书、讲座和播客。一部分节目免费。很多整本书在会员或单本购买后面，在应用里播放。
+    long:
+      en: |
+        喜马拉雅 (Ximalaya) is the largest Chinese-language audio platform, built in the early 2010s and now holding audiobooks, lecture courses, podcasts, radio drama, and children's programming side by side. For a listener wanting spoken Chinese, it occupies the position Audible holds for English.
+
+        The business mixes free listening, a VIP membership that unlocks most book-length content, and per-title purchases; playback happens in the app or on the website. Original and exclusive productions are a real strength, and the catalog's range in Chinese is unmatched — including a great deal that is not books at all.
+
+        The honest limits run in two directions. The platform assumes a mainland-China listener for payment and licensing, so access from elsewhere degrades unpredictably, and store purchases stay inside the app: nothing downloads as an open audio file. On devices it runs on phones and on Android-based e-ink readers — where listening is the better use of the hardware anyway.
+      zh: |
+        喜马拉雅是最大的中文音频平台，建于 2010 年代初，如今有声书、课程讲座、播客、广播剧和儿童内容并排摆着。想听中文的人，它占着 Audible 在英文世界占的那个位置。
+
+        生意混着三种：免费收听、解锁大多数整本书的 VIP 会员，以及单本购买；播放在应用或网站里完成。原创与独家制作是实打实的强项，书目的广度在中文世界无出其右——包括大量根本不是书的东西，相声、评书、儿童故事都在其列。
+
+        诚实的边界走两条。平台在支付和授权上都默认中国大陆听众，从别处访问会不可预期地降级；商店购买也留在应用里：没有任何东西以开放音频文件的形式下载。设备上它跑在手机和 Android 底子的墨水屏阅读器里——在那上面，听本来也比读更配这块硬件。
     category: audiobooks
     formats: []
     languages: [zh]
@@ -1106,6 +1613,19 @@ entries:
         Storytel is a subscription for streaming audiobooks and, in some markets, ebooks read inside the app. You do not keep an open file, and the catalog changes with the country of the subscription.
       zh: >
         Storytel 是串流有声书的订阅，部分市场也包含在应用内阅读的电子书。你留不下开放文件，书库随订阅所在的国家变化。
+    long:
+      en: |
+        Storytel is the Swedish subscription service that took streaming audiobooks into the mainstream across Northern Europe, and it now operates in a set of markets reaching from the Nordics to Spain, the Netherlands, Poland, and beyond. One monthly fee buys unlimited listening, and in several markets e-books ride along inside the same app.
+
+        The model is honest about what it is: streaming, not ownership. Titles rotate as licenses come and go, each country holds its own catalog, and reading or listening happens inside Storytel's apps — you never hold a file. Original production, including audio-first fiction, is a house specialty and a reason people subscribe beyond the international list.
+
+        The limits follow the map. The service is simply not sold across much of the world, pricing differs sharply between countries, and an e-ink reader is mostly beside the point: this is a phone service. For a listener inside one of its markets — especially in a language the big English platforms serve thinly — it is often the better subscription.
+      zh: |
+        Storytel 是瑞典的订阅服务，把有声书串流带成北欧的主流，如今在从北欧到西班牙、荷兰、波兰等地的一批市场运营。一份月费换无限收听，若干市场的电子书也搭在同一个应用里。
+
+        模型对它是什么很诚实：串流，不是拥有。授权来去之间书目轮换，每个国家握着自己的书库，阅读或收听都在 Storytel 的应用里——你从不持有文件。原创制作，包括「先有声」的小说，是它的招牌，也是人们在国际书目之外订阅的理由。
+
+        边界跟着版图走。世界上大部分地方根本买不到这项服务，各国价格差别很大；墨水屏阅读器在这里多半帮不上忙：这是手机上的服务。对身处其市场之内的听众——尤其当大平台把你的语言照顾得很薄时——它往往是更好的那份订阅。
     category: audiobooks
     formats: []
     languages: [sv, en, de, es, it, nl, pl, fi, da, fr]
@@ -1124,6 +1644,19 @@ entries:
         MobileRead is a long-running forum about ebook readers, formats, and reading software. You can read it without an account. It is a discussion board, not a book download site.
       zh: >
         MobileRead 是长期运行的论坛，讨论电纸书、格式和阅读软件。不注册也可以看。它是讨论板，不是图书下载站。
+    long:
+      en: |
+        MobileRead has been the forum for dedicated ebook hardware since the early 2000s — older than the Kindle, and older than most of the devices it now covers. The boards are organized by manufacturer (Kindle, Kobo, PocketBook, Onyx, and the rest), with further sections for formats, reading software, and the accessorizing of it all.
+
+        It is readable without an account, posting needs a free one, and the culture runs technical. This is where KOReader's discussion threads live, where Calibre's author answers questions, and where custom firmware and device tweaks are argued over alongside plain setup help. An attached wiki collects the answers that proved durable.
+
+        The e-ink angle is direct: for buying advice, troubleshooting, and getting a retired device to behave, there is no deeper archive. Treat it as forums, not a catalog — advice ages, and a random attachment in a thread is not part of this site's legal-collection promise. Search before asking; the answer from 2019 is usually still there.
+      zh: |
+        MobileRead 从 2000 年代初起就是专门谈论电子书硬件的论坛——比 Kindle 还老，也比它如今覆盖的大多数设备老。版面按厂商分（Kindle、Kobo、PocketBook、Onyx 等），另有格式、阅读软件和周边配件的板块，二手交易也占一角。
+
+        不注册可以读，发帖要一个免费账号，风气偏技术。KOReader 的长篇讨论帖住在这里，Calibre 的作者在这里答疑，定制固件和设备玩法与普通的设置求助并排出现。附带的维基收着被时间证明耐用的答案，老帖里也埋着大量一手经验。
+
+        墨水屏角度很直接：买设备前的咨询、排障、让一台退役设备重新听话，没有更深的档案可查。把它当论坛而不是目录——建议会过期，帖子里随手一个附件也不在本站「合法收录」的承诺之内。先搜索再提问；2019 年的答案通常还在那里，连当时的截图都常常还挂得住。
     category: communities
     formats: []
     languages: [en]
@@ -1142,6 +1675,19 @@ entries:
         Goodreads is a social catalog for tracking books you have read or want to read, with ratings and reviews. Use it to choose a title, then find a legal copy in a library or a store.
       zh: >
         Goodreads 是记录已读和想读的社交书目，有评分和书评。用它决定读什么，再去图书馆或商店找合法的版本。
+    long:
+      en: |
+        Goodreads, founded in 2007 and owned by Amazon since 2013, is the default English-language book tracker: mark books as read, reading, or want-to-read, rate them, write reviews, and watch a feed of friends doing the same. The annual reading challenge turns quantities into a mild sport.
+
+        Its reference value is the data — aggregated ratings across millions of editions, community lists, and enough reviews that a careful reader can triangulate before buying or borrowing. Links then hand you off to stores and libraries; Goodreads helps decide what to read, never where the file comes from.
+
+        Honest limits: the interface is dated and ad-supported, review quality is unfiltered crowd opinion, and occasional review-bombing episodes remind you the scores are weather, not truth. Amazon has also tightened outside access to the data over the years. As a decision aid before you come back to this catalog for a legal copy, it does its job.
+      zh: |
+        Goodreads 创立于 2007 年，2013 年起属亚马逊，是英语世界默认的读书记录站：把书标成读过、在读、想读，打分、写书评，再看朋友做同样的事。每年的阅读挑战把数量变成一项温和的运动，朋友之间互相看得见进度。
+
+        参考价值在数据——数百万版本的聚合评分、社区榜单和足够多的书评，细心的读者可以在买或借之前三角定位。链接随后把你交给商店和图书馆；Goodreads 帮你决定读什么，从不决定文件从哪里来。
+
+        诚实的边界：界面老旧，靠广告支撑；书评质量是不加过滤的群众意见；间或发生的刷分事件也提醒你，分数是天气，不是真相。这些年亚马逊还收紧了外部对数据的访问。作为回到本目录找合法版本之前的决策辅助，它尽职——把分数和书评对照着看，就更尽职了。
     category: communities
     formats: []
     languages: [en]
@@ -1160,6 +1706,19 @@ entries:
         豆瓣读书 is the Chinese-language community for book records, ratings, and reviews. It is a place to decide what to read, not the ebook file itself.
       zh: >
         豆瓣读书是中文读书社区，有读书记录、评分和书评。它用来决定读什么，本身不是那本电子书文件。
+    long:
+      en: |
+        豆瓣读书 is the book section of Douban, the Beijing company that has anchored Chinese online book culture since 2005. The mechanics are the familiar triad — want to read, reading, read — wrapped in ratings, long-form reviews, curated lists called 豆列, and author and series pages.
+
+        What makes it valuable is the review culture. Chinese readers write at length, disagreements get argued rather than buried, and a book's score reflects years of accumulated opinion rather than a launch-week push. It is where Chinese readers check before buying, in roughly the role Goodreads plays in English.
+
+        It sells nothing directly — purchase links point outward to the stores — and browsing works without an account, though marking books wants one. The honest limits: the community is Chinese-language and China-centered, and like any review platform it carries campaigns and grudges. As an adviser on what to read next, it has no real substitute in Chinese.
+      zh: |
+        豆瓣读书是豆瓣的书那一面，这家北京公司自 2005 年起就是中文网络书文化的锚。机制是熟悉的三件套——想读、在读、读过——外面裹着评分、长评、叫作豆列的策展书单，以及作者和系列页面。
+
+        真正值钱的是书评文化。中文读者肯写长文，分歧被争论而不是被埋掉，一本书的分数是多年累积的意见，而不是上市一周的冲刺。书单（豆列）常比算法更会荐书。中文读者买书前会来看，扮演的大致是 Goodreads 在英语世界的那一角。
+
+        它不直接卖东西——购买链接指向外面的商店——浏览不需要账号，标记书目则需要。诚实的边界：社区以中文和中国为中心；和任何评论平台一样，也有打榜和私怨。作为「下一本读什么」的参谋，中文世界没有真正的替代品。
     category: communities
     formats: []
     languages: [zh]
@@ -1178,6 +1737,19 @@ entries:
         r/ereader is a Reddit community about dedicated reading devices, apps, and everyday setup questions. Threads move quickly and are not an edited guide.
       zh: >
         r/ereader 是 Reddit 上关于电纸书、应用和日常设置的社区。帖子更新很快，也不是经过编辑的指南。
+    long:
+      en: |
+        r/ereader is the subreddit for dedicated reading devices and the software around them — which reader to buy, which case survives a backpack, why a PDF will not open, and photographs of new hardware with the bezel still shiny.
+
+        Its virtues are speed and volume. A question asked today has answers tonight, sale sightings and firmware news arrive quickly, the upvote ranking does rough triage of what matters, and the community's photography habit means real-world screen shots of the devices you are considering. Reddit is readable without an account; posting and voting need one.
+
+        The limits are the same things. Nothing is edited, the same handful of questions recur, opinions are strong, and a confident comment can still be wrong about your exact device. Search the subreddit and MobileRead before asking, and treat what you find as leads rather than documentation. For current events — prices, releases, deals — it beats the forums; for durable answers, the forums beat it.
+      zh: |
+        r/ereader 是关于专门阅读设备及其周边软件的版块——买哪台阅读器、哪个保护套经得住背包、为什么一份 PDF 打不开，还有边框尚且发亮的新机照片。
+
+        它的美德是快和量大。今天问的问题今晚就有答案，降价情报和固件消息来得快，投票排名粗粗分出什么要紧，社区晒机的习惯还意味着你能看到候选设备的真实屏幕，而不是商店页面上的渲染图。Reddit 不注册也能读，发帖和投票需要账号。
+
+        局限也还是这些。没有编辑，同样几个问题反复出现，观点强硬，而一条底气十足的评论也可能恰恰在你的机型上错掉。提问之前先搜版块和 MobileRead，把搜到的当线索，不当文档；日期久于一年的帖子，先核一下现状。论时事——价格、发布、优惠——它胜过论坛；论耐用的答案，论坛胜过它。
     category: communities
     formats: []
     languages: [en]
@@ -1196,6 +1768,19 @@ entries:
         书伴 publishes Chinese news, reviews, and practical notes about Kindle and other e-readers. It is a reading of the device market, not a bookstore.
       zh: >
         书伴发布 Kindle 和其他电纸书的中文新闻、评测和实用笔记。它是在看设备市场，不是书店。
+    long:
+      en: |
+        书伴 (BookFere) is a long-running Chinese site devoted to Kindle and other e-readers: news of firmware and devices, reviews, and above all practical writing — how to manage a library, how to send documents to a device, how dictionaries work, and what the various helper tools actually do.
+
+        The coverage runs deeper than a news feed and more patiently than a forum: articles are edited, kept current, and organized so a reader can follow one topic from basics to fine detail. Reading requires no account, and the archive is the site's real product.
+
+        The honest framing: an independent site with its own voice, focused on the Chinese e-reader market, where some advanced topics involve customizing devices beyond what the manufacturer intended — legal on your own hardware, but read before you leap. For Chinese-language Kindle users it has been the practical reference for years; for English readers, MobileRead covers the same ground.
+      zh: |
+        书伴（BookFere）是长期运营的中文站点，专注于 Kindle 和其他电纸书：固件与设备的新闻、评测，以及最实用的那部分写作——怎么管理书库、怎么把文档送进设备、词典怎么用、各种辅助工具到底做了什么。
+
+        它的覆盖比新闻源深，比论坛有耐心：文章经过编辑、持续更新、组织得相当清楚，读者能顺着一条线索从入门走到细节。阅读不需要账号，这份档案库才是网站真正的产品，旧文也大多有人回头照料。
+
+        诚实的定位：一家有自己声音的独立站点，聚焦中文电纸书市场；部分进阶话题涉及超出厂商预期的设备定制——在自己的硬件上合法，但动手前先读完。对中文 Kindle 用户，它多年来就是实用的参考书；英文读者那边，MobileRead 覆盖同样的地皮，只是要用英文去读。
     category: communities
     formats: []
     languages: [zh]
@@ -1214,6 +1799,19 @@ entries:
         TeleRead is an English-language news site about ebook publishing, libraries, and reading technology. It reports on the field. It does not host the books.
       zh: >
         TeleRead 是英文新闻站，写电子书出版、图书馆和阅读技术。它报道这个领域，不托管那些书。
+    long:
+      en: |
+        TeleRead is one of the oldest continuously published English sites covering e-books. Its name goes back to a 1990s proposal for a national digital-library system, and the blog that grew out of that advocacy still writes about publishing, libraries, DRM, and e-ink devices today.
+
+        The angle is policy and the reader's interest rather than gadget enthusiasm: library funding, publisher consolidation, accessibility, e-ink hardware reviews, and the economics of the formats this catalog organizes. A small roster of writers keeps a steady flow of short posts, with the occasional deep dive into a single company or a court fight.
+
+        The honest limits: a small operation, an uneven posting rhythm, and strong opinions — a blog with positions, not a wire service. Use it to notice what happens between product launches: court cases, library budget cuts, format retirements. Those are the changes that quietly decide what you will be allowed to read next year, and TeleRead watches them closely, week after week.
+      zh: |
+        TeleRead 是持续运营时间最长的英文电子书网站之一。名字可以追溯到 1990 年代一份全国数字图书馆系统的提案，从那份倡议里长出来的博客，如今仍在写出版、图书馆、DRM 和墨水屏设备。
+
+        角度是政策和读者利益，不是数码热情：图书馆经费、出版社并购、无障碍、墨水屏硬件评测，以及本目录整理的这些格式的经济学。一小队作者维持着短文的稳定流，偶尔深潜一次。对喜欢追问「书为什么变成这样」的读者，它是合适的口粮。
+
+        诚实的边界：小体量作业，发文节奏不均，观点鲜明——这是一家有立场的博客，不是通讯社。用它去注意发布会与发布会之间发生的事：诉讼、图书馆预算削减、格式退役。正是这些变化决定你被允许读什么，而 TeleRead 盯着它们。
     category: communities
     formats: []
     languages: [en]
@@ -1232,6 +1830,19 @@ entries:
         news.e-ink.me is the family news page, typeset so a tech briefing stays readable on an e-ink browser. It covers the news. It is not an ebook library.
       zh: >
         news.e-ink.me 是家族的新闻页，版式让一份科技简报在墨水屏浏览器里仍然可读。它登新闻，不是电子书库。
+    long:
+      en: |
+        news.e-ink.me is the family's answer to a small, real problem: most news sites are unreadable on an e-ink browser — heavy, animated, and impatient with slow refreshes. This front page carries a digest of technology news in a layout that respects the screen it is on.
+
+        There is nothing to install and no account to make. It is a web page, deliberately light, that works in the simple browsers shipped on e-ink tablets and in any ordinary browser as well; reading is the whole feature set.
+
+        The honest limits: it is a briefing, not a full newsroom — a way to keep an eye on the day while away from a fast screen, not a replacement for following a subject in depth. It sits on this catalog's communities shelf because that is what it is, a reading place rather than a book source. For e-ink device owners it is a useful daily habit.
+      zh: |
+        news.e-ink.me 回答的是一个小而真实的问题：大多数新闻站在墨水屏浏览器上没法读——重、爱动、对慢刷新没有耐心。这个首页用尊重那块屏幕的版式，载一份当天主要消息的科技简报。
+
+        不用装什么，也没有账号可建。它是一张刻意做轻的网页，在墨水屏平板自带的简易浏览器里能用，在普通浏览器里也能用，刷新和翻页也不折腾那块屏；阅读就是全部功能，没有登录墙，也没有推送打扰。
+
+        诚实的边界：它是一份简报，不是一间完整的编辑室——离开快屏幕时顺便看一眼当天，不是深度跟一条线的替代品。它放在本目录的社区一栏，因为它的本质如此：一处阅读的地方，不是书的来源。对墨水屏设备的主人，它是一项顺手的日常，配早上的茶或咖啡都合适。
     category: communities
     formats: []
     languages: [en]
@@ -1250,6 +1861,19 @@ entries:
         wiki.e-ink.me is the family knowledge base on ebook formats, dictionaries, reading software, and e-reader setup. English articles adapt older public wiki pages and add original notes.
       zh: >
         wiki.e-ink.me 是家族的知识库，写电子书格式、词典、阅读软件和电纸书设置。英文文章改写自较早的公开维基，并有原创补充。
+    long:
+      en: |
+        wiki.e-ink.me is the family's knowledge base for the practical end of e-reading: what the formats actually are and how they differ, how dictionaries get onto readers, which software opens what, and how specific devices are set up. English articles adapt material from an older public wiki, with original writing filling the gaps.
+
+        The tone is reference, not blog — short factual pages, organized for lookup, free to read with no account. Where a topic needs depth, such as the anatomy of an EPUB or the varieties of DRM on library loans, the wiki keeps the explanation in one place instead of scattering it across forum threads.
+
+        Honest limits: the scope is deliberately narrow (ebooks and readers, not general technology), adapted pages may lag behind their sources, and a wiki grows at the speed of its volunteers. As a first stop before asking a forum — what KEPUB is, why a file will not open — it usually shortens the conversation.
+      zh: |
+        wiki.e-ink.me 是家族的知识库，管的是电子书阅读里偏实操的那一头：各种格式到底是什么、差别在哪，词典怎么装上阅读器，什么软件开什么文件，具体设备怎么设置。英文文章改写自一个较早的公开维基，再由原创文章补上缺口。
+
+        语气是参考书，不是博客——短而实的页面，按查阅组织，免费阅读，无需账号，手机屏幕上也不挤。当一个题目需要深度，比如 EPUB 的构造、图书馆借阅上 DRM 的种种，维基把解释收在一处，而不是散落各论坛帖子。
+
+        诚实的边界：范围刻意窄（电子书和阅读器，不是一般科技），改写的页面可能滞后于来源，而维基按志愿者的速度生长。作为论坛提问前的第一站——「KEPUB 是什么」「这个文件为什么打不开」——它通常能把对话截短，有时干脆把问题取消掉。
     category: communities
     formats: []
     languages: [en]
@@ -1268,6 +1892,19 @@ entries:
         games.e-ink.me is a small set of free browser games made to be playable on e-ink screens. It is the family's play shelf, not a place to find books.
       zh: >
         games.e-ink.me 是一小套免费浏览器游戏，为了能在墨水屏上玩。它是家族的游戏架，不是找书的地方。
+    long:
+      en: |
+        games.e-ink.me is the family's play shelf: a small set of free browser games built specifically for e-ink screens — grayscale, patient with slow refreshes, controllable without frantic tapping. It exists because most web games are unplayable on exactly the devices that are nicest to read on.
+
+        There is nothing to install and no account to create; the games run in the browser of an e-ink tablet, an e-ink phone, or any ordinary machine. The collection is deliberately small and the games deliberately simple — the hardware sets the design brief.
+
+        It appears on this catalog's communities shelf for honesty, not padding: the family sites are listed here as one map, and this is the corner where nothing productive happens. As a book source it contributes nothing, and it will not pretend otherwise. As a five-minute break on the device you already carry, it does exactly what it claims, no more and no less.
+      zh: |
+        games.e-ink.me 是家族的游戏架：一小套专为墨水屏做的免费浏览器游戏——灰阶、体谅慢刷新、不靠疯狂点按操控。它存在的原因很实际：多数网页游戏恰恰在最适合阅读的那类设备上玩不了——动画太多，刷新太快。
+
+        不用安装，没有账号可建；游戏跑在墨水屏平板或任何普通机器的浏览器里，不动声色，也不占地方。合集刻意小，游戏刻意简单——硬件就是设计任务书，打开一张页面就开玩。
+
+        它出现在本目录的社区一栏，是为了诚实，不是为了凑数：家族站点作为一张地图列出，这里是不发生任何正事、也不想发生正事的那个角落。作为书的来源它毫无贡献，也不假装有。作为你随身设备上的一次等车、一段午休、五分钟的休息，它做的事和说的一致。
     category: communities
     formats: []
     languages: [en]
@@ -1286,6 +1923,19 @@ entries:
         汉典 is a free Chinese dictionary for characters and words, with readings, meanings, and citations from classical writing. Look a character up here when a general bilingual glossary is too thin.
       zh: >
         汉典是免费的汉字和词语词典，有读音、义项和古籍书证。一般双语词表太薄时，用它查一个字。
+    long:
+      en: |
+        汉典 (Zdic) is the free Chinese dictionary for characters. A lookup returns the Mandarin readings, meanings across classical and modern use, the character's etymology and older forms where they are known, and citations drawn from classical writing — precisely the layers a bilingual glossary flattens or skips.
+
+        Around the character core sit word and idiom dictionaries, so a phrase that is more than the sum of its characters resolves too. Search works by pinyin, radical, and stroke count, which matters exactly when the character in front of you is one you cannot type. No account is needed; the site is free and ad-supported.
+
+        The interface is Chinese, which is honest — this is a dictionary for reading Chinese, not for learning it from zero. On e-ink the pages are light and render well in simple browsers. For classical texts, rare variants, and the one 字 that stops a 书格 scan cold, this is the lookup this catalog points to first.
+      zh: |
+        汉典是免费的汉字词典。一次检索给出普通话的读音和声调、古今义项、能考则考的构形与古体，《说文》的解说也在其中，还有从经史里引来的原文书证——正是双语词表压扁或跳过的那些层。
+
+        字核之外还有词典和成语词典，一个大于字面之和的短语、一条成语也能落地。检索可按拼音、部首和笔画，这在你面前正好躺着一个打不出来的字时最有用。不需要账号，站点免费，靠广告维持，页面也不重。
+
+        界面是中文的，这很诚实——它是为读中文的人做的词典，不是为从零学中文的人做的。墨水屏上页面轻，简易浏览器也渲染得像样。查古文、查异体字、查通假字，也查那个让书格扫描件停下来的字，本目录先指向这里，再由别的词典补细节。
     category: dictionaries
     formats: []
     languages: [zh]
@@ -1304,6 +1954,19 @@ entries:
         Wiktionary is a free multilingual dictionary of definitions, etymologies, and translations anyone can edit. Coverage is deep for common words and thin for rare technical ones.
       zh: >
         维基词典是免费的多语词典，有释义、词源和翻译，任何人都可以编辑。常见词往往很全，冷僻术语可能很薄。
+    long:
+      en: |
+        Wiktionary is Wikimedia's dictionary, running since 2002 on the same anyone-can-edit engine as its siblings. Each language edition is a dictionary of and for that language — definitions, pronunciations, inflections, etymologies, and translation tables linking entries across editions.
+
+        For a reader, the strength is range. One address covers the language you are reading, the language you think in, and several more besides, with the entries freely reusable under an open license. A common word in a major language is often covered superbly; a rare technical term may be a stub or simply missing.
+
+        The honest texture is that of any open project: uneven, improving, occasionally wrong, offered without an editorial guarantee. It is a better first stop than a search engine's scraped glossary fragments, and a worse last stop than a specialist dictionary once the word is a term of art. Free to use; looking things up needs no account, since accounts exist for editing.
+      zh: |
+        维基词典是维基媒体的词典，自 2002 年起用与姊妹项目相同的「人人可编」引擎运转。每个语言版本既是该语言的词典，也为该语言服务——释义、读音、屈折变化、词源，以及把各版本条目连起来的翻译表。
+
+        对读者，长处在覆盖面。一个地址同时装着你正在读的语言、用来思考的语言，另外还有几种；条目按开放许可自由复用。大语种的常见词常常覆盖得极好；冷僻术语可能只是个空壳，或者干脆没有。
+
+        诚实的质地是一切开放项目的质地：不齐、在改进、偶尔出错，不给编辑担保。它比搜索引擎里抓来的词表碎片更适合当第一站，当词条是行业术语时，又比专科词典更不适合当最后一站。免费可用；查阅不需要账号，账号是留给编辑的。
     category: dictionaries
     formats: []
     languages: [en, zh, fr, de, es, ja, ru, pl, it, pt, nl, sv, ko, ar]
@@ -1322,6 +1985,19 @@ entries:
         WordReference is a free set of bilingual dictionaries, plus forums about phrases a dictionary entry only half explains. It is built for translation while you read, not for an essay on a word's whole history.
       zh: >
         WordReference 是一套免费的双语词典，另有论坛讨论词条只解释了一半的短语。它为阅读时的翻译而做，不是为了铺陈一个词的全部历史。
+    long:
+      en: |
+        WordReference has been the online dictionary for translation-while-reading since the late 1990s: bilingual dictionaries pairing English with Spanish, French, Italian, German, Portuguese, and a longer list of languages, several of them built on licensed print dictionaries.
+
+        What keeps readers loyal is the forums. For a phrase the entry only half explains — register, idiom, regional use — there is often a thread where native speakers argue it out, sometimes across two pages of examples, and the dictionary entry links straight to the relevant discussion.
+
+        The website is free to search and needs no account; the paid tiers live in the mobile apps. The limits: it is built around English as the pivot language, so it is not the tool for pairs that exclude English, and it runs thinner on etymology and rare technical vocabulary than Wiktionary. For reading a novel in a language you almost have, it is usually the fastest honest answer.
+      zh: |
+        WordReference 自 1990 年代末起就是「边读边查」的在线词典：双语词典把英语和西班牙语、法语、意大利语、德语、葡萄牙语以及更长一串语言配对，其中数种以授权的成熟纸本词典为底子，编辑传统可以追溯到书页时代。
+
+        让读者留下来的是论坛。一个词条只解释了一半的短语——语域、习语、地区差异——常常已经有一条帖子，母语者在里面吵个明白，有时带两页例句和上下文，而词条直接链到相应讨论。
+
+        网站免费检索，不需要账号；付费层在手机应用那边。边界：它以英语为轴心搭建，两头都不含英语的搭配不是它的活；词源和冷僻术语又比维基词典薄，论坛的回答质量不一，多看两楼再采信。读一本你几乎读得动的外语小说时，它通常是最快的诚实答案。
     category: dictionaries
     formats: []
     languages: [en, es, fr, it, de, pt, pl, ja, zh, ko, nl, sv, ar]

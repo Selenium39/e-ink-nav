@@ -1,0 +1,154 @@
+---
+import Base from '../layouts/Base.astro';
+import EntryCard from '../components/EntryCard.astro';
+import { categoryBySlug, domainOf, entriesIn, entryById, paragraphs } from '../lib/catalog';
+import { absoluteUrl, htmlLang, languageName, localePath, useUi, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+  id: string;
+}
+
+const { locale, id } = Astro.props;
+const ui = useUi(locale);
+const entry = entryById(id);
+const category = categoryBySlug(entry.category);
+const domain = domainOf(entry.url);
+const slug = `sites/${entry.id}`;
+const path = localePath(locale, slug);
+const title = `${entry.name} — nav.e-ink.me`;
+const description = entry.description[locale];
+const related = entriesIn(category.slug)
+  .filter((item) => item.id !== entry.id)
+  .slice(0, 6);
+const cta = category.cta;
+const favicon = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: ui.home, item: absoluteUrl(localePath(locale)) },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: category.title[locale],
+          item: absoluteUrl(localePath(locale, category.slug)),
+        },
+        { '@type': 'ListItem', position: 3, name: entry.name, item: absoluteUrl(path) },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      name: title,
+      description,
+      url: absoluteUrl(path),
+      inLanguage: htmlLang[locale],
+    },
+  ],
+};
+---
+
+<Base
+  locale={locale}
+  slug={slug}
+  title={title}
+  description={description}
+  jsonLd={jsonLd}
+  currentCategory={entry.category}
+  currentState="location"
+>
+  <main id="content">
+    <div class="wrap">
+      <nav class="crumb" aria-label={ui.breadcrumbLabel}>
+        <a href={localePath(locale)}>{ui.home}</a>
+        <span aria-hidden="true"> › </span>
+        <a href={localePath(locale, category.slug)}>{category.title[locale]}</a>
+        <span aria-hidden="true"> › </span>
+        <span aria-current="page">{entry.name}</span>
+      </nav>
+
+      <header class="entry-head">
+        <h1>
+          <img
+            class="favicon-lg"
+            src={favicon}
+            alt=""
+            width="40"
+            height="40"
+            loading="lazy"
+            decoding="async"
+            onerror="this.remove()"
+          />
+          {entry.name}
+        </h1>
+        <p class="lede">{description}</p>
+      </header>
+
+      <article class="prose">
+        {paragraphs(entry.long[locale]).map((paragraph) => <p>{paragraph}</p>)}
+      </article>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt>{ui.metaSite}</dt>
+          <dd><a href={entry.url} rel="noopener noreferrer">{domain}</a></dd>
+        </div>
+        <div class="fact">
+          <dt>{ui.metaCategory}</dt>
+          <dd><a href={localePath(locale, category.slug)}>{category.title[locale]}</a></dd>
+        </div>
+        <div class="fact">
+          <dt>{ui.metaFormats}</dt>
+          <dd>{entry.formats.length > 0 ? entry.formats.join(', ') : '—'}</dd>
+        </div>
+        <div class="fact">
+          <dt>{ui.metaLanguages}</dt>
+          <dd>{entry.languages.map((code) => languageName(locale, code)).join(', ')}</dd>
+        </div>
+        <div class="fact">
+          <dt>{ui.metaPricing}</dt>
+          <dd>{ui.pricing[entry.pricing]}</dd>
+        </div>
+        <div class="fact">
+          <dt>{ui.metaRegistration}</dt>
+          <dd>{entry.registration ? ui.registrationRequired : ui.registrationNone}</dd>
+        </div>
+        {
+          entry.region[locale] && (
+            <div class="fact">
+              <dt>{ui.metaRegion}</dt>
+              <dd>{entry.region[locale]}</dd>
+            </div>
+          )
+        }
+      </dl>
+
+      <a class="action-link" href={entry.url} rel="noopener noreferrer">{ui.visitSite}</a>
+
+      {
+        cta && (
+          <aside class="cta">
+            <p class="eyebrow">{ui.ctaEyebrow}</p>
+            <h2>{cta.title[locale]}</h2>
+            <p>{cta.body[locale]}</p>
+            <a class="cta-link" href={cta.href[locale]} rel="noopener noreferrer">
+              {cta.action[locale]}
+            </a>
+          </aside>
+        )
+      }
+
+      <section class="section" aria-labelledby="related-title">
+        <div class="section-head">
+          <h2 id="related-title">{ui.relatedEntries}</h2>
+          <a href={localePath(locale, category.slug)}>{ui.relatedAll}</a>
+        </div>
+        <div class="grid">
+          {related.map((item) => <EntryCard entry={item} locale={locale} filterable={false} />)}
+        </div>
+      </section>
+    </div>
+  </main>
+</Base>

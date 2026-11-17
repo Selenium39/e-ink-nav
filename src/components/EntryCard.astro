@@ -1,6 +1,6 @@
 ---
 import { domainOf, haystack, type Entry } from '../lib/catalog';
-import { languageName, useUi, type Locale } from '../i18n/ui';
+import { languageName, localePath, useUi, type Locale } from '../i18n/ui';
 
 interface Props {
   entry: Entry;
@@ -36,7 +36,7 @@ const langTitle = entry.languages.map((code) => languageName(locale, code)).join
       decoding="async"
       onerror="this.remove()"
     />
-    <a href={entry.url} rel="noopener noreferrer">{entry.name}</a>
+    <a href={localePath(locale, `sites/${entry.id}`)}>{entry.name}</a>
   </h3>
   <p class="card-desc">{entry.description[locale]}</p>
   <ul class="tags">
@@ -60,4 +60,5 @@ const langTitle = entry.languages.map((code) => languageName(locale, code)).join
     {entry.featured && <li class="tag">{ui.tagFeatured}</li>}
   </ul>
   {entry.region[locale] && <p class="region">{entry.region[locale]}</p>}
+  <a class="ext" href={entry.url} rel="noopener noreferrer">{ui.openExternal} ↗</a>
 </article>

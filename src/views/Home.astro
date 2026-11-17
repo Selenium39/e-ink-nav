@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import CategoryNav from '../components/CategoryNav.astro';
 import EntryCard from '../components/EntryCard.astro';
 import FilterBar from '../components/FilterBar.astro';
 import {
@@ -8,6 +7,7 @@ import {
   entries,
   entriesIn,
   featuredEntries,
+  firstSentence,
   itemListLd,
   usedFormats,
   usedLanguages,
@@ -40,6 +40,30 @@ const featured = featuredEntries();
         <p class="redline">{ui.heroRedline}</p>
       </header>
 
+      <section class="section" aria-labelledby="categories-title">
+        <div class="section-head">
+          <h2 id="categories-title">{ui.categoriesTitle}</h2>
+        </div>
+        <div class="index-grid">
+          {
+            categories.map((category) => {
+              const count = entriesIn(category.slug).length;
+              return (
+                <div class="index-card">
+                  <h3 class="index-title">
+                    <a href={localePath(locale, category.slug)}>{category.title[locale]}</a>
+                  </h3>
+                  <p class="index-count">{ui.categoriesCount.replace('{n}', String(count))}</p>
+                  <p class="index-summary">
+                    {firstSentence(category.intro[locale], locale === 'zh' ? 60 : 110)}
+                  </p>
+                </div>
+              );
+            })
+          }
+        </div>
+      </section>
+
       <section class="section" data-featured aria-labelledby="featured-title">
         <div class="section-head">
           <h2 id="featured-title">{ui.featuredTitle}</h2>
@@ -48,13 +72,6 @@ const featured = featuredEntries();
         <div class="grid">
           {featured.map((entry) => <EntryCard entry={entry} locale={locale} filterable={false} />)}
         </div>
-      </section>
-
-      <section class="section" aria-labelledby="categories-title">
-        <div class="section-head">
-          <h2 id="categories-title">{ui.categoriesTitle}</h2>
-        </div>
-        <CategoryNav locale={locale} />
       </section>
     </div>
 
