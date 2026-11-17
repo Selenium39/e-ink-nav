@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CategoryNav from '../components/CategoryNav.astro';
 import FamilyNav from '../components/FamilyNav.astro';
 import Footer from '../components/Footer.astro';
 import { SITE, UMAMI_SCRIPT_SRC, UMAMI_WEBSITE_ID } from '../config';
@@ -13,9 +14,11 @@ interface Props {
   jsonLd?: Record<string, unknown>;
   robots?: string;
   navHome?: boolean;
+  currentCategory?: string;
 }
 
-const { locale, title, description, slug = '', jsonLd, robots = 'index,follow', navHome = slug === '' } = Astro.props;
+const { locale, title, description, slug = '', jsonLd, robots = 'index,follow', navHome = slug === '', currentCategory } =
+  Astro.props;
 const ui = useUi(locale);
 const indexable = !robots.includes('noindex');
 const path = localePath(locale, slug);
@@ -77,6 +80,7 @@ const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
   <body>
     <a class="skip" href="#content">{ui.skip}</a>
     <FamilyNav locale={locale} slug={slug} home={navHome} />
+    <CategoryNav locale={locale} current={currentCategory} />
     <slot />
     <Footer locale={locale} />
     <script>

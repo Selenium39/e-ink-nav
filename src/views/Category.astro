@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import CategoryNav from '../components/CategoryNav.astro';
 import EntryCard from '../components/EntryCard.astro';
 import FilterBar from '../components/FilterBar.astro';
 import {
@@ -35,6 +34,7 @@ const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => ca
   title={title}
   description={category.meta[locale]}
   jsonLd={itemListLd(category.title[locale], list)}
+  currentCategory={slug}
 >
   <main id="content">
     <div class="wrap">
@@ -70,7 +70,6 @@ const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => ca
           {list.map((entry) => <EntryCard entry={entry} locale={locale} />)}
         </div>
       </section>
-      <CategoryNav locale={locale} current={slug} />
       <aside class="cta">
         <p class="eyebrow">{ui.ctaEyebrow}</p>
         <h2>{cta.title[locale]}</h2>

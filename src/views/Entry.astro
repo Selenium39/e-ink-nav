@@ -50,7 +50,14 @@ const jsonLd = {
 };
 ---
 
-<Base locale={locale} slug={slug} title={title} description={description} jsonLd={jsonLd}>
+<Base
+  locale={locale}
+  slug={slug}
+  title={title}
+  description={description}
+  jsonLd={jsonLd}
+  currentCategory={entry.category}
+>
   <main id="content">
     <div class="wrap">
       <nav class="crumb" aria-label={ui.breadcrumbLabel}>
