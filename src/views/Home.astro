@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import CategoryNav from '../components/CategoryNav.astro';
+import EntryCard from '../components/EntryCard.astro';
+import FilterBar from '../components/FilterBar.astro';
+import {
+  categories,
+  entries,
+  entriesIn,
+  featuredEntries,
+  itemListLd,
+  usedFormats,
+  usedLanguages,
+  usedPricing,
+} from '../lib/catalog';
+import { localePath, useUi, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const ui = useUi(locale);
+const title = `${ui.heroTitle} — nav.e-ink.me`;
+const featured = featuredEntries();
+---
+
+<Base
+  locale={locale}
+  title={title}
+  description={ui.homeDescription}
+  jsonLd={itemListLd(ui.heroTitle, entries)}
+>
+  <main id="content">
+    <div class="wrap">
+      <header class="hero">
+        <p class="eyebrow">{ui.heroEyebrow}</p>
+        <h1>{ui.heroTitle}</h1>
+        <p class="lede">{ui.heroLede}</p>
+        <p class="redline">{ui.heroRedline}</p>
+      </header>
+
+      <section class="section" data-featured aria-labelledby="featured-title">
+        <div class="section-head">
+          <h2 id="featured-title">{ui.featuredTitle}</h2>
+          <p class="note">{ui.featuredNote}</p>
+        </div>
+        <div class="grid">
+          {featured.map((entry) => <EntryCard entry={entry} locale={locale} filterable={false} />)}
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="categories-title">
+        <div class="section-head">
+          <h2 id="categories-title">{ui.categoriesTitle}</h2>
+        </div>
+        <CategoryNav locale={locale} />
+      </section>
+    </div>
+
+    <FilterBar locale={locale} formats={usedFormats()} languages={usedLanguages()} pricing={usedPricing()} />
+
+    <div class="wrap section" data-catalog data-count-template={ui.filtersCount}>
+      <h2 class="section-head">{ui.homeAllTitle}</h2>
+      <p class="empty" data-empty hidden>{ui.filtersEmpty}</p>
+      {
+        categories.map((category) => (
+          <section class="section" data-group aria-labelledby={`group-${category.slug}`}>
+            <div class="section-head">
+              <h3 id={`group-${category.slug}`}>
+                <a href={localePath(locale, category.slug)}>{category.title[locale]}</a>
+              </h3>
+              <p class="meta" data-group-count>{entriesIn(category.slug).length}</p>
+            </div>
+            <div class="grid">
+              {entriesIn(category.slug).map((entry) => (
+                <EntryCard entry={entry} locale={locale} />
+              ))}
+            </div>
+          </section>
+        ))
+      }
+    </div>
+  </main>
+</Base>

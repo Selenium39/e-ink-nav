@@ -1,0 +1,24 @@
+{
+  "name": "e-ink-nav",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "nav.e-ink.me — a static, bilingual catalog of legal ebook resources.",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:data": "node scripts/check-data.mjs",
+    "check:filter": "node scripts/test-filter.mjs",
+    "check": "npm run check:data && npm run check:filter",
+    "check:dist": "node scripts/check-dist.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.5",
+    "astro": "^7.4.12",
+    "js-yaml": "^5.5.0"
+  }
+}
