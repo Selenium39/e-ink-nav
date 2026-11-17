@@ -54,9 +54,16 @@ function initTheme(): void {
     syncThemeChrome(true);
   });
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+  const scheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const onScheme = () => {
     if (!root.hasAttribute('data-theme')) syncThemeChrome(false);
-  });
+  };
+  if (typeof scheme.addEventListener === 'function') {
+    scheme.addEventListener('change', onScheme);
+  } else {
+    const legacy = scheme as MediaQueryList & { addListener?: (listener: () => void) => void };
+    legacy.addListener?.(onScheme);
+  }
 }
 
 function initCatalog(): void {
