@@ -8,9 +8,11 @@ export const CONTACT_EMAIL = 'openminimax@gmail.com';
  * Umami website id.
  * Leave this an empty string to skip analytics entirely — the script tag is
  * not rendered, and the build does not contact Umami.
- * Set a real id (and, if you self-host, UMAMI_SCRIPT_SRC) when the site is ready.
+ * NOTE: this intentionally uses e-ink.me's website id (Alex, 2026-11-17 —
+ * the separate nav website was deleted from Umami). Filter by hostname in
+ * Umami to tell nav.e-ink.me traffic apart from e-ink.me traffic.
  */
-export const UMAMI_WEBSITE_ID = '5729785d-21a0-455f-86da-812ffb13ecb2';
+export const UMAMI_WEBSITE_ID = '1d1fb9fa-b17e-4b56-8f34-bcf9b89143e4';
 
 /** Used only when UMAMI_WEBSITE_ID is a non-empty string. */
 export const UMAMI_SCRIPT_SRC = 'https://umami.selenium39.me/script.js';
