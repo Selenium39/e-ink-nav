@@ -437,6 +437,68 @@ input {
   text-decoration: none;
 }
 
+.favicon-lg {
+  width: 40px;
+  height: 40px;
+  margin-top: 0.3rem;
+  flex: none;
+}
+
+.entry-head h1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+  margin-bottom: 0.75rem;
+}
+
+.facts {
+  max-width: 40rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9rem) 1fr;
+  gap: 0.6rem;
+  padding-block: 0.45rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.facts dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.action-link {
+  display: inline-block;
+  margin-top: 1.4rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.ext {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.ext:hover {
+  color: var(--accent);
+}
+
 .prose {
   max-width: 40rem;
   margin-top: 1rem;
@@ -509,5 +571,10 @@ input {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .fact {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
   }
 }

@@ -30,6 +30,7 @@ export interface Entry {
   name: string;
   url: string;
   description: Localized;
+  long: Localized;
   category: string;
   formats: string[];
   languages: string[];
@@ -64,6 +65,12 @@ export function categoryBySlug(slug: string): Category {
 
 export function entriesIn(slug: string): Entry[] {
   return entries.filter((entry) => entry.category === slug);
+}
+
+export function entryById(id: string): Entry {
+  const entry = entries.find((item) => item.id === id);
+  if (!entry) throw new Error(`Unknown entry: ${id}`);
+  return entry;
 }
 
 const HOUSE_IDS = new Set(['eink-me', 'iloveepub']);

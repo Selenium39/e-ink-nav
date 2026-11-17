@@ -164,6 +164,7 @@ export function assertCatalog(data) {
       'name',
       'url',
       'description',
+      'long',
       'category',
       'formats',
       'languages',
@@ -202,6 +203,13 @@ export function assertCatalog(data) {
       urls.set(entry.url, entry.id);
     }
     requireLocales(entry.description, `${where}.description`, errors);
+    requireLocales(entry.long, `${where}.long`, errors);
+    if (isString(entry.long?.en) && englishWords(entry.long.en) < 120) {
+      errors.push(`${where}.long.en has ${englishWords(entry.long.en)} words (need 120+)`);
+    }
+    if (isString(entry.long?.zh) && cjkChars(entry.long.zh) < 200) {
+      errors.push(`${where}.long.zh has ${cjkChars(entry.long.zh)} 汉字 (need 200+)`);
+    }
     if (isString(entry.description?.en)) {
       const key = entry.description.en;
       if (key.length < 40) errors.push(`${where}.description.en is too short`);
