@@ -1,5 +1,5 @@
 ---
-import { FAMILY } from '../config';
+import { FAMILY, SITE_NAME } from '../config';
 import { localePath, useUi, type Locale } from '../i18n/ui';
 import LangSwitch from './LangSwitch.astro';
 import ThemeToggle from './ThemeToggle.astro';
@@ -16,28 +16,30 @@ const ui = useUi(locale);
 
 <header class="family">
   <div class="wrap family-row">
-    <nav aria-label={ui.familyLabel}>
-      <ul>
-        {
-          FAMILY.map((item) => {
-            const href = item.id === 'nav' ? localePath(locale) : item.href;
-            const label = ui.family[item.id];
-            const current = item.id === 'nav' && home;
-            return (
-              <li>
-                <a
-                  href={href}
-                  aria-current={current ? 'page' : undefined}
-                  rel={item.external ? 'noopener noreferrer' : undefined}
-                >
-                  {label}
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </nav>
+    <div class="brand-row">
+      <a class="logo" href={localePath(locale)}>{SITE_NAME}</a>
+      <nav aria-label={ui.familyLabel}>
+        <ul>
+          {
+            FAMILY.map((item) => {
+              const label = ui.family[item.id];
+              const current = item.id === 'nav' && home;
+              return (
+                <li>
+                  <a
+                    href={item.href}
+                    aria-current={current ? 'page' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                  >
+                    {label}
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </nav>
+    </div>
     <div class="tools">
       <LangSwitch locale={locale} slug={slug} />
       <ThemeToggle locale={locale} />

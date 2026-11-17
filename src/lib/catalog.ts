@@ -1,4 +1,5 @@
 import rawCatalog from '../data/sites.yaml?raw';
+import { SITE, SITE_NAME } from '../config';
 import { assertCatalog, parseCatalog } from '../data/load.mjs';
 import { formatOrder, languageOrder, pricingOrder, type Locale } from '../i18n/ui';
 
@@ -187,6 +188,11 @@ export function itemListLd(name: string, list: Entry[]) {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: SITE_NAME,
+      url: `${SITE}/`,
+    },
     numberOfItems: list.length,
     itemListElement: list.map((entry, index) => ({
       '@type': 'ListItem',

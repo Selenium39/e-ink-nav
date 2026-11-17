@@ -1,8 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import EntryCard from '../components/EntryCard.astro';
+import { SITE, SITE_NAME } from '../config';
 import { categoryBySlug, domainOf, entriesIn, entryById, paragraphs } from '../lib/catalog';
-import { absoluteUrl, htmlLang, languageName, localePath, useUi, type Locale } from '../i18n/ui';
+import { absoluteUrl, documentTitle, htmlLang, languageName, localePath, useUi, type Locale } from '../i18n/ui';
 
 interface Props {
   locale: Locale;
@@ -16,7 +17,7 @@ const category = categoryBySlug(entry.category);
 const domain = domainOf(entry.url);
 const slug = `sites/${entry.id}`;
 const path = localePath(locale, slug);
-const title = `${entry.name} — nav.e-ink.me`;
+const title = documentTitle(entry.name);
 const description = entry.description[locale];
 const related = entriesIn(category.slug)
   .filter((item) => item.id !== entry.id)
@@ -45,6 +46,11 @@ const jsonLd = {
       description,
       url: absoluteUrl(path),
       inLanguage: htmlLang[locale],
+      isPartOf: {
+        '@type': 'WebSite',
+        name: SITE_NAME,
+        url: `${SITE}/`,
+      },
     },
   ],
 };

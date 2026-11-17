@@ -28,8 +28,16 @@ def latin(size):
 
 
 def cjk(size, index=2):
-    # NotoSerifCJK-Bold.ttc face order: 0 JP, 1 KR, 2 SC, 3 TC, 4 HK
+    # NotoSerifCJK-Bold.ttc face order: 0 JP, 1 KR, 2 SC, 3 TC, 4 HK.
+    # OG_CJK_FONT may point at a single-face OTF (Simplified Chinese Bold).
+    override = os.environ.get("OG_CJK_FONT")
+    if override:
+        return ImageFont.truetype(override, size)
     return ImageFont.truetype(SERIF_CJK_TTC, size, index=index)
+
+
+def tracked(text):
+    return " ".join(text)
 
 
 def paper_bg():
@@ -67,7 +75,7 @@ def make(lines, sub, headline_font, sub_font, hsize, wordmark_y, start_y, gap, p
     draw_book(d, 268, H // 2, 300)
 
     tx = 500
-    d.text((tx, wordmark_y), " ".join(list("NAV.E-INK.ME")), font=latin(30), fill=ACCENT)
+    d.text((tx, wordmark_y), tracked("INKME NAV"), font=latin(30), fill=ACCENT)
     y = start_y
     for line in lines:
         d.text((tx, y), line, font=headline_font, fill=INK)

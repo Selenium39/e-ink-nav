@@ -1,12 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
-import { localePath, useUi } from '../i18n/ui';
+import { documentTitle, localePath, useUi } from '../i18n/ui';
 
 const en = useUi('en');
 const zh = useUi('zh');
 ---
 
-<Base locale="en" navHome={false} title={`${en.notFoundTitle} — nav.e-ink.me`} description={en.notFoundBody} robots="noindex">
+<Base locale="en" navHome={false} title={documentTitle(en.notFoundTitle)} description={en.notFoundBody} robots="noindex">
   <main id="content" class="wrap">
     <h1>{en.notFoundTitle}</h1>
     <p class="lede" style="margin-top:0.75rem">{en.notFoundBody}</p>

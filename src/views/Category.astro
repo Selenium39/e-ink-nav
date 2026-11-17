@@ -12,7 +12,7 @@ import {
   paragraphs,
   pricingOf,
 } from '../lib/catalog';
-import { localePath, useUi, type Locale } from '../i18n/ui';
+import { documentTitle, localePath, useUi, type Locale } from '../i18n/ui';
 
 interface Props {
   locale: Locale;
@@ -23,7 +23,7 @@ const { locale, slug } = Astro.props;
 const ui = useUi(locale);
 const category = categoryBySlug(slug);
 const list = entriesIn(slug);
-const title = `${category.title[locale]} — nav.e-ink.me`;
+const title = documentTitle(category.title[locale]);
 const cta = category.cta;
 const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => candidate.slug === item)!);
 ---

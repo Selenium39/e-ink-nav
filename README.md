@@ -1,4 +1,4 @@
-# nav.e-ink.me — a directory of legal ebook resources
+# Inkme Nav — a directory of legal ebook resources
 
 [English](README.md) · [中文](README.zh-CN.md)
 
@@ -145,14 +145,15 @@ Not an ebook store. These sit next to the book you are already reading, for the 
 
 The site has no submission form and no accounts. Suggestions and corrections go to [openminimax@gmail.com](mailto:openminimax@gmail.com). Only legal resources are considered.
 
-## The e-ink.me family
+## The Inkme family
 
-nav is the discovery layer — it points at resources. The rest of the family does things with them:
+Inkme Nav is the discovery layer — it points at resources. The rest of the family does things with them:
 
-- [e-ink.me](https://e-ink.me) — ebook tools: web page to EPUB, format conversion
-- [news.e-ink.me](https://news.e-ink.me) — tech news for e-ink screens
-- [wiki.e-ink.me](https://wiki.e-ink.me) — the ebook knowledge base
-- [games.e-ink.me](https://games.e-ink.me) — browser games for e-ink screens
+- [Inkme](https://e-ink.me) — ebook tools: web page to EPUB, format conversion
+- [Inkme News](https://news.e-ink.me) — tech news for e-ink screens
+- [Inkme Games](https://games.e-ink.me) — browser games for e-ink screens
+- [Inkme Nav](https://nav.e-ink.me) — this directory
+- [Inkme Wiki](https://wiki.e-ink.me) — the ebook knowledge base
 
 ## About this repository
 
