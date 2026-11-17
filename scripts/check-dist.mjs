@@ -15,10 +15,10 @@ const slugs = [
 
 const pages = [
   ['/', 'dist/index.html', 'en', 52],
-  ['/zh', 'dist/zh/index.html', 'zh-CN', 52],
+  ['/zh', 'dist/zh.html', 'zh-CN', 52],
   ...slugs.flatMap((slug) => [
-    [`/${slug}`, `dist/${slug}/index.html`, 'en', null],
-    [`/zh/${slug}`, `dist/zh/${slug}/index.html`, 'zh-CN', null],
+    [`/${slug}`, `dist/${slug}.html`, 'en', null],
+    [`/zh/${slug}`, `dist/zh/${slug}.html`, 'zh-CN', null],
   ]),
 ];
 
@@ -69,31 +69,45 @@ for (const [url, file, lang, homeCount] of pages) {
   if (homeCount === null && !html.includes('class="prose"')) fail(`${url} missing intro`);
 }
 
-const zhStores = fs.readFileSync('dist/zh/ebook-stores/index.html', 'utf8');
-if (!zhStores.includes('只有 MOBI')) fail('zh stores CTA hook');
-if (!zhStores.includes('https://e-ink.me/zh/convert/mobi-to-epub')) fail('zh stores CTA url');
-if (!zhStores.includes('href="/zh"') && !zhStores.includes("href='/zh'")) {
-  /* language switch or crumb */
+function readDist(file, label) {
+  if (!fs.existsSync(file)) {
+    fail(`missing ${label}: ${file}`);
+    return '';
+  }
+  return fs.readFileSync(file, 'utf8');
 }
-if (!zhStores.includes('hreflang="en" href="https://nav.e-ink.me/ebook-stores"')) fail('zh stores en alternate');
 
-const enHome = fs.readFileSync('dist/index.html', 'utf8');
-if (!enHome.includes('href="/zh"')) fail('home zh switch');
-if (!enHome.includes('data-featured')) fail('home featured');
-const zhHome = fs.readFileSync('dist/zh/index.html', 'utf8');
-if (!zhHome.includes('电子书资源导航')) fail('zh home title');
-if (!zhHome.includes('推荐收录 / 勘误')) fail('zh footer');
+const zhStores = readDist('dist/zh/ebook-stores.html', 'zh stores');
+if (zhStores) {
+  if (!zhStores.includes('只有 MOBI')) fail('zh stores CTA hook');
+  if (!zhStores.includes('https://e-ink.me/zh/convert/mobi-to-epub')) fail('zh stores CTA url');
+  if (!zhStores.includes('href="/zh"') && !zhStores.includes("href='/zh'")) fail('zh stores link to /zh');
+  if (!zhStores.includes('hreflang="en" href="https://nav.e-ink.me/ebook-stores"')) fail('zh stores en alternate');
+}
 
-const sitemap = fs.readFileSync('dist/sitemap-0.xml', 'utf8');
-const locs = sitemap.match(/<loc>/g)?.length ?? 0;
-if (locs !== 18) fail(`sitemap has ${locs} urls, expected 18`);
-if (sitemap.includes('/404')) fail('sitemap includes 404');
+const enHome = readDist('dist/index.html', 'en home');
+if (enHome && !enHome.includes('href="/zh"')) fail('home zh switch');
+if (enHome && !enHome.includes('data-featured')) fail('home featured');
+const zhHome = readDist('dist/zh.html', 'zh home');
+if (zhHome && !zhHome.includes('电子书资源导航')) fail('zh home title');
+if (zhHome && !zhHome.includes('推荐收录 / 勘误')) fail('zh footer');
 
-const robots = fs.readFileSync('dist/robots.txt', 'utf8');
-if (!robots.includes('Sitemap: https://nav.e-ink.me/sitemap-index.xml')) fail('robots sitemap');
+const notFound = readDist('dist/404.html', '404');
+if (notFound && notFound.includes('rel="canonical"')) fail('404 should not emit a canonical');
+if (notFound && !notFound.includes('lang="zh-CN"')) fail('404 chinese block lang');
+
+const sitemap = readDist('dist/sitemap-0.xml', 'sitemap');
+if (sitemap) {
+  const locs = sitemap.match(/<loc>/g)?.length ?? 0;
+  if (locs !== 18) fail(`sitemap has ${locs} urls, expected 18`);
+  if (sitemap.includes('/404')) fail('sitemap includes 404');
+}
+
+const robots = readDist('dist/robots.txt', 'robots');
+if (robots && !robots.includes('Sitemap: https://nav.e-ink.me/sitemap-index.xml')) fail('robots sitemap');
 
 if (failed) {
   console.error(`${failed} dist check(s) failed`);
   process.exit(1);
 }
-console.log(`OK dist: ${pages.length} pages, sitemap ${locs} urls, filters and ItemList present, Umami omitted.`);
+console.log(`OK dist: ${pages.length} pages, filters and ItemList present, Umami omitted.`);

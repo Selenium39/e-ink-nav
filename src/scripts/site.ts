@@ -16,25 +16,42 @@ function readEntry(el: HTMLElement): EntryData {
   };
 }
 
+function currentTheme(): 'dark' | 'light' {
+  const explicit = document.documentElement.getAttribute('data-theme');
+  if (explicit === 'dark' || explicit === 'light') return explicit;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function syncThemeChrome(explicit: boolean): void {
+  const theme = currentTheme();
+  const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+  if (button) button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+  if (!explicit) return;
+  const color = theme === 'dark' ? '#0A0A0A' : '#FAF9F6';
+  const metas = [...document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')];
+  const [first, ...rest] = metas;
+  if (first) {
+    first.setAttribute('content', color);
+    first.removeAttribute('media');
+  }
+  for (const extra of rest) extra.remove();
+}
+
 function initTheme(): void {
   const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
   if (!button) return;
   const root = document.documentElement;
-
-  const current = (): 'dark' | 'light' => {
-    const explicit = root.getAttribute('data-theme');
-    if (explicit === 'dark' || explicit === 'light') return explicit;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  };
+  syncThemeChrome(root.hasAttribute('data-theme'));
 
   button.addEventListener('click', () => {
-    const next = current() === 'dark' ? 'light' : 'dark';
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try {
       localStorage.setItem('theme', next);
     } catch {
       /* private mode */
     }
+    syncThemeChrome(true);
   });
 }
 
@@ -71,7 +88,10 @@ function initCatalog(): void {
       if (ok) shown += 1;
     }
     for (const group of groups) {
-      group.hidden = group.querySelector('[data-entry]:not([hidden])') === null;
+      const visible = group.querySelectorAll('[data-entry]:not([hidden])').length;
+      group.hidden = visible === 0;
+      const groupCount = group.querySelector('[data-group-count]');
+      if (groupCount) groupCount.textContent = String(visible);
     }
     if (featured) featured.hidden = active;
     if (countEl) countEl.textContent = template.replace('{n}', String(shown));

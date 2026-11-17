@@ -19,62 +19,6 @@ export const CATEGORY_SLUGS = [
   'dictionaries',
 ];
 
-/** id, official URL, category. The seed list from PLAN.md — nothing added, nothing dropped. */
-export const REQUIRED_ENTRIES = [
-  ['project-gutenberg', 'https://www.gutenberg.org', 'free-ebooks'],
-  ['standard-ebooks', 'https://standardebooks.org', 'free-ebooks'],
-  ['internet-archive', 'https://archive.org', 'free-ebooks'],
-  ['open-library', 'https://openlibrary.org', 'free-ebooks'],
-  ['manybooks', 'https://manybooks.net', 'free-ebooks'],
-  ['wikisource', 'https://wikisource.org', 'free-ebooks'],
-  ['doab', 'https://www.doabooks.org', 'free-ebooks'],
-  ['oapen', 'https://library.oapen.org', 'free-ebooks'],
-  ['hathitrust', 'https://www.hathitrust.org', 'free-ebooks'],
-  ['openstax', 'https://openstax.org', 'free-ebooks'],
-  ['ctext', 'https://ctext.org', 'free-ebooks'],
-  ['shuge', 'https://www.shuge.org', 'free-ebooks'],
-  ['kindle-store', 'https://www.amazon.com/kindle-store', 'ebook-stores'],
-  ['kobo-store', 'https://www.kobo.com', 'ebook-stores'],
-  ['google-play-books', 'https://play.google.com/store/books', 'ebook-stores'],
-  ['apple-books', 'https://books.apple.com', 'ebook-stores'],
-  ['weread', 'https://weread.qq.com', 'ebook-stores'],
-  ['douban-read', 'https://read.douban.com', 'ebook-stores'],
-  ['jd-read', 'https://ebooks.jd.com', 'ebook-stores'],
-  ['libby', 'https://libbyapp.com', 'library-borrowing'],
-  ['hoopla', 'https://www.hoopladigital.com', 'library-borrowing'],
-  ['nlc', 'https://www.nlc.cn', 'library-borrowing'],
-  ['koreader', 'https://koreader.rocks', 'reading-apps'],
-  ['calibre', 'https://calibre-ebook.com', 'reading-apps'],
-  ['moon-reader', 'https://www.moondownload.com', 'reading-apps'],
-  ['readera', 'https://readera.org', 'reading-apps'],
-  ['fbreader', 'https://fbreader.org', 'reading-apps'],
-  ['legado', 'https://github.com/gedoor/legado', 'reading-apps'],
-  ['thorium', 'https://www.edrlab.org/software/thorium-reader/', 'reading-apps'],
-  ['kindle-app', 'https://www.amazon.com/kindle-dbs/fd/kcp', 'reading-apps'],
-  ['kobo-app', 'https://www.kobo.com', 'reading-apps'],
-  ['weread-app', 'https://weread.qq.com', 'reading-apps'],
-  ['eink-me', 'https://e-ink.me', 'ebook-tools'],
-  ['iloveepub', 'https://iloveepub.com', 'ebook-tools'],
-  ['sigil', 'https://sigil-ebook.com', 'ebook-tools'],
-  ['pandoc', 'https://pandoc.org', 'ebook-tools'],
-  ['librivox', 'https://librivox.org', 'audiobooks'],
-  ['audible', 'https://www.audible.com', 'audiobooks'],
-  ['ximalaya', 'https://www.ximalaya.com', 'audiobooks'],
-  ['storytel', 'https://www.storytel.com', 'audiobooks'],
-  ['mobileread', 'https://www.mobileread.com', 'communities'],
-  ['goodreads', 'https://www.goodreads.com', 'communities'],
-  ['douban-books', 'https://book.douban.com', 'communities'],
-  ['reddit-ereader', 'https://www.reddit.com/r/ereader/', 'communities'],
-  ['bookfere', 'https://bookfere.com', 'communities'],
-  ['teleread', 'https://teleread.org', 'communities'],
-  ['news-eink', 'https://news.e-ink.me', 'communities'],
-  ['wiki-eink', 'https://wiki.e-ink.me', 'communities'],
-  ['games-eink', 'https://games.e-ink.me', 'communities'],
-  ['zdic', 'https://www.zdic.net', 'dictionaries'],
-  ['wiktionary', 'https://www.wiktionary.org', 'dictionaries'],
-  ['wordreference', 'https://www.wordreference.com', 'dictionaries'],
-];
-
 const DUPLICATE_URLS_OK = new Set(['https://weread.qq.com', 'https://www.kobo.com']);
 
 const BLOCKED_HOSTS = [
@@ -208,8 +152,6 @@ export function assertCatalog(data) {
   const seen = new Set();
   const urls = new Map();
   const descriptions = new Set();
-  const counts = Object.fromEntries(CATEGORY_SLUGS.map((slug) => [slug, 0]));
-  let featured = 0;
 
   entries.forEach((entry, index) => {
     const where = `entries[${index}]${entry?.id ? ` (${entry.id})` : ''}`;
@@ -274,8 +216,6 @@ export function assertCatalog(data) {
     }
     if (!CATEGORY_SLUGS.includes(entry.category)) {
       errors.push(`${where} category "${entry.category}" is not one of the 8 slugs`);
-    } else {
-      counts[entry.category] += 1;
     }
     if (!Array.isArray(entry.formats)) {
       errors.push(`${where}.formats must be an array`);
@@ -298,7 +238,6 @@ export function assertCatalog(data) {
     if (!PRICING.includes(entry.pricing)) errors.push(`${where}.pricing invalid`);
     if (typeof entry.registration !== 'boolean') errors.push(`${where}.registration must be boolean`);
     if (typeof entry.featured !== 'boolean') errors.push(`${where}.featured must be boolean`);
-    if (entry.featured) featured += 1;
     requireLocales(entry.region, `${where}.region`, errors, { allowEmpty: true });
     if (isString(entry.region?.en) && isString(entry.region?.zh)) {
       const enEmpty = entry.region.en.trim() === '';
@@ -306,39 +245,6 @@ export function assertCatalog(data) {
       if (enEmpty !== zhEmpty) errors.push(`${where}.region must be filled in both languages or neither`);
     }
   });
-
-  if (entries.length !== REQUIRED_ENTRIES.length) {
-    errors.push(`expected ${REQUIRED_ENTRIES.length} entries, found ${entries.length}`);
-  }
-  for (const [id, url, category] of REQUIRED_ENTRIES) {
-    const entry = entries.find((item) => item?.id === id);
-    if (!entry) {
-      errors.push(`missing seed entry ${id}`);
-      continue;
-    }
-    if (entry.url !== url) errors.push(`${id} url must be ${url}`);
-    if (entry.category !== category) errors.push(`${id} category must be ${category}`);
-  }
-  for (const id of seen) {
-    if (!REQUIRED_ENTRIES.some(([requiredId]) => requiredId === id)) {
-      errors.push(`unexpected entry ${id} — do not add beyond the seed list`);
-    }
-  }
-
-  const expectedCounts = {
-    'free-ebooks': 12,
-    'ebook-stores': 7,
-    'library-borrowing': 3,
-    'reading-apps': 10,
-    'ebook-tools': 4,
-    audiobooks: 4,
-    communities: 9,
-    dictionaries: 3,
-  };
-  for (const [slug, count] of Object.entries(expectedCounts)) {
-    if (counts[slug] !== count) errors.push(`${slug} has ${counts[slug]} entries, expected ${count}`);
-  }
-  if (featured < 6 || featured > 10) errors.push(`featured count is ${featured}, expected 6–10`);
 
   for (const id of ['eink-me', 'iloveepub']) {
     const entry = entries.find((item) => item?.id === id);

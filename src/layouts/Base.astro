@@ -12,10 +12,12 @@ interface Props {
   slug?: string;
   jsonLd?: Record<string, unknown>;
   robots?: string;
+  navHome?: boolean;
 }
 
-const { locale, title, description, slug = '', jsonLd, robots = 'index,follow' } = Astro.props;
+const { locale, title, description, slug = '', jsonLd, robots = 'index,follow', navHome = slug === '' } = Astro.props;
 const ui = useUi(locale);
+const indexable = !robots.includes('noindex');
 const path = localePath(locale, slug);
 const canonical = absoluteUrl(path);
 const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
@@ -29,13 +31,14 @@ const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
-    <link rel="canonical" href={canonical} />
+    {indexable && <link rel="canonical" href={canonical} />}
     {
-      locales.map((code) => (
-        <link rel="alternate" hreflang={hreflang[code]} href={absoluteUrl(localePath(code, slug))} />
-      ))
+      indexable &&
+        locales.map((code) => (
+          <link rel="alternate" hreflang={hreflang[code]} href={absoluteUrl(localePath(code, slug))} />
+        ))
     }
-    <link rel="alternate" hreflang="x-default" href={absoluteUrl(localePath('en', slug))} />
+    {indexable && <link rel="alternate" hreflang="x-default" href={absoluteUrl(localePath('en', slug))} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="theme-color" content="#FAF9F6" media="(prefers-color-scheme: light)" />
@@ -43,7 +46,7 @@ const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
+    {indexable && <meta property="og:url" content={canonical} />}
     <meta property="og:locale" content={locale === 'zh' ? 'zh_CN' : 'en_US'} />
     {json && <script type="application/ld+json" set:html={json} />}
     <script is:inline>
@@ -64,7 +67,7 @@ const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
   </head>
   <body>
     <a class="skip" href="#content">{ui.skip}</a>
-    <FamilyNav locale={locale} slug={slug} />
+    <FamilyNav locale={locale} slug={slug} home={navHome} />
     <slot />
     <Footer locale={locale} />
     <script>

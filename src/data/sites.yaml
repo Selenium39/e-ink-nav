@@ -97,8 +97,8 @@ categories:
         en: Only have MOBI?
         zh: 只有 MOBI？
       body:
-        en: Only have MOBI? Convert it to EPUB in one click, then read it on a device that does not take Kindle files. e-ink.me charges credits after a small free starting balance.
-        zh: 只有 MOBI？一键转成 EPUB，再放进不吃 Kindle 格式的阅读器。e-ink.me 在少量免费额度之后按次计费。
+        en: Convert it to EPUB in one click, then read it on a device that does not take Kindle files. e-ink.me charges credits after a small free starting balance.
+        zh: 一键转成 EPUB，再放进不吃 Kindle 格式的阅读器。e-ink.me 在少量免费额度之后按次计费。
       action:
         en: Convert MOBI to EPUB
         zh: MOBI 转 EPUB
@@ -689,11 +689,11 @@ entries:
     url: https://weread.qq.com
     description:
       en: >
-        微信读书 is a Chinese reading service on a WeChat account, with a large free catalog, paid titles, and a membership card. Store books stay inside the app. The app can also open local files you already own.
+        微信读书 is a Chinese reading service on a WeChat account, with a large free catalog, paid titles, and a membership card. Store books stay inside the app and are not handed out as open files.
       zh: >
-        微信读书用微信账号阅读，有大批免费书、单本付费和无限卡会员。商店里的书留在应用内。应用也能打开你本来就有的本地文件。
+        微信读书用微信账号阅读，有大批免费书、单本付费和无限卡会员。商店里的书留在应用内，不会以开放文件发给你。
     category: ebook-stores
-    formats: [EPUB, PDF, TXT, MOBI, AZW3]
+    formats: []
     languages: [zh]
     pricing: freemium
     registration: true

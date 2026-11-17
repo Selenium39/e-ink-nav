@@ -7,9 +7,10 @@ import ThemeToggle from './ThemeToggle.astro';
 interface Props {
   locale: Locale;
   slug?: string;
+  home?: boolean;
 }
 
-const { locale, slug = '' } = Astro.props;
+const { locale, slug = '', home = false } = Astro.props;
 const ui = useUi(locale);
 ---
 
@@ -21,7 +22,7 @@ const ui = useUi(locale);
           FAMILY.map((item) => {
             const href = item.id === 'nav' ? localePath(locale) : item.href;
             const label = ui.family[item.id];
-            const current = item.id === 'nav';
+            const current = item.id === 'nav' && home;
             return (
               <li>
                 <a

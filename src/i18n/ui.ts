@@ -1,11 +1,14 @@
+import { SITE } from '../config';
+
 /**
  * UI chrome strings. Entry blurbs and category essays live in src/data/sites.yaml.
  *
  * To add a locale:
- * 1. Append its code to `locales` (keep `defaultLocale` unprefixed).
- * 2. Add a folder src/pages/<code>/ that passes the new locale into the views.
- * 3. Fill every localized field in src/data/sites.yaml and every key below.
- * 4. Register the locale in astro.config.mjs (`i18n.locales` and sitemap `i18n`).
+ * 1. Append its code to `locales` here and to `LOCALES` in src/data/load.mjs.
+ * 2. Add htmlLang, hreflang, and every UI string below.
+ * 3. Add a folder src/pages/<code>/ that passes the new locale into the views.
+ * 4. Fill every localized field in src/data/sites.yaml.
+ * 5. Register the locale in astro.config.mjs (`i18n.locales` and sitemap `i18n`).
  */
 export const locales = ['en', 'zh'] as const;
 export type Locale = (typeof locales)[number];
@@ -28,8 +31,8 @@ export function localePath(locale: Locale, slug = ''): string {
 }
 
 export function absoluteUrl(pathname: string): string {
-  if (pathname === '/') return 'https://nav.e-ink.me/';
-  return `https://nav.e-ink.me${pathname}`;
+  if (pathname === '/') return `${SITE}/`;
+  return `${SITE}${pathname}`;
 }
 
 const ui = {
@@ -45,7 +48,7 @@ const ui = {
     },
     lang: { en: 'EN', zh: '中文' },
     langLabel: 'Language',
-    theme: { toggle: 'Toggle color theme', toDark: 'Dark', toLight: 'Light' },
+    theme: { toggle: 'Toggle dark or light theme', toDark: 'Dark', toLight: 'Light' },
     heroEyebrow: 'e-ink.me family',
     heroTitle: 'Legal ebook resources',
     heroLede:
@@ -153,7 +156,7 @@ export function useUi(locale: Locale): Messages {
   return ui[locale];
 }
 
-/** Full names for the language filter. Unknown codes fall back to themselves. */
+/** Full names for the language filter. Unknown codes fall back to the uppercased code. */
 export const languageNames: Record<Locale, Record<string, string>> = {
   en: {
     en: 'English',

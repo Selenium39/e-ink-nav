@@ -6,13 +6,15 @@ const en = useUi('en');
 const zh = useUi('zh');
 ---
 
-<Base locale="en" title={`${en.notFoundTitle} — nav.e-ink.me`} description={en.notFoundBody} robots="noindex">
+<Base locale="en" navHome={false} title={`${en.notFoundTitle} — nav.e-ink.me`} description={en.notFoundBody} robots="noindex">
   <main id="content" class="wrap">
     <h1>{en.notFoundTitle}</h1>
     <p class="lede" style="margin-top:0.75rem">{en.notFoundBody}</p>
     <p style="margin-top:0.75rem"><a href={localePath('en')}>{en.notFoundHome}</a></p>
-    <h2 style="margin-top:1.5rem">{zh.notFoundTitle}</h2>
-    <p class="lede" style="margin-top:0.75rem">{zh.notFoundBody}</p>
-    <p style="margin-top:0.75rem"><a href={localePath('zh')}>{zh.notFoundHome}</a></p>
+    <div lang="zh-CN">
+      <h2 style="margin-top:1.5rem">{zh.notFoundTitle}</h2>
+      <p class="lede" style="margin-top:0.75rem">{zh.notFoundBody}</p>
+      <p style="margin-top:0.75rem"><a href={localePath('zh')}>{zh.notFoundHome}</a></p>
+    </div>
   </main>
 </Base>

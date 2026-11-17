@@ -49,7 +49,9 @@ Category page essays, meta descriptions, and the e-ink.me call-to-action also li
 
 ## Languages
 
-English is the default and has no prefix. Chinese is `/zh/`. UI strings are in `src/i18n/ui.ts`. To add a locale later: add the code there, fill every localized field in `sites.yaml`, add `src/pages/<code>/`, and register the locale in `astro.config.mjs` (including the sitemap `i18n` block).
+English is the default and has no prefix. Chinese is `/zh/`. UI strings are in `src/i18n/ui.ts`. Adding a locale also means updating the hard-coded list in `src/data/load.mjs` (`LOCALES`), plus `htmlLang` and `hreflang` in `ui.ts`, a `src/pages/<code>/` folder, every localized field in `sites.yaml`, and `astro.config.mjs` (`i18n.locales` and the sitemap `i18n` block). `npm run check` rejects a locale that is missing from `LOCALES`.
+
+New listings are a data-file edit. The checker enforces the field schema and blocks known pirate hosts. It does not freeze the seed list.
 
 ## Analytics
 

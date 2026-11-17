@@ -1,4 +1,4 @@
-/** Deployed origin. Also set as `site` in astro.config.mjs for the sitemap. */
+/** Deployed origin. `astro.config.mjs` `site` and canonical URLs both use this. */
 export const SITE = 'https://nav.e-ink.me';
 
 /** Listing suggestions and corrections. There is no on-site form. */

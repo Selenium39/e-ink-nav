@@ -70,7 +70,7 @@ const featured = featuredEntries();
               <h3 id={`group-${category.slug}`}>
                 <a href={localePath(locale, category.slug)}>{category.title[locale]}</a>
               </h3>
-              <p class="meta">{entriesIn(category.slug).length}</p>
+              <p class="meta" data-group-count>{entriesIn(category.slug).length}</p>
             </div>
             <div class="grid">
               {entriesIn(category.slug).map((entry) => (

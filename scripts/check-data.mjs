@@ -18,4 +18,4 @@ for (const [slug, category] of Object.entries(data.categories)) {
     `  ${slug}: en ${englishWords(category.intro.en)} words, zh ${cjkChars(category.intro.zh)} 汉字`,
   );
 }
-console.log('Every seed entry has every field filled.');
+console.log('Every entry has all required fields and valid values.');

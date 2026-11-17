@@ -23,7 +23,7 @@ export interface Category {
   cta: Cta;
 }
 
-export type Pricing = 'free' | 'freemium' | 'subscription' | 'paid';
+export type Pricing = (typeof pricingOrder)[number];
 
 export interface Entry {
   id: string;
@@ -121,10 +121,23 @@ export function usedPricing(): Pricing[] {
   return pricingOf(entries);
 }
 
+function joinWrappedLines(part: string): string {
+  const lines = part
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean);
+  return lines.reduce((acc, line) => {
+    if (!acc) return line;
+    const cjk = /[\u3400-\u9fff]/;
+    const gap = cjk.test(acc.slice(-1)) && cjk.test(line[0] ?? '') ? '' : ' ';
+    return acc + gap + line;
+  }, '');
+}
+
 export function paragraphs(text: string): string[] {
   return text
     .split(/\n\s*\n/)
-    .map((part) => part.replace(/\s*\n\s*/g, ' ').trim())
+    .map((part) => joinWrappedLines(part))
     .filter(Boolean);
 }
 
