@@ -96,7 +96,7 @@
 | 站点 | 提供什么 | 费用 |
 | --- | --- | --- |
 | [Inkme](https://e-ink.me) | 网页转 EPUB，以及 MOBI、PDF、EPUB、HTML、TXT 互转*（本家族）* | 少量免费额度，之后付费 |
-| [iloveepub.com](https://iloveepub.com) | 浏览器里的 EPUB 工具集：压缩、合并、拆分、转换，文件不出本机*（本家族）* | 免费 |
+| [iloveepub](https://iloveepub.com) | 浏览器里的 EPUB 工具集：压缩、合并、拆分、转换，文件不出本机*（本家族）* | 免费 |
 | [Sigil](https://sigil-ebook.com) | 直接编辑 EPUB 的开源编辑器，改书而不是换包装 | 免费 |
 | [Pandoc](https://pandoc.org) | 命令行转换器：Markdown、DOCX、HTML 转 EPUB 和 PDF | 免费 |
 

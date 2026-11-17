@@ -208,8 +208,8 @@ categories:
       en: Ebook tools
       zh: 电子书工具
     meta:
-      en: Converters and editors for ebook files, including Inkme, iloveepub.com, Sigil, and Pandoc.
-      zh: 电子书转换和编辑工具，包括 Inkme、iloveepub.com、Sigil 和 Pandoc。
+      en: Converters and editors for ebook files, including Inkme, iloveepub, Sigil, and Pandoc.
+      zh: 电子书转换和编辑工具，包括 Inkme、iloveepub、Sigil 和 Pandoc。
     seeAlso:
       - reading-apps
       - free-ebooks
@@ -218,7 +218,7 @@ categories:
       en: |
         Tools are the unglamorous shelf, and they are the one that decides whether a legal file is actually pleasant to read. A public-domain download, a library loan, and a manuscript you wrote yourself can all arrive in the wrong shape. Conversion, repair, and editing are how a file becomes a book on a device.
 
-        Two of the tools here are part of this same family, so they get a short entry rather than a speech. Inkme turns a web page into an EPUB and converts among ebook and document formats, including MOBI, PDF, EPUB, HTML, and TXT. It is an account with a small free credit balance and then pay as you go. iloveepub.com is a different bargain: a set of EPUB utilities that run in the browser, including compress, merge, split, and a handful of conversions such as PDF to EPUB. The file stays on your machine, there is no account, and the tools are free. Use the first when you are grabbing a page from the web or need a server-side conversion. Use the second when you already have an EPUB and you do not want to upload it.
+        Two of the tools here are part of this same family, so they get a short entry rather than a speech. Inkme turns a web page into an EPUB and converts among ebook and document formats, including MOBI, PDF, EPUB, HTML, and TXT. It is an account with a small free credit balance and then pay as you go. iloveepub is a different bargain: a set of EPUB utilities that run in the browser, including compress, merge, split, and a handful of conversions such as PDF to EPUB. The file stays on your machine, there is no account, and the tools are free. Use the first when you are grabbing a page from the web or need a server-side conversion. Use the second when you already have an EPUB and you do not want to upload it.
 
         Sigil is the desktop editor for people who need to change the book, not just rewrap it. It edits EPUB directly: chapters, stylesheet, metadata, the table of contents. It is the right program when a Standard Ebooks-quality file is the goal and you are the one doing the work, or when a converted file has a broken contents page and a converter will only break it again. Sigil is free and open source. It is not a store, and it will not fetch books for you.
 
@@ -228,7 +228,7 @@ categories:
       zh: |
         工具这一栏不好看，却决定一份合法文件到底好不好读。公有领域的下载、图书馆的借阅、你自己写的稿子，都可能以错误的形状到达。转换、修复和编辑，是文件变成设备上那本书的过程。
 
-        这里有两件工具和本站同属一个家族，所以只给短短的条目，不给演说。Inkme 把网页做成 EPUB，也在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。它要账号，先给少量免费额度，之后按次计费。iloveepub.com 是另一种约定：一组在浏览器里运行的 EPUB 工具，包括压缩、合并、拆分，以及 PDF 转 EPUB 等几种转换。文件留在你的机器上，没有账号，工具免费。要从网页抓一篇文章，或需要服务器做的转换，用前者。你已经有 EPUB，而且不想上传，用后者。
+        这里有两件工具和本站同属一个家族，所以只给短短的条目，不给演说。Inkme 把网页做成 EPUB，也在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。它要账号，先给少量免费额度，之后按次计费。iloveepub 是另一种约定：一组在浏览器里运行的 EPUB 工具，包括压缩、合并、拆分，以及 PDF 转 EPUB 等几种转换。文件留在你的机器上，没有账号，工具免费。要从网页抓一篇文章，或需要服务器做的转换，用前者。你已经有 EPUB，而且不想上传，用后者。
 
         Sigil 是给需要改书、而不只是换一层包装的人用的桌面编辑器。它直接编辑 EPUB：章节、样式表、元数据、目录。目标是做出接近 Standard Ebooks 那种完成度、而且活要自己干的时候，就该用它。转换出来的文件目录是坏的、再转一次只会更坏的时候，也该用它。Sigil 免费开源。它不是商店，也不会替你去找书。
 
@@ -1420,22 +1420,22 @@ entries:
     featured: true
 
   - id: iloveepub
-    name: iloveepub.com
+    name: iloveepub
     url: https://iloveepub.com
     description:
       en: >
-        iloveepub.com is a set of free EPUB tools that run in the browser, including compress, merge, split, and conversions such as PDF or TXT to EPUB. Files stay on your device, and there is no account.
+        iloveepub is a set of free EPUB tools that run in the browser, including compress, merge, split, and conversions such as PDF or TXT to EPUB. Files stay on your device, and there is no account.
       zh: >
-        iloveepub.com 是一组在浏览器里运行的免费 EPUB 工具，包括压缩、合并、拆分，以及 PDF 或 TXT 转 EPUB。文件留在本机，不必注册。
+        iloveepub 是一组在浏览器里运行的免费 EPUB 工具，包括压缩、合并、拆分，以及 PDF 或 TXT 转 EPUB。文件留在本机，不必注册。
     long:
       en: |
-        iloveepub.com is the small, free sibling in the same family: a set of EPUB utilities that run entirely in your browser. Compress a file whose images choke an old device, merge split volumes into one book, divide one book into parts, or convert PDF, TXT, HTML, and DOCX into EPUB.
+        iloveepub is the small, free sibling in the same family: a set of EPUB utilities that run entirely in your browser. Compress a file whose images choke an old device, merge split volumes into one book, divide one book into parts, or convert PDF, TXT, HTML, and DOCX into EPUB.
 
         The characteristic that matters most to careful people: the processing happens on your machine. Files are not uploaded to a server, there is no account to create, and the tools cost nothing. Close the tab and nothing remains anywhere.
 
         The limits are the flip side of that design. Browser-based tools strain on very large files, the options are fewer than a desktop converter would offer, and no browser utility can rescue a scanned page — there is no text there to work on. For quick surgery on an EPUB you already have, it is the fastest legal tool on this shelf, and the only one that never asks where your file has been.
       zh: |
-        iloveepub.com 是同一家族里小而免费的工具站：一组完全在浏览器里运行的 EPUB 工具。图片压得旧设备喘不过气，就压缩；分卷想合成一本，就合并；一本要拆成几段，就拆分；也可以把 PDF、TXT、HTML 和 DOCX 转成 EPUB。
+        iloveepub 是同一家族里小而免费的工具站：一组完全在浏览器里运行的 EPUB 工具。图片压得旧设备喘不过气，就压缩；分卷想合成一本，就合并；一本要拆成几段，就拆分；也可以把 PDF、TXT、HTML 和 DOCX 转成 EPUB。
 
         对谨慎的人最要紧的一条：处理发生在你的机器上。文件不上传服务器，没有要建的账号，工具分文不收，断网也不耽误手头正在做的活。关掉标签页，任何地方都不留痕迹。
 
