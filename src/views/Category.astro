@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import CategoryNav from '../components/CategoryNav.astro';
+import EntryCard from '../components/EntryCard.astro';
+import FilterBar from '../components/FilterBar.astro';
+import {
+  categories,
+  categoryBySlug,
+  entriesIn,
+  formatsOf,
+  itemListLd,
+  languagesOf,
+  paragraphs,
+  pricingOf,
+} from '../lib/catalog';
+import { localePath, useUi, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+  slug: string;
+}
+
+const { locale, slug } = Astro.props;
+const ui = useUi(locale);
+const category = categoryBySlug(slug);
+const list = entriesIn(slug);
+const title = `${category.title[locale]} — nav.e-ink.me`;
+const cta = category.cta;
+const seeAlso = category.seeAlso.map((item) => categories.find((candidate) => candidate.slug === item)!);
+---
+
+<Base
+  locale={locale}
+  slug={slug}
+  title={title}
+  description={category.meta[locale]}
+  jsonLd={itemListLd(category.title[locale], list)}
+>
+  <main id="content">
+    <div class="wrap">
+      <p class="crumb">
+        <a href={localePath(locale)}>{ui.categoryBack}</a>
+      </p>
+      <header>
+        <h1>{category.title[locale]}</h1>
+      </header>
+      <article class="prose">
+        {paragraphs(category.intro[locale]).map((paragraph) => <p>{paragraph}</p>)}
+      </article>
+      <p class="see-also">
+        <span>{ui.categorySeeAlso}</span>
+        {
+          seeAlso.map((item, index) => (
+            <>
+              {index > 0 ? ' · ' : ' '}
+              <a href={localePath(locale, item.slug)}>{item.title[locale]}</a>
+            </>
+          ))
+        }
+      </p>
+    </div>
+
+    <FilterBar locale={locale} formats={formatsOf(list)} languages={languagesOf(list)} pricing={pricingOf(list)} />
+
+    <div class="wrap section" data-catalog data-count-template={ui.filtersCount}>
+      <h2 class="section-head">{ui.categoryEntries}</h2>
+      <p class="empty" data-empty hidden>{ui.filtersEmpty}</p>
+      <section data-group>
+        <div class="grid">
+          {list.map((entry) => <EntryCard entry={entry} locale={locale} />)}
+        </div>
+      </section>
+      <CategoryNav locale={locale} current={slug} />
+      <aside class="cta">
+        <p class="eyebrow">{ui.ctaEyebrow}</p>
+        <h2>{cta.title[locale]}</h2>
+        <p>{cta.body[locale]}</p>
+        <a class="cta-link" href={cta.href[locale]} rel="noopener noreferrer">{cta.action[locale]}</a>
+      </aside>
+    </div>
+  </main>
+</Base>

@@ -1,0 +1,48 @@
+---
+import { languageName, useUi, type Locale } from '../i18n/ui';
+import type { Pricing } from '../lib/catalog';
+
+interface Props {
+  locale: Locale;
+  formats: string[];
+  languages: string[];
+  pricing: Pricing[];
+}
+
+const { locale, formats, languages, pricing } = Astro.props;
+const ui = useUi(locale);
+---
+
+<form class="filters" data-filters role="search" aria-label={ui.filtersLegend}>
+  <div class="wrap">
+    <div class="filters-row">
+      <label class="field field-grow">
+        <span>{ui.filtersSearch}</span>
+        <input type="search" name="q" data-q autocomplete="off" placeholder={ui.filtersPlaceholder} />
+      </label>
+      <label class="field">
+        <span>{ui.filtersFormat}</span>
+        <select name="format" data-format>
+          <option value="">{ui.filtersAll}</option>
+          {formats.map((format) => <option value={format}>{format}</option>)}
+        </select>
+      </label>
+      <label class="field">
+        <span>{ui.filtersLanguage}</span>
+        <select name="lang" data-lang>
+          <option value="">{ui.filtersAll}</option>
+          {languages.map((code) => <option value={code}>{languageName(locale, code)}</option>)}
+        </select>
+      </label>
+      <label class="field">
+        <span>{ui.filtersPricing}</span>
+        <select name="pricing" data-pricing>
+          <option value="">{ui.filtersAll}</option>
+          {pricing.map((key) => <option value={key}>{ui.pricing[key]}</option>)}
+        </select>
+      </label>
+      <button type="button" data-reset>{ui.filtersReset}</button>
+    </div>
+    <p class="count-line" data-count aria-live="polite"></p>
+  </div>
+</form>

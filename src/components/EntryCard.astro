@@ -1,0 +1,63 @@
+---
+import { domainOf, haystack, type Entry } from '../lib/catalog';
+import { languageName, useUi, type Locale } from '../i18n/ui';
+
+interface Props {
+  entry: Entry;
+  locale: Locale;
+  filterable?: boolean;
+}
+
+const { entry, locale, filterable = true } = Astro.props;
+const ui = useUi(locale);
+const domain = domainOf(entry.url);
+const favicon = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=32`;
+const shownLangs = entry.languages.slice(0, 4);
+const extraLangs = entry.languages.length - shownLangs.length;
+const langTitle = entry.languages.map((code) => languageName(locale, code)).join(', ');
+---
+
+<article
+  class="card"
+  data-entry={filterable ? '1' : undefined}
+  data-hay={filterable ? haystack(entry) : undefined}
+  data-formats={filterable ? entry.formats.join(',') : undefined}
+  data-langs={filterable ? entry.languages.join(',') : undefined}
+  data-pricing={filterable ? entry.pricing : undefined}
+>
+  <h3 class="card-name">
+    <img
+      class="favicon"
+      src={favicon}
+      alt=""
+      width="32"
+      height="32"
+      loading="lazy"
+      decoding="async"
+      onerror="this.remove()"
+    />
+    <a href={entry.url} rel="noopener noreferrer">{entry.name}</a>
+  </h3>
+  <p class="card-desc">{entry.description[locale]}</p>
+  <ul class="tags">
+    {entry.formats.map((format) => <li class="tag">{format}</li>)}
+    {
+      shownLangs.map((code) => (
+        <li class="tag" title={languageName(locale, code)}>
+          {code.toUpperCase()}
+        </li>
+      ))
+    }
+    {
+      extraLangs > 0 && (
+        <li class="tag" title={langTitle}>
+          +{extraLangs}
+        </li>
+      )
+    }
+    <li class="tag">{ui.pricing[entry.pricing]}</li>
+    {entry.registration && <li class="tag">{ui.tagAccount}</li>}
+    {entry.featured && <li class="tag">{ui.tagFeatured}</li>}
+  </ul>
+  {entry.region[locale] && <p class="region">{entry.region[locale]}</p>}
+</article>

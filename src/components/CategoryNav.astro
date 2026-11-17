@@ -1,0 +1,30 @@
+---
+import { categories, entriesIn } from '../lib/catalog';
+import { localePath, useUi, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+  current?: string;
+}
+
+const { locale, current } = Astro.props;
+const ui = useUi(locale);
+---
+
+<nav class="cat-nav" aria-label={ui.categoriesNav}>
+  <ul>
+    {
+      categories.map((category) => (
+        <li>
+          <a
+            href={localePath(locale, category.slug)}
+            aria-current={category.slug === current ? 'page' : undefined}
+          >
+            {category.title[locale]}
+            <span class="count">{entriesIn(category.slug).length}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

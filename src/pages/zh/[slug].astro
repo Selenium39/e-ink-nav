@@ -1,0 +1,15 @@
+---
+import Category from '../../views/Category.astro';
+import { categories } from '../../lib/catalog';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { slug: category.slug },
+  }));
+}
+
+const { slug } = Astro.props;
+---
+
+<Category locale="zh" slug={slug} />
