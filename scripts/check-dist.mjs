@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadCatalog } from '../src/data/load.mjs';
 
 const dist = path.resolve('dist');
 const slugs = [
@@ -13,25 +14,20 @@ const slugs = [
   'dictionaries',
 ];
 
+const { data } = loadCatalog();
+const totalEntries = data.entries.length;
+const expectedCounts = Object.fromEntries(
+  slugs.map((slug) => [slug, data.entries.filter((entry) => entry.category === slug).length]),
+);
+
 const pages = [
-  ['/', 'dist/index.html', 'en', 52],
-  ['/zh', 'dist/zh.html', 'zh-CN', 52],
+  ['/', 'dist/index.html', 'en', totalEntries],
+  ['/zh', 'dist/zh.html', 'zh-CN', totalEntries],
   ...slugs.flatMap((slug) => [
     [`/${slug}`, `dist/${slug}.html`, 'en', null],
     [`/zh/${slug}`, `dist/zh/${slug}.html`, 'zh-CN', null],
   ]),
 ];
-
-const expectedCounts = {
-  'free-ebooks': 12,
-  'ebook-stores': 7,
-  'library-borrowing': 3,
-  'reading-apps': 10,
-  'ebook-tools': 4,
-  audiobooks: 4,
-  communities: 9,
-  dictionaries: 3,
-};
 
 let failed = 0;
 function fail(message) {
@@ -72,13 +68,13 @@ for (const [url, file, lang, homeCount] of pages) {
 function readDist(file, label) {
   if (!fs.existsSync(file)) {
     fail(`missing ${label}: ${file}`);
-    return '';
+    return null;
   }
   return fs.readFileSync(file, 'utf8');
 }
 
 const zhStores = readDist('dist/zh/ebook-stores.html', 'zh stores');
-if (zhStores) {
+if (zhStores !== null) {
   if (!zhStores.includes('只有 MOBI')) fail('zh stores CTA hook');
   if (!zhStores.includes('https://e-ink.me/zh/convert/mobi-to-epub')) fail('zh stores CTA url');
   if (!zhStores.includes('href="/zh"') && !zhStores.includes("href='/zh'")) fail('zh stores link to /zh');
@@ -86,25 +82,25 @@ if (zhStores) {
 }
 
 const enHome = readDist('dist/index.html', 'en home');
-if (enHome && !enHome.includes('href="/zh"')) fail('home zh switch');
-if (enHome && !enHome.includes('data-featured')) fail('home featured');
+if (enHome !== null && !enHome.includes('href="/zh"')) fail('home zh switch');
+if (enHome !== null && !enHome.includes('data-featured')) fail('home featured');
 const zhHome = readDist('dist/zh.html', 'zh home');
-if (zhHome && !zhHome.includes('电子书资源导航')) fail('zh home title');
-if (zhHome && !zhHome.includes('推荐收录 / 勘误')) fail('zh footer');
+if (zhHome !== null && !zhHome.includes('电子书资源导航')) fail('zh home title');
+if (zhHome !== null && !zhHome.includes('推荐收录 / 勘误')) fail('zh footer');
 
 const notFound = readDist('dist/404.html', '404');
-if (notFound && notFound.includes('rel="canonical"')) fail('404 should not emit a canonical');
-if (notFound && !notFound.includes('lang="zh-CN"')) fail('404 chinese block lang');
+if (notFound !== null && notFound.includes('rel="canonical"')) fail('404 should not emit a canonical');
+if (notFound !== null && !notFound.includes('lang="zh-CN"')) fail('404 chinese block lang');
 
 const sitemap = readDist('dist/sitemap-0.xml', 'sitemap');
-if (sitemap) {
+if (sitemap !== null) {
   const locs = sitemap.match(/<loc>/g)?.length ?? 0;
   if (locs !== 18) fail(`sitemap has ${locs} urls, expected 18`);
   if (sitemap.includes('/404')) fail('sitemap includes 404');
 }
 
 const robots = readDist('dist/robots.txt', 'robots');
-if (robots && !robots.includes('Sitemap: https://nav.e-ink.me/sitemap-index.xml')) fail('robots sitemap');
+if (robots !== null && !robots.includes('Sitemap: https://nav.e-ink.me/sitemap-index.xml')) fail('robots sitemap');
 
 if (failed) {
   console.error(`${failed} dist check(s) failed`);

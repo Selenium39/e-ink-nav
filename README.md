@@ -39,11 +39,11 @@ To add or correct a listing, append or edit an object under `entries`. Every ent
 | `pricing` | `free`, `freemium`, `subscription`, or `paid` |
 | `registration` | Boolean |
 | `region.en` / `region.zh` | Both filled, or both empty strings |
-| `featured` | Boolean. Keep the featured set small |
+| `featured` | Boolean. Keep the set short. The checker does not enforce a 6–10 cap |
 
 Category slugs: `free-ebooks`, `ebook-stores`, `library-borrowing`, `reading-apps`, `ebook-tools`, `audiobooks`, `communities`, `dictionaries`.
 
-Do not add sites that are not in PLAN.md's seed list, and never add pirate or shadow libraries. `npm run check` fails the build path if a required field is missing.
+Never add pirate or shadow libraries. `npm run check` fails if a required field is missing or invalid. `npm run check:dist` compares the built pages with this file, so a new listing does not require editing the check.
 
 Category page essays, meta descriptions, and the e-ink.me call-to-action also live in that same file, under `categories`.
 

@@ -128,7 +128,7 @@ function joinWrappedLines(part: string): string {
     .filter(Boolean);
   return lines.reduce((acc, line) => {
     if (!acc) return line;
-    const cjk = /[\u3400-\u9fff]/;
+    const cjk = /[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]/;
     const gap = cjk.test(acc.slice(-1)) && cjk.test(line[0] ?? '') ? '' : ' ';
     return acc + gap + line;
   }, '');

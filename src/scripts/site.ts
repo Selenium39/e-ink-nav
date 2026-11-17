@@ -53,6 +53,10 @@ function initTheme(): void {
     }
     syncThemeChrome(true);
   });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (!root.hasAttribute('data-theme')) syncThemeChrome(false);
+  });
 }
 
 function initCatalog(): void {
