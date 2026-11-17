@@ -1,4 +1,4 @@
-import { SITE } from '../config';
+import { SITE, SITE_NAME } from '../config';
 
 /**
  * UI chrome strings. Entry blurbs and category essays live in src/data/sites.yaml.
@@ -35,21 +35,26 @@ export function absoluteUrl(pathname: string): string {
   return `${SITE}${pathname}`;
 }
 
+/** Document title. The page name stays first; the site name is the suffix. */
+export function documentTitle(page: string): string {
+  return `${page} — ${SITE_NAME}`;
+}
+
 const ui = {
   en: {
     skip: 'Skip to content',
-    familyLabel: 'e-ink family',
+    familyLabel: 'Inkme family',
     family: {
-      tools: 'Tools',
-      news: 'News',
-      wiki: 'Wiki',
-      games: 'Games',
-      nav: 'Nav',
+      inkme: 'Inkme',
+      news: 'Inkme News',
+      games: 'Inkme Games',
+      nav: 'Inkme Nav',
+      wiki: 'Inkme Wiki',
     },
     lang: { en: 'EN', zh: '中文' },
     langLabel: 'Language',
     theme: { toggle: 'Toggle dark or light theme', toDark: 'Dark', toLight: 'Light' },
-    heroEyebrow: 'e-ink.me family',
+    heroEyebrow: 'Inkme family',
     heroTitle: 'Legal ebook resources',
     heroLede:
       'A paper catalog of places to find, borrow, buy, and read ebooks — libraries, stores, reading apps, and the tools that sit between them.',
@@ -100,10 +105,10 @@ const ui = {
     registrationRequired: 'Required',
     registrationNone: 'Not required',
     ctaEyebrow: 'Related tool',
-    footerFamily: 'e-ink family',
+    footerFamily: 'Inkme family',
     footerSuggest: 'Suggest a listing / corrections:',
-    footerLegal: 'Legal resources only. Part of the e-ink.me family.',
-    mailSubject: 'nav.e-ink.me listing suggestion',
+    footerLegal: 'Legal resources only. Part of the Inkme family.',
+    mailSubject: 'Inkme Nav listing suggestion',
     notFoundTitle: 'Page not found',
     notFoundBody: 'That page is not in the catalog.',
     notFoundHome: 'Back to the catalog',
@@ -111,18 +116,18 @@ const ui = {
   },
   zh: {
     skip: '跳到正文',
-    familyLabel: 'e-ink 家族',
+    familyLabel: 'Inkme 家族',
     family: {
-      tools: '工具',
-      news: '新闻',
-      wiki: '百科',
-      games: '游戏',
-      nav: '导航',
+      inkme: 'Inkme',
+      news: 'Inkme News',
+      games: 'Inkme Games',
+      nav: 'Inkme Nav',
+      wiki: 'Inkme Wiki',
     },
     lang: { en: 'EN', zh: '中文' },
     langLabel: '语言',
     theme: { toggle: '切换深色或浅色', toDark: '深色', toLight: '浅色' },
-    heroEyebrow: 'e-ink.me 家族',
+    heroEyebrow: 'Inkme 家族',
     heroTitle: '电子书资源导航',
     heroLede: '找书、借书、买书、读书工具的一份纸感目录。只做电子书这一件事。',
     heroRedline: '只收公有领域、开放获取、正版商店、图书馆和正规软件。不收盗版书库。',
@@ -171,10 +176,10 @@ const ui = {
     registrationRequired: '需要注册',
     registrationNone: '无需注册',
     ctaEyebrow: '相关工具',
-    footerFamily: 'e-ink 家族',
+    footerFamily: 'Inkme 家族',
     footerSuggest: '推荐收录 / 勘误：',
-    footerLegal: '只收录合法资源。e-ink.me 家族站点。',
-    mailSubject: 'nav.e-ink.me 收录建议',
+    footerLegal: '只收录合法资源。Inkme 家族站点。',
+    mailSubject: 'Inkme Nav 收录建议',
     notFoundTitle: '没有这一页',
     notFoundBody: '目录里没有这个地址。',
     notFoundHome: '回到目录',

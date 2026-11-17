@@ -1,6 +1,6 @@
 ---
 import { CONTACT_EMAIL, FAMILY } from '../config';
-import { localePath, useUi, type Locale } from '../i18n/ui';
+import { useUi, type Locale } from '../i18n/ui';
 
 interface Props {
   locale: Locale;
@@ -16,16 +16,13 @@ const subject = encodeURIComponent(ui.mailSubject);
     <nav aria-label={ui.footerFamily}>
       <ul>
         {
-          FAMILY.map((item) => {
-            const href = item.id === 'nav' ? localePath(locale) : item.href;
-            return (
-              <li>
-                <a href={href} rel={item.external ? 'noopener noreferrer' : undefined}>
-                  {ui.family[item.id]}
-                </a>
-              </li>
-            );
-          })
+          FAMILY.map((item) => (
+            <li>
+              <a href={item.href} rel={item.external ? 'noopener noreferrer' : undefined}>
+                {ui.family[item.id]}
+              </a>
+            </li>
+          ))
         }
       </ul>
     </nav>

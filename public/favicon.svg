@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="nav.e-ink.me">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Inkme Nav">
   <rect width="32" height="32" rx="6" fill="#FAFAFA"/>
   <rect x="5" y="4" width="22" height="24" rx="2" fill="none" stroke="#1A1A1A" stroke-width="1.5"/>
   <line x1="16" y1="4" x2="16" y2="28" stroke="#1A1A1A" stroke-width="0.75" stroke-dasharray="2 1.5"/>

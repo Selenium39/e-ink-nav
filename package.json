@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "nav.e-ink.me — a static, bilingual catalog of legal ebook resources.",
+  "description": "Inkme Nav (nav.e-ink.me) — a static, bilingual catalog of legal ebook resources.",
   "engines": {
     "node": ">=22.23.4"
   },

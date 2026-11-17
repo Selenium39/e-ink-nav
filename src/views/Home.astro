@@ -13,7 +13,7 @@ import {
   usedLanguages,
   usedPricing,
 } from '../lib/catalog';
-import { localePath, useUi, type Locale } from '../i18n/ui';
+import { documentTitle, localePath, useUi, type Locale } from '../i18n/ui';
 
 interface Props {
   locale: Locale;
@@ -21,7 +21,7 @@ interface Props {
 
 const { locale } = Astro.props;
 const ui = useUi(locale);
-const title = `${ui.heroTitle} — nav.e-ink.me`;
+const title = documentTitle(ui.heroTitle);
 const featured = featuredEntries();
 ---
 

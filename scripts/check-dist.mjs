@@ -43,6 +43,41 @@ function fail(message) {
   console.error(`FAIL ${message}`);
 }
 
+const FAMILY_LINKS = [
+  ['https://e-ink.me', 'Inkme'],
+  ['https://news.e-ink.me', 'Inkme News'],
+  ['https://games.e-ink.me', 'Inkme Games'],
+  ['https://nav.e-ink.me', 'Inkme Nav'],
+  ['https://wiki.e-ink.me', 'Inkme Wiki'],
+];
+
+function checkBrand(html, label) {
+  if (!html.includes('class="logo"') || !html.includes('>Inkme Nav<')) fail(`${label} logo text`);
+  if (!html.includes('<title>') || !html.includes('— Inkme Nav')) fail(`${label} document title`);
+  if (!html.includes('name="application-name" content="Inkme Nav"')) fail(`${label} application-name`);
+  if (!html.includes('property="og:site_name" content="Inkme Nav"')) fail(`${label} og:site_name`);
+  if (!html.includes('"@type":"WebSite"') || !html.includes('"name":"Inkme Nav"')) fail(`${label} WebSite JSON-LD`);
+  const navs = [];
+  const navRe = /<nav\b[^>]*aria-label="(?:Inkme family|Inkme 家族)"[^>]*>([\s\S]*?)<\/nav>/g;
+  let navMatch;
+  while ((navMatch = navRe.exec(html))) navs.push(navMatch[1]);
+  if (navs.length !== 2) fail(`${label} family nav count ${navs.length}`);
+  const linkRe = /<a\b[^>]*href="([^"]+)"[^>]*>\s*([^<]*?)\s*<\/a>/g;
+  navs.forEach((block, copy) => {
+    const links = [];
+    let match;
+    while ((match = linkRe.exec(block))) links.push([match[1], match[2].trim()]);
+    linkRe.lastIndex = 0;
+    if (links.length !== FAMILY_LINKS.length) fail(`${label} family[${copy}] count ${links.length}`);
+    FAMILY_LINKS.forEach(([href, text], index) => {
+      const link = links[index];
+      if (!link || link[0] !== href || link[1] !== text) {
+        fail(`${label} family[${copy}:${index}] expected ${href} ${text}, got ${link ? link.join(' ') : 'missing'}`);
+      }
+    });
+  });
+}
+
 // Shared by the listing-page and detail-page loops.
 function checkUmami(html, label) {
   if (html.includes('cloud.umami.is')) fail(`${label} umami cloud host should be absent`);
@@ -67,6 +102,7 @@ for (const [url, file, lang, homeCount] of pages) {
   }
   const html = fs.readFileSync(file, 'utf8');
   if (!html.includes(`lang="${lang}"`)) fail(`${url} lang`);
+  checkBrand(html, url);
   if (!html.includes('rel="canonical"')) fail(`${url} canonical`);
   if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"') || !html.includes('hreflang="x-default"')) {
     fail(`${url} hreflang`);
@@ -104,6 +140,7 @@ for (const [url, file, lang, entry] of detailPages) {
   detailPagesChecked += 1;
   const html = fs.readFileSync(file, 'utf8');
   if (!html.includes(`lang="${lang}"`)) fail(`${url} lang`);
+  checkBrand(html, url);
   if (!html.includes(`rel="canonical" href="https://nav.e-ink.me${url}"`)) fail(`${url} canonical`);
   if (!html.includes('hreflang="en"') || !html.includes('hreflang="zh-CN"') || !html.includes('hreflang="x-default"')) {
     fail(`${url} hreflang`);
@@ -138,6 +175,7 @@ if (zhHome !== null && !zhHome.includes('电子书资源导航')) fail('zh home 
 if (zhHome !== null && !zhHome.includes('推荐收录 / 勘误')) fail('zh footer');
 
 const notFound = readDist('dist/404.html', '404');
+if (notFound !== null) checkBrand(notFound, '404');
 if (notFound !== null && notFound.includes('rel="canonical"')) fail('404 should not emit a canonical');
 if (notFound !== null && !notFound.includes('lang="zh-CN"')) fail('404 chinese block lang');
 

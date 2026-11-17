@@ -1,4 +1,4 @@
-# nav.e-ink.me — 合法电子书资源目录
+# Inkme Nav — 合法电子书资源目录
 
 [English](README.md) · [中文](README.zh-CN.md)
 
@@ -145,14 +145,15 @@
 
 站内没有投稿系统，也没有账号。推荐和勘误请发邮件到 [openminimax@gmail.com](mailto:openminimax@gmail.com)。只考虑合法资源。
 
-## e-ink.me 家族
+## Inkme 家族
 
-nav 是发现层——负责指向资源。家族的其他成员负责对资源做事：
+Inkme Nav 是发现层——负责指向资源。家族的其他成员负责对资源做事：
 
-- [e-ink.me](https://e-ink.me) — 电子书工具：网页转 EPUB、格式转换
-- [news.e-ink.me](https://news.e-ink.me) — 给墨水屏看的科技新闻
-- [wiki.e-ink.me](https://wiki.e-ink.me) — 电子书知识库
-- [games.e-ink.me](https://games.e-ink.me) — 墨水屏浏览器游戏
+- [Inkme](https://e-ink.me) — 电子书工具：网页转 EPUB、格式转换
+- [Inkme News](https://news.e-ink.me) — 给墨水屏看的科技新闻
+- [Inkme Games](https://games.e-ink.me) — 墨水屏浏览器游戏
+- [Inkme Nav](https://nav.e-ink.me) — 本目录
+- [Inkme Wiki](https://wiki.e-ink.me) — 电子书知识库
 
 ## 关于本仓库
 

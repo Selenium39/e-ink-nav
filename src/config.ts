@@ -1,6 +1,9 @@
 /** Deployed origin. `astro.config.mjs` `site` and canonical URLs both use this. */
 export const SITE = 'https://nav.e-ink.me';
 
+/** Visible site name. The domain stays `SITE`. */
+export const SITE_NAME = 'Inkme Nav';
+
 /** Listing suggestions and corrections. There is no on-site form. */
 export const CONTACT_EMAIL = 'openminimax@gmail.com';
 
@@ -18,9 +21,9 @@ export const UMAMI_WEBSITE_ID = '1d1fb9fa-b17e-4b56-8f34-bcf9b89143e4';
 export const UMAMI_SCRIPT_SRC = 'https://umami.selenium39.me/script.js';
 
 export const FAMILY = [
-  { id: 'tools', href: 'https://e-ink.me', external: true },
+  { id: 'inkme', href: 'https://e-ink.me', external: true },
   { id: 'news', href: 'https://news.e-ink.me', external: true },
-  { id: 'wiki', href: 'https://wiki.e-ink.me', external: true },
   { id: 'games', href: 'https://games.e-ink.me', external: true },
-  { id: 'nav', href: '', external: false },
+  { id: 'nav', href: 'https://nav.e-ink.me', external: false },
+  { id: 'wiki', href: 'https://wiki.e-ink.me', external: true },
 ] as const;
