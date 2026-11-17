@@ -15,10 +15,20 @@ interface Props {
   robots?: string;
   navHome?: boolean;
   currentCategory?: string;
+  currentState?: 'page' | 'location';
 }
 
-const { locale, title, description, slug = '', jsonLd, robots = 'index,follow', navHome = slug === '', currentCategory } =
-  Astro.props;
+const {
+  locale,
+  title,
+  description,
+  slug = '',
+  jsonLd,
+  robots = 'index,follow',
+  navHome = slug === '',
+  currentCategory,
+  currentState = 'page',
+} = Astro.props;
 const ui = useUi(locale);
 const indexable = !robots.includes('noindex');
 const path = localePath(locale, slug);
@@ -80,7 +90,7 @@ const json = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
   <body>
     <a class="skip" href="#content">{ui.skip}</a>
     <FamilyNav locale={locale} slug={slug} home={navHome} />
-    <CategoryNav locale={locale} current={currentCategory} />
+    <CategoryNav locale={locale} current={currentCategory} currentState={currentState} />
     <slot />
     <Footer locale={locale} />
     <script>

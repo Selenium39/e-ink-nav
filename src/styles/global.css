@@ -359,7 +359,8 @@ main {
   text-underline-offset: 0.25em;
 }
 
-.cat-band a[aria-current='page'] {
+.cat-band a[aria-current='page'],
+.cat-band a[aria-current='location'] {
   color: var(--ink);
   font-weight: 650;
   text-decoration: underline;
@@ -367,7 +368,8 @@ main {
   text-underline-offset: 0.25em;
 }
 
-.cat-band a[aria-current='page'] .count {
+.cat-band a[aria-current='page'] .count,
+.cat-band a[aria-current='location'] .count {
   color: inherit;
 }
 
