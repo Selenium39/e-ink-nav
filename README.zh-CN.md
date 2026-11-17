@@ -95,7 +95,7 @@
 
 | 站点 | 提供什么 | 费用 |
 | --- | --- | --- |
-| [e-ink.me](https://e-ink.me) | 网页转 EPUB，以及 MOBI、PDF、EPUB、HTML、TXT 互转*（本家族）* | 少量免费额度，之后付费 |
+| [Inkme](https://e-ink.me) | 网页转 EPUB，以及 MOBI、PDF、EPUB、HTML、TXT 互转*（本家族）* | 少量免费额度，之后付费 |
 | [iloveepub.com](https://iloveepub.com) | 浏览器里的 EPUB 工具集：压缩、合并、拆分、转换，文件不出本机*（本家族）* | 免费 |
 | [Sigil](https://sigil-ebook.com) | 直接编辑 EPUB 的开源编辑器，改书而不是换包装 | 免费 |
 | [Pandoc](https://pandoc.org) | 命令行转换器：Markdown、DOCX、HTML 转 EPUB 和 PDF | 免费 |
@@ -127,9 +127,9 @@
 | [r/ereader](https://www.reddit.com/r/ereader/) | Reddit 上更快、更松的设备谈话 | 免费 |
 | [书伴](https://bookfere.com) | 中文 Kindle 与电纸书的新闻、评测和教程 | 免费 |
 | [TeleRead](https://teleread.org) | 老牌英文电子书、出版和图书馆新闻 | 免费 |
-| [news.e-ink.me](https://news.e-ink.me) | 给墨水屏浏览器排版的科技新闻*（本家族）* | 免费 |
-| [wiki.e-ink.me](https://wiki.e-ink.me) | 家族的电子书知识库：格式、词典、设备设置*（本家族）* | 免费 |
-| [games.e-ink.me](https://games.e-ink.me) | 打算在墨水屏上玩的浏览器游戏*（本家族）* | 免费 |
+| [Inkme News](https://news.e-ink.me) | 给墨水屏浏览器排版的科技新闻*（本家族）* | 免费 |
+| [Inkme Wiki](https://wiki.e-ink.me) | 家族的电子书知识库：格式、词典、设备设置*（本家族）* | 免费 |
+| [Inkme Games](https://games.e-ink.me) | 打算在墨水屏上玩的浏览器游戏*（本家族）* | 免费 |
 
 ## [词典与辅助](https://nav.e-ink.me/zh/dictionaries)
 
