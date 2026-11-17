@@ -96,7 +96,7 @@ The unglamorous shelf that decides whether a legal file is actually pleasant to 
 | Site | What it offers | Cost |
 | --- | --- | --- |
 | [Inkme](https://e-ink.me) | Web page to EPUB, plus conversions among MOBI, PDF, EPUB, HTML, and TXT *(this family)* | Free credits, then paid |
-| [iloveepub.com](https://iloveepub.com) | In-browser EPUB utilities — compress, merge, split, convert; files stay on your machine *(this family)* | Free |
+| [iloveepub](https://iloveepub.com) | In-browser EPUB utilities — compress, merge, split, convert; files stay on your machine *(this family)* | Free |
 | [Sigil](https://sigil-ebook.com) | The open-source EPUB editor for changing the book, not just rewrapping it | Free |
 | [Pandoc](https://pandoc.org) | Command-line converter from Markdown, DOCX, HTML into EPUB and PDF | Free |
 
