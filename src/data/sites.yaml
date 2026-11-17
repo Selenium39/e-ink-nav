@@ -51,8 +51,8 @@ categories:
         en: The article is not in any of these libraries
         zh: 这些书库里没有那篇文章
       body:
-        en: A long article, a documentation page, or a public-domain text that exists only as a web page can be saved as EPUB and read on an e-reader. e-ink.me does that extraction. New accounts start with a few free credits; after that, conversion is pay as you go.
-        zh: 长文、文档，或只有网页版的公有领域文本，可以抽成 EPUB 放到电纸书上读。e-ink.me 做的就是这件事。新账号有少量免费额度，之后按次计费。
+        en: A long article, a documentation page, or a public-domain text that exists only as a web page can be saved as EPUB and read on an e-reader. Inkme does that extraction. New accounts start with a few free credits; after that, conversion is pay as you go.
+        zh: 长文、文档，或只有网页版的公有领域文本，可以抽成 EPUB 放到电纸书上读。Inkme 做的就是这件事。新账号有少量免费额度，之后按次计费。
       action:
         en: Save a page as EPUB
         zh: 把网页存成 EPUB
@@ -97,8 +97,8 @@ categories:
         en: Only have MOBI?
         zh: 只有 MOBI？
       body:
-        en: Convert it to EPUB in one click, then read it on a device that does not take Kindle files. e-ink.me charges credits after a small free starting balance.
-        zh: 一键转成 EPUB，再放进不吃 Kindle 格式的阅读器。e-ink.me 在少量免费额度之后按次计费。
+        en: Convert it to EPUB in one click, then read it on a device that does not take Kindle files. Inkme charges credits after a small free starting balance.
+        zh: 一键转成 EPUB，再放进不吃 Kindle 格式的阅读器。Inkme 在少量免费额度之后按次计费。
       action:
         en: Convert MOBI to EPUB
         zh: MOBI 转 EPUB
@@ -147,8 +147,8 @@ categories:
         en: The library loan came as a PDF
         zh: 借到的是 PDF
       body:
-        en: A library PDF often will not reflow. Convert it to EPUB and the type size finally fits an e-ink screen. Keep the copy only for the loan, and remember e-ink.me is credit-based after the free starter credits.
-        zh: 图书馆的 PDF 往往不能重排。转成 EPUB 之后，字号才适合墨水屏。文件只在借期内留着。e-ink.me 用完免费额度后按次计费。
+        en: A library PDF often will not reflow. Convert it to EPUB and the type size finally fits an e-ink screen. Keep the copy only for the loan, and remember Inkme is credit-based after the free starter credits.
+        zh: 图书馆的 PDF 往往不能重排。转成 EPUB 之后，字号才适合墨水屏。文件只在借期内留着。Inkme 用完免费额度后按次计费。
       action:
         en: Convert PDF to EPUB
         zh: PDF 转 EPUB
@@ -197,8 +197,8 @@ categories:
         en: Match the file to the reader
         zh: 先换成阅读器吃得下的格式
       body:
-        en: Sideloading is smoother when the file matches the app. Convert MOBI, PDF, or TXT before you copy it over. MOBI to EPUB is the usual step. Credits apply on e-ink.me after the free starting balance.
-        zh: 文件和阅读器对得上，侧载才顺。拷贝之前先把 MOBI、PDF 或 TXT 转好。最常见的一步是 MOBI 转 EPUB。e-ink.me 用完免费额度后按次计费。
+        en: Sideloading is smoother when the file matches the app. Convert MOBI, PDF, or TXT before you copy it over. MOBI to EPUB is the usual step. Credits apply on Inkme after the free starting balance.
+        zh: 文件和阅读器对得上，侧载才顺。拷贝之前先把 MOBI、PDF 或 TXT 转好。最常见的一步是 MOBI 转 EPUB。Inkme 用完免费额度后按次计费。
       action:
         en: Open the format converter
         zh: 打开格式转换
@@ -208,8 +208,8 @@ categories:
       en: Ebook tools
       zh: 电子书工具
     meta:
-      en: Converters and editors for ebook files, including e-ink.me, iloveepub.com, Sigil, and Pandoc.
-      zh: 电子书转换和编辑工具，包括 e-ink.me、iloveepub.com、Sigil 和 Pandoc。
+      en: Converters and editors for ebook files, including Inkme, iloveepub.com, Sigil, and Pandoc.
+      zh: 电子书转换和编辑工具，包括 Inkme、iloveepub.com、Sigil 和 Pandoc。
     seeAlso:
       - reading-apps
       - free-ebooks
@@ -218,7 +218,7 @@ categories:
       en: |
         Tools are the unglamorous shelf, and they are the one that decides whether a legal file is actually pleasant to read. A public-domain download, a library loan, and a manuscript you wrote yourself can all arrive in the wrong shape. Conversion, repair, and editing are how a file becomes a book on a device.
 
-        Two of the tools here are part of this same family, so they get a short entry rather than a speech. e-ink.me turns a web page into an EPUB and converts among ebook and document formats, including MOBI, PDF, EPUB, HTML, and TXT. It is an account with a small free credit balance and then pay as you go. iloveepub.com is a different bargain: a set of EPUB utilities that run in the browser, including compress, merge, split, and a handful of conversions such as PDF to EPUB. The file stays on your machine, there is no account, and the tools are free. Use the first when you are grabbing a page from the web or need a server-side conversion. Use the second when you already have an EPUB and you do not want to upload it.
+        Two of the tools here are part of this same family, so they get a short entry rather than a speech. Inkme turns a web page into an EPUB and converts among ebook and document formats, including MOBI, PDF, EPUB, HTML, and TXT. It is an account with a small free credit balance and then pay as you go. iloveepub.com is a different bargain: a set of EPUB utilities that run in the browser, including compress, merge, split, and a handful of conversions such as PDF to EPUB. The file stays on your machine, there is no account, and the tools are free. Use the first when you are grabbing a page from the web or need a server-side conversion. Use the second when you already have an EPUB and you do not want to upload it.
 
         Sigil is the desktop editor for people who need to change the book, not just rewrap it. It edits EPUB directly: chapters, stylesheet, metadata, the table of contents. It is the right program when a Standard Ebooks-quality file is the goal and you are the one doing the work, or when a converted file has a broken contents page and a converter will only break it again. Sigil is free and open source. It is not a store, and it will not fetch books for you.
 
@@ -228,7 +228,7 @@ categories:
       zh: |
         工具这一栏不好看，却决定一份合法文件到底好不好读。公有领域的下载、图书馆的借阅、你自己写的稿子，都可能以错误的形状到达。转换、修复和编辑，是文件变成设备上那本书的过程。
 
-        这里有两件工具和本站同属一个家族，所以只给短短的条目，不给演说。e-ink.me 把网页做成 EPUB，也在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。它要账号，先给少量免费额度，之后按次计费。iloveepub.com 是另一种约定：一组在浏览器里运行的 EPUB 工具，包括压缩、合并、拆分，以及 PDF 转 EPUB 等几种转换。文件留在你的机器上，没有账号，工具免费。要从网页抓一篇文章，或需要服务器做的转换，用前者。你已经有 EPUB，而且不想上传，用后者。
+        这里有两件工具和本站同属一个家族，所以只给短短的条目，不给演说。Inkme 把网页做成 EPUB，也在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。它要账号，先给少量免费额度，之后按次计费。iloveepub.com 是另一种约定：一组在浏览器里运行的 EPUB 工具，包括压缩、合并、拆分，以及 PDF 转 EPUB 等几种转换。文件留在你的机器上，没有账号，工具免费。要从网页抓一篇文章，或需要服务器做的转换，用前者。你已经有 EPUB，而且不想上传，用后者。
 
         Sigil 是给需要改书、而不只是换一层包装的人用的桌面编辑器。它直接编辑 EPUB：章节、样式表、元数据、目录。目标是做出接近 Standard Ebooks 那种完成度、而且活要自己干的时候，就该用它。转换出来的文件目录是坏的、再转一次只会更坏的时候，也该用它。Sigil 免费开源。它不是商店，也不会替你去找书。
 
@@ -243,11 +243,11 @@ categories:
         en: The converter
         zh: 格式转换器
       body:
-        en: This shelf already lists the editors and the utilities. When what you need is an online conversion from one ebook format to another, the converter is on e-ink.me. Free starter credits, then pay as you go.
-        zh: 编辑器和本地小工具上面已经列了。若你要的是在线把电子书转成另一种格式，转换器在 e-ink.me。先有少量免费额度，之后按次计费。
+        en: This shelf already lists the editors and the utilities. When what you need is an online conversion from one ebook format to another, the converter is on Inkme. Free starter credits, then pay as you go.
+        zh: 编辑器和本地小工具上面已经列了。若你要的是在线把电子书转成另一种格式，转换器在 Inkme。先有少量免费额度，之后按次计费。
       action:
-        en: Open the e-ink.me converter
-        zh: 打开 e-ink.me 转换器
+        en: Open the Inkme converter
+        zh: 打开 Inkme 转换器
 
   audiobooks:
     title:
@@ -293,8 +293,8 @@ categories:
         en: You already have the EPUB
         zh: 你已经有这本 EPUB
       body:
-        en: This is not a narrated audiobook. If you already have the EPUB and want a synthesized voice for a walk, e-ink.me can read it to an MP3. It uses credits, and it will not sound like a studio recording.
-        zh: 这不是演播的有声书。若你已经有 EPUB，只想在走路时听合成语音，e-ink.me 可以把它读成 MP3。按次计费，听起来也不会像录音棚。
+        en: This is not a narrated audiobook. If you already have the EPUB and want a synthesized voice for a walk, Inkme can read it to an MP3. It uses credits, and it will not sound like a studio recording.
+        zh: 这不是演播的有声书。若你已经有 EPUB，只想在走路时听合成语音，Inkme 可以把它读成 MP3。按次计费，听起来也不会像录音棚。
       action:
         en: Turn an EPUB into MP3
         zh: 把 EPUB 转成 MP3
@@ -304,8 +304,8 @@ categories:
       en: Communities
       zh: 社区与资讯
     meta:
-      en: Forums, reading trackers, and ebook news, plus the rest of the e-ink.me family.
-      zh: 论坛、读书记录和电子书资讯，以及 e-ink.me 家族的其他站点。
+      en: Forums, reading trackers, and ebook news, plus the rest of the Inkme family.
+      zh: 论坛、读书记录和电子书资讯，以及 Inkme 家族的其他站点。
     seeAlso:
       - reading-apps
       - dictionaries
@@ -320,7 +320,7 @@ categories:
 
         Reddit's r/ereader is the looser, faster version of the device conversation: which reader to buy, which case survives a bag, which app still opens a PDF. It moves quickly and it is not edited. Treat a single comment as a lead, not as a manual. 书伴 (BookFere) is a Chinese site of Kindle and e-reader news, reviews, and how-to writing, updated often enough that it is a better pulse of that hardware market than a general tech front page. TeleRead is one of the older English ebook news sites, still writing about publishing, libraries, and reading technology.
 
-        The other three links are family, not outside press. news.e-ink.me is a tech news front page set in type an e-ink browser can actually read. wiki.e-ink.me is the family's ebook knowledge base: formats, dictionaries, reading software, and device setup, with English articles adapted from older public wiki material plus original pieces. games.e-ink.me is a set of browser games meant to be playable on an e-ink screen. They are here so the family is one map. They are not bookstores.
+        The other three links are family, not outside press. Inkme News is a tech news front page set in type an e-ink browser can actually read. Inkme Wiki is the family's ebook knowledge base: formats, dictionaries, reading software, and device setup, with English articles adapted from older public wiki material plus original pieces. Inkme Games is a set of browser games meant to be playable on an e-ink screen. They are here so the family is one map. They are not bookstores.
 
         When a discussion turns into "the file will not open," the useful next step is almost always a format, not another forum. The tools shelf is the other side of that conversation.
       zh: |
@@ -332,7 +332,7 @@ categories:
 
         Reddit 的 r/ereader 是更松、更快的设备谈话：买哪一台、哪个保护套经得起包、哪个应用还能打开 PDF。它更新得快，也没有编辑。把一条评论当成线索，不要当成说明书。书伴是中文的 Kindle 和电纸书站点，有新闻、评测和用法，更新勤快，比综合科技首页更摸得到这块硬件市场的脉搏。TeleRead 是较早的英文电子书新闻站，现在仍在写出版、图书馆和阅读技术。
 
-        另外三个链接是家族，不是外面的媒体。news.e-ink.me 是一份给墨水屏浏览器准备的科技新闻首页，版式真的能在那种屏幕上读。wiki.e-ink.me 是家族的电子书知识库：格式、词典、阅读软件和设备设置。英文文章改写自较早的公开维基，另外也有原创。games.e-ink.me 是一组打算在墨水屏上玩的浏览器游戏。放在这里，是为了让家族成为一张地图。它们不是书店。
+        另外三个链接是家族，不是外面的媒体。Inkme News 是一份给墨水屏浏览器准备的科技新闻首页，版式真的能在那种屏幕上读。Inkme Wiki 是家族的电子书知识库：格式、词典、阅读软件和设备设置。英文文章改写自较早的公开维基，另外也有原创。Inkme Games 是一组打算在墨水屏上玩的浏览器游戏。放在这里，是为了让家族成为一张地图。它们不是书店。
 
         讨论进行到「这个文件打不开」时，下一步几乎总是格式，而不是再换一个论坛。工具那一栏就是这场谈话的另一面。
     cta:
@@ -343,8 +343,8 @@ categories:
         en: The thread ended on a format
         zh: 帖子最后卡在格式上
       body:
-        en: Device forums often end with a file the reader will not open. The converter does that one job. e-ink.me is credit-based after a few free starter credits.
-        zh: 设备论坛聊到最后，常常是阅读器打不开那个文件。转换器只做这一件事。e-ink.me 在少量免费额度之后按次计费。
+        en: Device forums often end with a file the reader will not open. The converter does that one job. Inkme is credit-based after a few free starter credits.
+        zh: 设备论坛聊到最后，常常是阅读器打不开那个文件。转换器只做这一件事。Inkme 在少量免费额度之后按次计费。
       action:
         en: Open the format converter
         zh: 打开格式转换
@@ -389,8 +389,8 @@ categories:
         en: A long entry is an article
         zh: 一条长释文就是一篇文章
       body:
-        en: A single word can stay in the browser. A long dictionary essay or a page of citations is worth saving as EPUB for an e-reader. e-ink.me starts you with a few free credits, then charges per conversion.
-        zh: 一个词留在浏览器里就好。一条很长的词典释文或一页书证，值得存成 EPUB 放到电纸书上。e-ink.me 先给少量免费额度，之后按次计费。
+        en: A single word can stay in the browser. A long dictionary essay or a page of citations is worth saving as EPUB for an e-reader. Inkme starts you with a few free credits, then charges per conversion.
+        zh: 一个词留在浏览器里就好。一条很长的词典释文或一页书证，值得存成 EPUB 放到电纸书上。Inkme 先给少量免费额度，之后按次计费。
       action:
         en: Save the page as EPUB
         zh: 把这一页存成 EPUB
@@ -1389,22 +1389,22 @@ entries:
     featured: false
 
   - id: eink-me
-    name: e-ink.me
+    name: Inkme
     url: https://e-ink.me
     description:
       en: >
-        e-ink.me turns a web page into an EPUB and converts among formats such as MOBI, PDF, EPUB, HTML, and TXT. New accounts get a small free credit balance; further conversions are pay as you go.
+        Inkme turns a web page into an EPUB and converts among formats such as MOBI, PDF, EPUB, HTML, and TXT. New accounts get a small free credit balance; further conversions are pay as you go.
       zh: >
-        e-ink.me 把网页做成 EPUB，并在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。新账号有少量免费额度，之后按次计费。
+        Inkme 把网页做成 EPUB，并在 MOBI、PDF、EPUB、HTML、TXT 等格式之间转换。新账号有少量免费额度，之后按次计费。
     long:
       en: |
-        e-ink.me is this catalog's sibling, and its job is the gap between a web page and an e-reader: it extracts an article, a documentation page, or a long post into a clean EPUB, stripping the chrome and keeping the text. It also converts among the ordinary ebook and document formats — MOBI, PDF, EPUB, HTML, TXT, and DOCX among them.
+        Inkme is this catalog's sibling, and its job is the gap between a web page and an e-reader: it extracts an article, a documentation page, or a long post into a clean EPUB, stripping the chrome and keeping the text. It also converts among the ordinary ebook and document formats — MOBI, PDF, EPUB, HTML, TXT, and DOCX among them.
 
         An account starts with a small free credit balance, and further conversions are pay-per-use; there is no subscription to forget about. The output files are ordinary DRM-free files that you keep — what goes onto your reader is yours to copy again, convert again, or share inside a household.
 
         The honest limits match the design. It does not remove DRM from books bought elsewhere — nothing legal does — and a scanned PDF converted to EPUB is still a photograph at heart. What it is for is the everyday case: the long read trapped in a browser tab, and the file in the wrong shape for the device in your bag.
       zh: |
-        e-ink.me 是本目录的姊妹站点，做的是网页与电纸书之间那段空隙：把一篇文章、一页文档或一篇长帖抽成干净的 EPUB，剥掉广告、评论和外壳，留下文字本身。它也在常见的电子书与文档格式之间来回转换——MOBI、PDF、EPUB、HTML、TXT、DOCX 都在内。
+        Inkme 是本目录的姊妹站点，做的是网页与电纸书之间那段空隙：把一篇文章、一页文档或一篇长帖抽成干净的 EPUB，剥掉广告、评论和外壳，留下文字本身。它也在常见的电子书与文档格式之间来回转换——MOBI、PDF、EPUB、HTML、TXT、DOCX 都在内。
 
         新账号自带少量免费额度，之后的转换按次计费；没有一份会忘掉的订阅。输出的是普通的无 DRM 文件，归你保存——进阅读器的东西，可以再拷贝、再转换，也可以在家人之间传看，不必再回头找原链接。
 
@@ -1823,22 +1823,22 @@ entries:
     featured: false
 
   - id: news-eink
-    name: news.e-ink.me
+    name: Inkme News
     url: https://news.e-ink.me
     description:
       en: >
-        news.e-ink.me is the family news page, typeset so a tech briefing stays readable on an e-ink browser. It covers the news. It is not an ebook library.
+        Inkme News is the family news page, typeset so a tech briefing stays readable on an e-ink browser. It covers the news. It is not an ebook library.
       zh: >
-        news.e-ink.me 是家族的新闻页，版式让一份科技简报在墨水屏浏览器里仍然可读。它登新闻，不是电子书库。
+        Inkme News 是家族的新闻页，版式让一份科技简报在墨水屏浏览器里仍然可读。它登新闻，不是电子书库。
     long:
       en: |
-        news.e-ink.me is the family's answer to a small, real problem: most news sites are unreadable on an e-ink browser — heavy, animated, and impatient with slow refreshes. This front page carries a digest of technology news in a layout that respects the screen it is on.
+        Inkme News is the family's answer to a small, real problem: most news sites are unreadable on an e-ink browser — heavy, animated, and impatient with slow refreshes. This front page carries a digest of technology news in a layout that respects the screen it is on.
 
         There is nothing to install and no account to make. It is a web page, deliberately light, that works in the simple browsers shipped on e-ink tablets and in any ordinary browser as well; reading is the whole feature set.
 
         The honest limits: it is a briefing, not a full newsroom — a way to keep an eye on the day while away from a fast screen, not a replacement for following a subject in depth. It sits on this catalog's communities shelf because that is what it is, a reading place rather than a book source. For e-ink device owners it is a useful daily habit.
       zh: |
-        news.e-ink.me 回答的是一个小而真实的问题：大多数新闻站在墨水屏浏览器上没法读——重、爱动、对慢刷新没有耐心。这个首页用尊重那块屏幕的版式，载一份当天主要消息的科技简报。
+        Inkme News 回答的是一个小而真实的问题：大多数新闻站在墨水屏浏览器上没法读——重、爱动、对慢刷新没有耐心。这个首页用尊重那块屏幕的版式，载一份当天主要消息的科技简报。
 
         不用装什么，也没有账号可建。它是一张刻意做轻的网页，在墨水屏平板自带的简易浏览器里能用，在普通浏览器里也能用，刷新和翻页也不折腾那块屏；阅读就是全部功能，没有登录墙，也没有推送打扰。
 
@@ -1854,22 +1854,22 @@ entries:
     featured: false
 
   - id: wiki-eink
-    name: wiki.e-ink.me
+    name: Inkme Wiki
     url: https://wiki.e-ink.me
     description:
       en: >
-        wiki.e-ink.me is the family knowledge base on ebook formats, dictionaries, reading software, and e-reader setup. English articles adapt older public wiki pages and add original notes.
+        Inkme Wiki is the family knowledge base on ebook formats, dictionaries, reading software, and e-reader setup. English articles adapt older public wiki pages and add original notes.
       zh: >
-        wiki.e-ink.me 是家族的知识库，写电子书格式、词典、阅读软件和电纸书设置。英文文章改写自较早的公开维基，并有原创补充。
+        Inkme Wiki 是家族的知识库，写电子书格式、词典、阅读软件和电纸书设置。英文文章改写自较早的公开维基，并有原创补充。
     long:
       en: |
-        wiki.e-ink.me is the family's knowledge base for the practical end of e-reading: what the formats actually are and how they differ, how dictionaries get onto readers, which software opens what, and how specific devices are set up. English articles adapt material from an older public wiki, with original writing filling the gaps.
+        Inkme Wiki is the family's knowledge base for the practical end of e-reading: what the formats actually are and how they differ, how dictionaries get onto readers, which software opens what, and how specific devices are set up. English articles adapt material from an older public wiki, with original writing filling the gaps.
 
         The tone is reference, not blog — short factual pages, organized for lookup, free to read with no account. Where a topic needs depth, such as the anatomy of an EPUB or the varieties of DRM on library loans, the wiki keeps the explanation in one place instead of scattering it across forum threads.
 
         Honest limits: the scope is deliberately narrow (ebooks and readers, not general technology), adapted pages may lag behind their sources, and a wiki grows at the speed of its volunteers. As a first stop before asking a forum — what KEPUB is, why a file will not open — it usually shortens the conversation.
       zh: |
-        wiki.e-ink.me 是家族的知识库，管的是电子书阅读里偏实操的那一头：各种格式到底是什么、差别在哪，词典怎么装上阅读器，什么软件开什么文件，具体设备怎么设置。英文文章改写自一个较早的公开维基，再由原创文章补上缺口。
+        Inkme Wiki 是家族的知识库，管的是电子书阅读里偏实操的那一头：各种格式到底是什么、差别在哪，词典怎么装上阅读器，什么软件开什么文件，具体设备怎么设置。英文文章改写自一个较早的公开维基，再由原创文章补上缺口。
 
         语气是参考书，不是博客——短而实的页面，按查阅组织，免费阅读，无需账号，手机屏幕上也不挤。当一个题目需要深度，比如 EPUB 的构造、图书馆借阅上 DRM 的种种，维基把解释收在一处，而不是散落各论坛帖子。
 
@@ -1885,22 +1885,22 @@ entries:
     featured: false
 
   - id: games-eink
-    name: games.e-ink.me
+    name: Inkme Games
     url: https://games.e-ink.me
     description:
       en: >
-        games.e-ink.me is a small set of free browser games made to be playable on e-ink screens. It is the family's play shelf, not a place to find books.
+        Inkme Games is a small set of free browser games made to be playable on e-ink screens. It is the family's play shelf, not a place to find books.
       zh: >
-        games.e-ink.me 是一小套免费浏览器游戏，为了能在墨水屏上玩。它是家族的游戏架，不是找书的地方。
+        Inkme Games 是一小套免费浏览器游戏，为了能在墨水屏上玩。它是家族的游戏架，不是找书的地方。
     long:
       en: |
-        games.e-ink.me is the family's play shelf: a small set of free browser games built specifically for e-ink screens — grayscale, patient with slow refreshes, controllable without frantic tapping. It exists because most web games are unplayable on exactly the devices that are nicest to read on.
+        Inkme Games is the family's play shelf: a small set of free browser games built specifically for e-ink screens — grayscale, patient with slow refreshes, controllable without frantic tapping. It exists because most web games are unplayable on exactly the devices that are nicest to read on.
 
         There is nothing to install and no account to create; the games run in the browser of an e-ink tablet, an e-ink phone, or any ordinary machine. The collection is deliberately small and the games deliberately simple — the hardware sets the design brief.
 
         It appears on this catalog's communities shelf for honesty, not padding: the family sites are listed here as one map, and this is the corner where nothing productive happens. As a book source it contributes nothing, and it will not pretend otherwise. As a five-minute break on the device you already carry, it does exactly what it claims, no more and no less.
       zh: |
-        games.e-ink.me 是家族的游戏架：一小套专为墨水屏做的免费浏览器游戏——灰阶、体谅慢刷新、不靠疯狂点按操控。它存在的原因很实际：多数网页游戏恰恰在最适合阅读的那类设备上玩不了——动画太多，刷新太快。
+        Inkme Games 是家族的游戏架：一小套专为墨水屏做的免费浏览器游戏——灰阶、体谅慢刷新、不靠疯狂点按操控。它存在的原因很实际：多数网页游戏恰恰在最适合阅读的那类设备上玩不了——动画太多，刷新太快。
 
         不用安装，没有账号可建；游戏跑在墨水屏平板或任何普通机器的浏览器里，不动声色，也不占地方。合集刻意小，游戏刻意简单——硬件就是设计任务书，打开一张页面就开玩。
 

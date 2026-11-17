@@ -95,7 +95,7 @@ The unglamorous shelf that decides whether a legal file is actually pleasant to 
 
 | Site | What it offers | Cost |
 | --- | --- | --- |
-| [e-ink.me](https://e-ink.me) | Web page to EPUB, plus conversions among MOBI, PDF, EPUB, HTML, and TXT *(this family)* | Free credits, then paid |
+| [Inkme](https://e-ink.me) | Web page to EPUB, plus conversions among MOBI, PDF, EPUB, HTML, and TXT *(this family)* | Free credits, then paid |
 | [iloveepub.com](https://iloveepub.com) | In-browser EPUB utilities — compress, merge, split, convert; files stay on your machine *(this family)* | Free |
 | [Sigil](https://sigil-ebook.com) | The open-source EPUB editor for changing the book, not just rewrapping it | Free |
 | [Pandoc](https://pandoc.org) | Command-line converter from Markdown, DOCX, HTML into EPUB and PDF | Free |
@@ -127,9 +127,9 @@ Where people argue about the device, the format, and whether the book was worth 
 | [r/ereader](https://www.reddit.com/r/ereader/) | Reddit's faster, looser device talk | Free |
 | [书伴 BookFere](https://bookfere.com) | Chinese Kindle and e-reader news, reviews, and how-tos | Free |
 | [TeleRead](https://teleread.org) | Long-running English ebook, publishing, and library news | Free |
-| [news.e-ink.me](https://news.e-ink.me) | Tech news set in type an e-ink browser can actually read *(this family)* | Free |
-| [wiki.e-ink.me](https://wiki.e-ink.me) | The family's ebook knowledge base: formats, dictionaries, device setup *(this family)* | Free |
-| [games.e-ink.me](https://games.e-ink.me) | Browser games meant to be playable on an e-ink screen *(this family)* | Free |
+| [Inkme News](https://news.e-ink.me) | Tech news set in type an e-ink browser can actually read *(this family)* | Free |
+| [Inkme Wiki](https://wiki.e-ink.me) | The family's ebook knowledge base: formats, dictionaries, device setup *(this family)* | Free |
+| [Inkme Games](https://games.e-ink.me) | Browser games meant to be playable on an e-ink screen *(this family)* | Free |
 
 ## [Dictionaries](https://nav.e-ink.me/dictionaries)
 
