@@ -25,6 +25,24 @@ const langTitle = entry.languages.map((code) => languageName(locale, code)).join
   data-langs={filterable ? entry.languages.join(',') : undefined}
   data-pricing={filterable ? entry.pricing : undefined}
 >
+  <a class="ext" href={entry.url} rel="noopener noreferrer" aria-label={ui.openExternal}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M15 3h6v6"></path>
+      <path d="M10 14 21 3"></path>
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+    </svg>
+  </a>
   <h3 class="card-name">
     <img
       class="favicon"
@@ -60,5 +78,4 @@ const langTitle = entry.languages.map((code) => languageName(locale, code)).join
     {entry.featured && <li class="tag">{ui.tagFeatured}</li>}
   </ul>
   {entry.region[locale] && <p class="region">{entry.region[locale]}</p>}
-  <a class="ext" href={entry.url} rel="noopener noreferrer">{ui.openExternal} ↗</a>
 </article>

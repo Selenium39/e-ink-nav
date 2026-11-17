@@ -27,7 +27,7 @@ function syncThemeChrome(explicit: boolean): void {
   const button = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
   if (button) button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
   if (!explicit) return;
-  const color = theme === 'dark' ? '#0A0A0A' : '#FAF9F6';
+  const color = theme === 'dark' ? '#0F0F0F' : '#FAFAFA';
   const metas = [...document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')];
   const [first, ...rest] = metas;
   if (first) {
