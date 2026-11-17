@@ -16,6 +16,14 @@ const slugs = [
 
 const { data } = loadCatalog();
 const totalEntries = data.entries.length;
+const expectedSitemapUrls = (1 + Object.keys(data.categories).length) * 2 + totalEntries * 2;
+
+// Analytics intent lives in src/config.ts: a non-empty UMAMI_WEBSITE_ID means
+// every page must render the script tag; an empty one means no analytics.
+const configSrc = fs.readFileSync(path.resolve('src/config.ts'), 'utf8');
+const umamiWebsiteId = configSrc.match(/export const UMAMI_WEBSITE_ID = ['"]([^'"]*)['"]/)?.[1] ?? '';
+const umamiScriptSrc = configSrc.match(/export const UMAMI_SCRIPT_SRC = ['"]([^'"]*)['"]/)?.[1] ?? '';
+const umamiScriptHost = umamiScriptSrc === '' ? '' : new URL(umamiScriptSrc).hostname;
 const expectedCounts = Object.fromEntries(
   slugs.map((slug) => [slug, data.entries.filter((entry) => entry.category === slug).length]),
 );
@@ -53,7 +61,13 @@ for (const [url, file, lang, homeCount] of pages) {
     fail(`${url} filters`);
   }
   if (!html.includes('data-lang-link')) fail(`${url} language switch`);
-  if (html.includes('umami') || html.includes('cloud.umami.is')) fail(`${url} umami should be absent`);
+  if (html.includes('cloud.umami.is')) fail(`${url} umami cloud host should be absent`);
+  if (umamiWebsiteId === '') {
+    if (html.includes('umami')) fail(`${url} umami should be absent`);
+  } else {
+    if (!html.includes(`data-website-id="${umamiWebsiteId}"`)) fail(`${url} umami website id`);
+    if (!html.includes(umamiScriptHost)) fail(`${url} umami script host`);
+  }
   if (!html.includes('mailto:openminimax@gmail.com')) fail(`${url} mailto`);
   const entries = html.match(/data-entry="1"/g)?.length ?? 0;
   if (homeCount !== null && entries !== homeCount) fail(`${url} has ${entries} entries, expected ${homeCount}`);
@@ -95,7 +109,7 @@ if (notFound !== null && !notFound.includes('lang="zh-CN"')) fail('404 chinese b
 const sitemap = readDist('dist/sitemap-0.xml', 'sitemap');
 if (sitemap !== null) {
   const locs = sitemap.match(/<loc>/g)?.length ?? 0;
-  if (locs !== 18) fail(`sitemap has ${locs} urls, expected 18`);
+  if (locs !== expectedSitemapUrls) fail(`sitemap has ${locs} urls, expected ${expectedSitemapUrls}`);
   if (sitemap.includes('/404')) fail('sitemap includes 404');
 }
 
@@ -106,4 +120,4 @@ if (failed) {
   console.error(`${failed} dist check(s) failed`);
   process.exit(1);
 }
-console.log(`OK dist: ${pages.length} pages, filters and ItemList present, Umami omitted.`);
+console.log(`OK dist: ${pages.length} pages, filters and ItemList present, Umami present with website id ${umamiWebsiteId}, sitemap ${expectedSitemapUrls} urls.`);
